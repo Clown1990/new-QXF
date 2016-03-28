@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:flex="http://www.springframework.org/schema/flex"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           	http://www.springframework.org/schema/beans
+          	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          	http://www.springframework.org/schema/context
+           	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			">
+           
+	<!--隐式地向 Spring 容器注册 -->
+	<context:annotation-config />
+	<!-- 自动扫描指定包目录下所有在注解代码的java类 -->
+	<context:component-scan base-package="com.qxjs.controller.*" />
+	<context:component-scan base-package="com.qxjs.service.*" />
+
+	<!-- 从datasource.properties这个文件获得参数 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:DataSource.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass">
+			<value>${datasource.driverClassName}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${datasource.url}</value>
+		</property>
+		<property name="user">
+			<value>${datasource.username}</value>
+		</property>
+		<property name="password">
+			<value>${datasource.password}</value>
+		</property>
+		<property name="acquireIncrement">
+			<value>${c3p0.acquireIncrement}</value>
+		</property>
+		<property name="initialPoolSize">
+			<value>${c3p0.initialPoolSize}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>${c3p0.minPoolSize}</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>${c3p0.maxPoolSize}</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>${c3p0.maxIdleTime}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+			<value>${c3p0.idleConnectionTestPeriod}</value>
+		</property>
+		<property name="maxStatements">
+			<value>${c3p0.maxStatements}</value>
+		</property>
+		<property name="numHelperThreads">
+			<value>${c3p0.numHelperThreads}</value>
+		</property>
+		<property name="testConnectionOnCheckout">
+			<value>${c3p0.testConnectionOnCheckout}</value>
+		</property>
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<!-- <property name="configLocation" value=""/> -->
+		<!-- 该属性用来指定MyBatis的XML配置文件路径,跟Spring整合时，编写MyBatis映射文件的目的无非是配置一下typeAlias、setting之类的
+			元素。不用在其中指定数据源，或者事务处理方式。就算配置了也会被忽略。因为这些都是使用Spring中的配置 。当然如果你不打算添加typeAlias
+			之类的设置的话，你连MyBatis的配置文件都不用写，更不用配置这个属性了-->
+		<!--<property name="mapperLocations" value="src/UserMapper.xml"/>-->
+		<!-- 该配置文件用来指定Mapper映射文件的位置 ，如果映射文件与相应的接口同名，且在同一路径下，那么可以不配置该选项-->
+	</bean>
+  	
+	<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.user.UserMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="activityMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.activity.ActivityMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="customMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.custom.CustomMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="newsMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.news.NewsMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="orderMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.order.OrderMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="categoryMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.category.CategoryMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="groupMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.group.GroupMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="paramMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.param.ParamMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="photoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.photo.PhotoMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="productMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.product.ProductMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="seriesMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.product.series.SeriesMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	
+  	<bean id="storeMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+    	<property name="mapperInterface" value="com.qxjs.dao.store.StoreMapper" /> 
+   		<property name="sqlSessionFactory" ref="sqlSessionFactory" /> 
+  	</bean> 
+  	<!-- bean id="userService" class="com.qxjs.service.user.UserService"/-->
+  	
+</beans>

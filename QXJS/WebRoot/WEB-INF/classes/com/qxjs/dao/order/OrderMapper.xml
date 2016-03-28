@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qxjs.dao.order.OrderMapper" >
+  <resultMap id="OrderResultMap" type="com.qxjs.model.vo.order.Order" >
+    <id column="orderId" property="orderId" jdbcType="INTEGER" />
+    <result column="customId" property="customId" jdbcType="INTEGER" />
+    <result column="time" property="time" jdbcType="INTEGER" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    
+    <result column="customName" property="customName" jdbcType="VARCHAR" />
+    
+  </resultMap>
+  
+  <insert id="insertControl" parameterType="Order">
+    	INSERT INTO t_order (customId,time,address,content,comment) 
+    		VALUES(#{customId},#{time},#{address},#{content},#{comment})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from t_order 
+    	WHERE orderId in (${idStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Order">
+    	UPDATE t_order 
+   		SET     customId = #{customId},
+   				time = #{time},
+   				address = #{address},
+   				content = #{content},
+   				comment = #{comment}
+   		WHERE orderId = #{orderId}
+  	</update>
+  	
+  	<select id="selectCount" parameterType="Order" resultType="Integer">
+		select count(*) from t_order
+		where customId in (
+			select customId from custom where custom.customName like CONCAT(CONCAT('%',#{vo.customName}),'%')
+		)
+		<![CDATA[
+			AND time <= UNIX_TIMESTAMP(STR_TO_DATE(CONCAT(#{endDate}, ' 00:00:00'), '%Y%m%d %T'))
+			AND time >= UNIX_TIMESTAMP(STR_TO_DATE(CONCAT(#{startDate}, ' 00:00:00'), '%Y%m%d %T'))
+		]]>
+  	</select>
+	
+	<select id="selectControl" resultMap="OrderResultMap" resultType="Order">
+    	select * from t_order
+		where customId in (
+			select customId from custom where custom.customName like CONCAT(CONCAT('%',#{vo.customName}),'%')
+		)
+		<![CDATA[
+			AND time <= UNIX_TIMESTAMP(STR_TO_DATE(CONCAT(#{endDate}, ' 00:00:00'), '%Y%m%d %T'))
+			AND time >= UNIX_TIMESTAMP(STR_TO_DATE(CONCAT(#{startDate}, ' 00:00:00'), '%Y%m%d %T'))
+		]]>
+		order by orderId
+     	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+</mapper>

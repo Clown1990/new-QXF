@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qxjs.dao.custom.ProvinceMapper" >
+  <resultMap id="ProvinceResultMap" type="com.qxjs.model.vo.common.Province" >
+    <id column="provinceId" property="provinceId" jdbcType="INTEGER" />
+    <result column="provinceName" property="provinceName" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <insert id="insertControl" parameterType="Province">
+    	INSERT INTO Province (provinceId,provinceName) 
+    		VALUES(#{provinceId},#{provinceName})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from Province 
+    	WHERE provinceId in (${idStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Province">
+    	UPDATE Province 
+   		SET provinceName = #{provinceName}
+   		WHERE provinceId = #{provinceId}
+  	</update>
+  	
+  	<select id="selectCount" parameterType="Province" resultType="Integer">
+    	SELECT count(*) FROM Province 
+    	WHERE provinceName like 
+		<![CDATA[   
+			CONCAT(CONCAT('%',#{provinceName}),'%')				
+		]]>		
+  	</select>
+	
+	<select id="selectControl" resultMap="ProvinceResultMap" resultType="Province">
+    	SELECT * FROM Province 
+    	WHERE provinceName like 
+		<![CDATA[   
+			CONCAT(CONCAT('%',#{provinceName}),'%')				
+		]]>		
+		order by provinceId
+     	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+  	
+</mapper>

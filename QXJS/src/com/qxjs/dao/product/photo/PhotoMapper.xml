@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qxjs.dao.product.photo.PhotoMapper" >
+  <resultMap id="PhotoResultMap" type="com.qxjs.model.vo.product.photo.Photo" >
+    <id column="photoId" property="photoId" jdbcType="INTEGER" />
+    <result column="userId" property="userId" jdbcType="INTEGER" />
+    <result column="productId" property="productId" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="path" property="path" jdbcType="VARCHAR" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="enable" property="enable" jdbcType="INTEGER" />
+    
+    <result column="userName" property="userName" jdbcType="VARCHAR" />
+    <result column="productName" property="productName" jdbcType="VARCHAR" />
+    <result column="productCd" property="productCd" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <insert id="insertControl" parameterType="Photo">
+    	INSERT INTO Photo (userId,type,path,comment,enable,productId) 
+    		VALUES(#{userId},#{type},#{path},#{comment},#{enable},#{productId})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from Photo 
+    	WHERE photoId in (${idStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Photo">
+    	UPDATE Photo 
+   		SET userId = #{userId},
+	   		type = #{type},
+	   		path = #{path},
+	   		enable = #{enable},
+	   		productId = #{productId},
+	   		comment = #{comment}
+   		WHERE photoId = #{photoId}
+  	</update>
+  	
+  	<select id="selectCount" parameterType="Photo" resultType="Integer">
+    	SELECT count(*) FROM Photo 
+		WHERE productId = #{productId}	
+  	</select>
+	
+	<select id="selectControl" resultMap="PhotoResultMap" resultType="Photo">
+    	SELECT * FROM Photo 
+    	left join user on user.userId = Photo.userId
+    	left join product on product.productId = Photo.productId
+    	WHERE productId = #{vo.productId}
+		order by paramId
+     	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+</mapper>

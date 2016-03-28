@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qxjs.dao.custom.CustomMapper" >
+  <resultMap id="CustomResultMap" type="com.qxjs.model.vo.custom.Custom" >
+    <id column="customId" property="customId" jdbcType="INTEGER" />
+    <result column="storeId" property="storeId" jdbcType="INTEGER" />
+    <result column="customName" property="customName" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <insert id="insertControl" parameterType="Custom">
+    	INSERT INTO custom (storeId,customName,sex,age,phone,address) 
+    		VALUES(#{storeId},#{customName},#{sex},#{age},#{phone},#{address})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from custom 
+    	WHERE customId in (${idStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Custom">
+    	UPDATE custom 
+   		SET     storeId = #{storeId},
+   				customName = #{customName},
+   				sex = #{sex},
+   				age = #{age},
+   				phone = #{phone},
+   				address = #{address}
+   		WHERE customId = #{customId}
+  	</update>
+  	
+  	<select id="selectCount" parameterType="Custom" resultType="Integer">
+    	SELECT count(*) FROM custom 
+    	WHERE customName like 
+		<![CDATA[   
+			CONCAT(CONCAT('%',#{customName}),'%')				
+		]]>		
+  	</select>
+	
+	<select id="selectControl" resultMap="CustomResultMap" resultType="Custom">
+    	SELECT * FROM custom 
+    	WHERE customName like 
+		<![CDATA[   
+			CONCAT(CONCAT('%',#{vo.customName}),'%')				
+		]]>		
+		order by customId
+     	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+</mapper>

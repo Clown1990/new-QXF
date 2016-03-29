@@ -32,7 +32,7 @@ public class SeriesController {
 			Series vo = new Series();
 			vo.setEnable(Integer.parseInt(request.getParameter("enable")));
 			vo.setSeriesName(request.getParameter("seriesName"));
-			vo.setComent(request.getParameter("coment"));
+			vo.setComment(request.getParameter("comment"));
 			mapper.insertControl(vo);
 			map.put("result", NameSpace.SUCCESS); 
 		}catch(Exception e){
@@ -68,7 +68,7 @@ public class SeriesController {
 			vo.setSeriesId(Integer.parseInt(request.getParameter("seriesId")));
 			vo.setEnable(Integer.parseInt(request.getParameter("enable")));
 			vo.setSeriesName(request.getParameter("seriesName"));
-			vo.setComent(request.getParameter("coment"));
+			vo.setComment(request.getParameter("coment"));
 			mapper.updateControl(vo);
 			map.put("result", NameSpace.SUCCESS); 
 		}catch(Exception e){

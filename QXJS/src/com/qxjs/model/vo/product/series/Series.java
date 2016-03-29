@@ -5,7 +5,7 @@ public class Series {
 
     private String seriesName;
 
-    private String coment;
+    private String comment;
 
     private int enable;
 
@@ -25,12 +25,12 @@ public class Series {
 		this.seriesName = seriesName;
 	}
 
-	public String getComent() {
-		return coment;
+	public String getComment() {
+		return comment;
 	}
 
-	public void setComent(String coment) {
-		this.coment = coment;
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 
 	public int getEnable() {

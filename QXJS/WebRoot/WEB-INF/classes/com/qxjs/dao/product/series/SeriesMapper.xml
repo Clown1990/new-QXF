@@ -4,13 +4,13 @@
   <resultMap id="SeriesResultMap" type="com.qxjs.model.vo.product.series.Series" >
     <id column="seriesId" property="seriesId" jdbcType="INTEGER" />
     <result column="seriesName" property="seriesName" jdbcType="VARCHAR" />
-    <result column="coment" property="coment" jdbcType="VARCHAR" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
     <result column="enable" property="enable" jdbcType="INTEGER" />
   </resultMap>
   
   <insert id="insertControl" parameterType="Series">
-    	INSERT INTO Series (seriesName,coment,enable) 
-    		VALUES(#{seriesName},#{coment},#{enable})
+    	INSERT INTO Series (seriesName,comment,enable) 
+    		VALUES(#{seriesName},#{comment},#{enable})
   	</insert>
   	
   	<delete id="deleteControl" parameterType="String">
@@ -21,7 +21,7 @@
   	<update id="updateControl" parameterType="Series">
     	UPDATE Series 
    		SET seriesName = #{seriesName},
-	   		coment = #{coment},
+	   		comment = #{comment},
 	   		enable = #{enable}
    		WHERE seriesId = #{seriesId}
   	</update>

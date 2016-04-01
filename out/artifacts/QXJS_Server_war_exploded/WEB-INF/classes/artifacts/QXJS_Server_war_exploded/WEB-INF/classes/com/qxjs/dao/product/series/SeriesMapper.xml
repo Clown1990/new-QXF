@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qxjs.dao.product.series.SeriesMapper" >
+  <resultMap id="SeriesResultMap" type="com.qxjs.model.vo.product.series.Series" >
+    <id column="seriesId" property="seriesId" jdbcType="INTEGER" />
+    <result column="seriesName" property="seriesName" jdbcType="VARCHAR" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="enable" property="enable" jdbcType="INTEGER" />
+  </resultMap>
+  
+  <insert id="insertControl" parameterType="Series">
+    	INSERT INTO Series (seriesName,comment,enable) 
+    		VALUES(#{seriesName},#{comment},#{enable})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from Series 
+    	WHERE seriesId in (${idStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Series">
+    	UPDATE Series 
+   		SET seriesName = #{seriesName},
+	   		comment = #{comment},
+	   		enable = #{enable}
+   		WHERE seriesId = #{seriesId}
+  	</update>
+  	
+	<select id="selectControl" resultMap="SeriesResultMap" resultType="Series">
+    	SELECT * FROM Series 
+    	WHERE enable = 1	
+		order by seriesId
+     	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+</mapper>

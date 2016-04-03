@@ -30,25 +30,5 @@
         <jarDirectory url="file://$MODULE_DIR$/QXJS/WebRoot/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="" scope="PROVIDED">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../QXJS_Server/QXJS/WebRoot/WEB-INF/lib/jsp-api-2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="" scope="PROVIDED">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../QXJS_Server/QXJS/WebRoot/WEB-INF/lib/servlet-api-3.0-alpha-1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../../QXJS_Server/QXJS/WebRoot/WEB-INF/lib/servlet-api-3.0-alpha-1.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>

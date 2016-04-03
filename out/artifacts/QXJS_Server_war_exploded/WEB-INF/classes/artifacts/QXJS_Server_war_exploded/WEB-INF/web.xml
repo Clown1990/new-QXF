@@ -43,7 +43,7 @@
 	</servlet-mapping>
 
 	<welcome-file-list>
-		<welcome-file>JavaTest.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	
 	<display-name>QXJS</display-name>

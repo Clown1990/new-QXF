@@ -33,12 +33,12 @@ function deleteSeries(seriesId) {
     })
 }
 //修改管系列-获取当前选中行信息
-function updateGetSeries(userId){
+function updateGetSeries(seriesId){
     var url = url;
     $.ajax({
         type: 'POST',
         url: url,
-        data: {userId:userId},
+        data: {seriesId:seriesId},
         success: function (data) {
             console.log(data);
         },

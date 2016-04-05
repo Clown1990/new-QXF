@@ -1,6 +1,6 @@
-/**
- * Created by cj on 16/4/5.
- */
+///**
+// * Created by cj on 16/4/5.
+// */
 $(function(){
     $('#submit').click(function(){
         login();
@@ -9,14 +9,19 @@ $(function(){
 })
 function login() {
     var logindata = $('#login').serialize();
-    var url = "spring/user/loginControl";
+    var url = "/spring/user/loginControl";
     $.ajax({
-        type: 'POST',
+        type: 'get',
         url: url,
         data: logindata,
         success: function (data) {
-            alert(data);
-            console.log(data);
+            if(data.result =="SUCCESS"){
+                //window.open("http://www.baidu.com");
+                window.location.href = "user/userManage.html";
+            }else {
+                return false;
+            }
+
         },
         error: function () {
             alert("异常！");

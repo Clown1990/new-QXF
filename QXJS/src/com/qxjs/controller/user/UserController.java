@@ -16,6 +16,7 @@ import com.qxjs.common.NameSpace;
 import com.qxjs.dao.user.UserMapper;
 import com.qxjs.model.vo.common.PageVo;
 import com.qxjs.model.vo.user.User;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/user")
@@ -109,7 +110,20 @@ public class UserController {
 	
 	@RequestMapping(value="/loginControl", method = RequestMethod.GET)
 	public @ResponseBody Map<String,Object> loginControl(HttpServletRequest request, HttpServletResponse response)
+//	public ModelAndView loginControl(HttpServletRequest request, HttpServletResponse response)
 	{
+//		ModelAndView modelAndView = new ModelAndView("demo");
+//		try{
+//			User vo = new User();
+//			vo.setUsername(request.getParameter("username"));
+//			vo.setPassword(request.getParameter("password"));
+//			modelAndView.addObject("list", mapper.loginControl(vo));
+//			modelAndView.addObject("result", NameSpace.SUCCESS);
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			modelAndView.addObject("result", NameSpace.FAIL);
+//		}
+//		return modelAndView;
 		Map<String,Object> map = new HashMap<String,Object>();
 		try{
 			User vo = new User();

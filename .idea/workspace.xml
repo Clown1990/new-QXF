@@ -2,615 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ae0b64-2689-493b-a553-4dcdff218e7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_footer_script.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_header_script.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/chosen/chosen-sprite_402x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/chosen/chosen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dataTables/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_5F40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jasny/jasny-bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/nouslider/jquery.nouislider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/summernote/summernote.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot@" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/dashbard4_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/2s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/5s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/6s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/html_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p_big2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/profile_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/rails_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/chartjs-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/jquery.uploadPreview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.tableTools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jqGrid/i18n/grid.locale-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jsKnob/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/rickshaw/vendor/d3.v3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/toastr/toastr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/userManage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/css/diyUpload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/avi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/png.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/js/webuploader.html5only.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/accessory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/activity/Activity.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/custom/custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/news/news.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/pictures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/product.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/series.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/user/userManage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/patterns/header-profile-skin-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/patterns/header-profile-skin-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/patterns/header-profile-skin-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/patterns/header-profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/patterns/shattered.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/css/blueimp-gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/error.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/video-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/blueimp/img/video-play.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/chosen/chosen-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/chosen/chosen-sprite_402x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/chosen/chosen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/codemirror/ambiance.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/cropper/cropper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dataTables/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dataTables/dataTables.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dataTables/dataTables.tableTools.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/datapicker/datepicker3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dropzone/basic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/dropzone/dropzone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/fullcalendar/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/iCheck/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/iCheck/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/iCheck/green_402x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/sprite-skin-flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/spritemap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/images/spritemap_402x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_5F40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_5F40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_222222_5F256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_2e83ff_5F256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_454545_5F256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_888888_5F256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_cd0a0a_5F256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jasny/jasny-bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jqGrid/ui.jqgrid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jsTree/32px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jsTree/40px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jsTree/style.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/jsTree/throbber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/morris/morris-0.4.3.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/nouslider/jquery.nouislider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/steps/jquery.steps.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/summernote/summernote-bs3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/summernote/summernote.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/switchery/switchery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/plugins/toastr/toastr.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.eot@" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.eot@v=4.3.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.svg@v=4.3.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.ttf@v=4.3.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.woff2@v=4.3.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.woff@v=4.3.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot@" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/a8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/angular_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/dashbard4_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/dashbard4_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/email_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/email_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/email_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/full_height.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/10s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/11s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/12s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/1s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/2s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/3s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/4s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/5s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/6s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/7s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/8s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/gallery/9s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/html_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/mvc_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/off_canvas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p_big1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p_big2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/p_big3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/profile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/profile_big.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/profile_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/rails_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/img/zender_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/Activity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/Group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/category.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/chartjs-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/flot-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/morris-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/peity-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/rickshaw-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/demo/sparkline-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/inspinia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/jquery-2.1.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/jquery-ui-1.10.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/jquery-ui.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/jquery.uploadPreview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/news.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/order.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/param.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/picture.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/blueimp/jquery.blueimp-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/chartJs/Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/chosen/chosen.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/codemirror/mode/javascript/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/colorpicker/bootstrap-colorpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/cropper/cropper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/dataTables.tableTools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dataTables/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/datapicker/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/diff_match_patch/javascript/diff_match_patch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/dropzone/dropzone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/easypiechart/jquery.easypiechart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/curvedLines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.spline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.symbol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/fullcalendar/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/gritter/images/gritter-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/gritter/images/gritter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/gritter/images/ie-spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/gritter/jquery.gritter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/gritter/jquery.gritter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/iCheck/icheck.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/idle-timer/idle-timer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jasny/jasny-bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jeditable/jquery.jeditable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jqGrid/i18n/grid.locale-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jqGrid/jquery.jqGrid.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jquery-ui/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jsKnob/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jsTree/jstree.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/metisMenu/jquery.metisMenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/morris/morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/morris/raphael-2.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/nestable/jquery.nestable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/nouslider/jquery.nouislider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/pace/pace.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/peity/jquery.peity.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/rickshaw/vendor/d3.v3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/sparkline/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/staps/jquery.steps.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/summernote/summernote.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/switchery/switchery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/tinycon/tinycon.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/toastr/toastr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/validate/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/plugins/video/responsible-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/product.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/series.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/store.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/js/userManage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/css/diyUpload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/css/webuploader.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/bgblack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/check_alt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/avi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/cdr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/csv.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/doc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/jpg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/mp3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/png.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/ppt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/rar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/xls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/zip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/filebg/复件 txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/images/x_alt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/js/diyUpload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/diyUpload/js/webuploader.html5only.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/plugin/server/fileupload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/accessory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/activity/Activity.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/custom/custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/describe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/jq_grid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/news/news.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/order/order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/Group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/category.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/param.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/pictures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/product.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/product/series.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/qxdp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/store/storeManage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/technology.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/upLoadFile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/user/userManage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/temple/validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/websrc/velocity.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/animate.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/animate.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap-datetimepicker.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap-datetimepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap-datetimepicker.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap-datetimepicker.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/css.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/datepicker.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/datepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/patterns/header-profile-skin-1.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/patterns/header-profile-skin-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/patterns/header-profile-skin-2.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/patterns/header-profile-skin-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/patterns/header-profile-skin-3.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/patterns/header-profile-skin-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/patterns/header-profile.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/patterns/header-profile.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/patterns/shattered.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/patterns/shattered.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/css/blueimp-gallery.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/css/blueimp-gallery.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/error.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/error.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/error.svg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/error.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/loading.gif" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/loading.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/play-pause.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/play-pause.svg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/play-pause.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/video-play.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/video-play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/blueimp/img/video-play.svg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/blueimp/img/video-play.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/chosen/chosen-sprite.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/chosen/chosen-sprite.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/chosen/chosen-sprite_402x.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/chosen/chosen-sprite_402x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/chosen/chosen.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/chosen/chosen.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/codemirror/ambiance.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/codemirror/ambiance.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/codemirror/codemirror.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/colorpicker/bootstrap-colorpicker.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/cropper/cropper.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/cropper/cropper.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/dataTables/dataTables.bootstrap.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/dataTables/dataTables.bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/dataTables/dataTables.responsive.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/dataTables/dataTables.responsive.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/dataTables/dataTables.tableTools.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/dataTables/dataTables.tableTools.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/datapicker/datepicker3.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/datapicker/datepicker3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/dropzone/basic.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/dropzone/basic.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/dropzone/dropzone.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/dropzone/dropzone.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/fullcalendar/fullcalendar.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/fullcalendar/fullcalendar.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/fullcalendar/fullcalendar.print.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/fullcalendar/fullcalendar.print.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/iCheck/custom.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/iCheck/custom.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/iCheck/green.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/iCheck/green.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/iCheck/green_402x.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/iCheck/green_402x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/alpha.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/bootstrap-colorpicker/alpha.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/hue.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/bootstrap-colorpicker/hue.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/bootstrap-colorpicker/saturation.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/bootstrap-colorpicker/saturation.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/sort_asc.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/sort_asc.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/sort_desc.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/sort_desc.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/sprite-skin-flat.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/sprite-skin-flat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/spritemap.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/spritemap.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/images/spritemap_402x.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/images/spritemap_402x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_5F40x100.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_5F40x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_5F40x100.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_5F40x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_222222_5F256x240.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-icons_222222_5F256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_2e83ff_5F256x240.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-icons_2e83ff_5F256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_454545_5F256x240.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-icons_454545_5F256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_888888_5F256x240.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-icons_888888_5F256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/images/ui-icons_cd0a0a_5F256x240.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/images/ui-icons_cd0a0a_5F256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jasny/jasny-bootstrap.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jasny/jasny-bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jqGrid/ui.jqgrid.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jqGrid/ui.jqgrid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jsTree/32px.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jsTree/32px.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jsTree/40px.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jsTree/40px.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jsTree/style.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jsTree/style.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/jsTree/throbber.gif" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/jsTree/throbber.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/morris/morris-0.4.3.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/morris/morris-0.4.3.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/nouslider/jquery.nouislider.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/nouslider/jquery.nouislider.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/steps/jquery.steps.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/steps/jquery.steps.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/summernote/summernote-bs3.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/summernote/summernote-bs3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/summernote/summernote.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/summernote/summernote.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/switchery/switchery.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/switchery/switchery.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/plugins/toastr/toastr.min.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/plugins/toastr/toastr.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/style.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/css/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.eot@" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.eot@" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.eot@v=4.3.0" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.eot@v=4.3.0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.svg@v=4.3.0" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.svg@v=4.3.0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.ttf@v=4.3.0" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.ttf@v=4.3.0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.woff2@v=4.3.0" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.woff2@v=4.3.0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/font-awesome/fonts/fontawesome-webfont.woff@v=4.3.0" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/font-awesome/fonts/fontawesome-webfont.woff@v=4.3.0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.eot@" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.eot@" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a1.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a2.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a3.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a4.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a5.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a6.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a7.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/a8.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/a8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/angular_logo.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/angular_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/dashbard4_1.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/dashbard4_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/dashbard4_2.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/dashbard4_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/email_1.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/email_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/email_2.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/email_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/email_3.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/email_3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/full_height.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/full_height.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/10s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/10s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/11s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/11s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/12s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/12s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/1s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/1s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/2s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/2s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/3s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/3s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/4s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/4s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/5s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/5s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/6s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/6s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/7s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/7s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/8s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/8s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/gallery/9s.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/9s.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/html_logo.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/html_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/mvc_logo.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/mvc_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/off_canvas.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/off_canvas.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p1.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p2.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p3.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p_big1.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p_big1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p_big2.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p_big2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/p_big3.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/p_big3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/profile.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/profile.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/profile_big.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/profile_big.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/profile_small.jpg" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/profile_small.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/rails_logo.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/rails_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/img/zender_logo.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/zender_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/Activity.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/Activity.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/Group.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/Group.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/bootstrap.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/category.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/category.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/custom.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/custom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/chartjs-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/chartjs-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/flot-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/flot-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/morris-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/morris-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/peity-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/peity-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/rickshaw-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/rickshaw-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/demo/sparkline-demo.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/demo/sparkline-demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/inspinia.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/inspinia.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/jquery-2.1.1.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/jquery-2.1.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/jquery-ui-1.10.4.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/jquery-ui-1.10.4.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/jquery-ui.custom.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/jquery-ui.custom.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/jquery.uploadPreview.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/jquery.uploadPreview.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/news.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/news.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/order.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/order.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/param.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/param.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/picture.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/picture.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/blueimp/jquery.blueimp-gallery.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/blueimp/jquery.blueimp-gallery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/chartJs/Chart.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/chartJs/Chart.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/chosen/chosen.jquery.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/chosen/chosen.jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/codemirror/codemirror.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/codemirror/mode/javascript/javascript.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/codemirror/mode/javascript/javascript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/colorpicker/bootstrap-colorpicker.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/colorpicker/bootstrap-colorpicker.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/cropper/cropper.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/cropper/cropper.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/dataTables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/dataTables/dataTables.bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/dataTables/dataTables.responsive.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/dataTables/dataTables.responsive.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/dataTables/dataTables.tableTools.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/dataTables/dataTables.tableTools.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/dataTables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/dataTables/jquery.dataTables.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/datapicker/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/datapicker/bootstrap-datepicker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/diff_match_patch/javascript/diff_match_patch.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/diff_match_patch/javascript/diff_match_patch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/dropzone/dropzone.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/easypiechart/jquery.easypiechart.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/easypiechart/jquery.easypiechart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/curvedLines.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/curvedLines.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.pie.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.resize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.spline.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.spline.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.symbol.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.symbol.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.time.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.time.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/fullcalendar/fullcalendar.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/fullcalendar/moment.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/fullcalendar/moment.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/gritter/images/gritter-light.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/gritter/images/gritter-light.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/gritter/images/gritter.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/gritter/images/gritter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/gritter/images/ie-spacer.gif" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/gritter/images/ie-spacer.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/gritter/jquery.gritter.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/gritter/jquery.gritter.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/gritter/jquery.gritter.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/gritter/jquery.gritter.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/iCheck/icheck.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/iCheck/icheck.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/idle-timer/idle-timer.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/idle-timer/idle-timer.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jasny/jasny-bootstrap.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jasny/jasny-bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jeditable/jquery.jeditable.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jeditable/jquery.jeditable.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jqGrid/i18n/grid.locale-en.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jqGrid/i18n/grid.locale-en.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jqGrid/jquery.jqGrid.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jqGrid/jquery.jqGrid.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jquery-ui/jquery-ui.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jquery-ui/jquery-ui.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jsKnob/jquery.knob.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jsKnob/jquery.knob.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jsTree/jstree.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jsTree/jstree.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/metisMenu/jquery.metisMenu.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/metisMenu/jquery.metisMenu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/morris/morris.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/morris/morris.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/morris/raphael-2.1.0.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/morris/raphael-2.1.0.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/nestable/jquery.nestable.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/nestable/jquery.nestable.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/nouslider/jquery.nouislider.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/nouslider/jquery.nouislider.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/pace/pace.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/pace/pace.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/peity/jquery.peity.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/peity/jquery.peity.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/rickshaw/rickshaw.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/rickshaw/rickshaw.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/rickshaw/vendor/d3.v3.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/rickshaw/vendor/d3.v3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/slimscroll/jquery.slimscroll.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/sparkline/jquery.sparkline.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/sparkline/jquery.sparkline.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/staps/jquery.steps.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/staps/jquery.steps.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/summernote/summernote.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/summernote/summernote.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/switchery/switchery.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/switchery/switchery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/tinycon/tinycon.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/tinycon/tinycon.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/toastr/toastr.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/toastr/toastr.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/validate/jquery.validate.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/validate/jquery.validate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/plugins/video/responsible-video.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/video/responsible-video.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/product.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/product.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/series.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/series.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/store.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/store.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/userManage.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/userManage.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/css/diyUpload.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/css/diyUpload.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/css/webuploader.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/css/webuploader.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/bgblack.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/bgblack.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/check_alt.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/check_alt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/avi.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/avi.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/cdr.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/cdr.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/csv.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/csv.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/doc.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/doc.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/jpg.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/jpg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/mp3.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/mp3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/pdf.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/pdf.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/png.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/png.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/ppt.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/ppt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/rar.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/rar.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/txt.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/txt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/xls.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/xls.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/zip.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/zip.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/filebg/复件 txt.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/filebg/复件 txt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/images/x_alt.png" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/images/x_alt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/js/diyUpload.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/js/diyUpload.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/diyUpload/js/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/diyUpload/js/webuploader.html5only.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/plugin/server/fileupload.php" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/plugin/server/fileupload.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/404.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/404.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/500.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/500.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/accessory.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/activity/Activity.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/activity/Activity.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/custom/custom.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/demo.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/demo.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/describe.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/describe.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/jq_grid.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/jq_grid.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/login.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/news/news.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/order/order.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/Group.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/category.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/param.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/pictures.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/product.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/series.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/qxdp.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/store/storeManage.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/technology.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/technology.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/upLoadFile.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/upLoadFile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/user/userManage.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/validation.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/validation.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/velocity.properties" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/velocity.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/com/qxjs/controller/user/UserController.class" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/com/qxjs/controller/user/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/com/qxjs/controller/user/UserController.class" afterPath="$PROJECT_DIR$/out/com/qxjs/controller/user/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/src/DataSource.properties" afterPath="$PROJECT_DIR$/QXJS/src/DataSource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/DataSource.properties" afterPath="$PROJECT_DIR$/out/DataSource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" afterPath="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/out/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DataSource.properties" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DataSource.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/artifacts/QXJS_Server_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/js/login.js" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/temple/login.html" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/temple/login.html" />
     </list>
     <ignored path="QXJS_Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -639,43 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/dao/user/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-              <folding>
-                <element signature="e#3892#3907#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NameSpace.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/common/NameSpace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.6373938">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -684,20 +55,20 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6666667">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state vertical-scroll-proportion="-20.958334">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7281553">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
-                <element signature="e#0#35#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -706,8 +77,18 @@
       <file leaf-file-name="DispatcherServlet.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4313726">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="-1.1764706">
+              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -770,10 +151,11 @@
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product/product.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/index.jsp" />
         <option value="$PROJECT_DIR$/QXJS/src/DataSource.properties" />
-        <option value="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_header_script.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_footer_script.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" />
       </list>
@@ -927,62 +309,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="websrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS_Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS_Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS_Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS_Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QXJS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1082,6 +408,160 @@
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1100,8 +580,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple" />
       <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple" />
       <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple" />
       <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc" />
       <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js" />
@@ -1627,16 +1107,16 @@
       <updated>1459353831954</updated>
       <workItem from="1459353833135" duration="2490000" />
       <workItem from="1459408062189" duration="29995000" />
-      <workItem from="1459699913458" duration="7677000" />
+      <workItem from="1459699913458" duration="10981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40162000" />
+    <option name="totallyTimeSpent" value="43466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1393" height="825" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1647,17 +1127,17 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22100955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44747612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944486" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39972714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944486" sideWeight="0.5061296" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1719,8 +1199,14 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1729,34 +1215,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5531915">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/series.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21276596">
-          <caret line="47" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc;n#addSeries#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/Activity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9574468">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc;n#addSeries#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/order/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1955,14 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/DataSource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.25">
@@ -2103,22 +1553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/dao/user/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/common/NameSpace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2127,39 +1561,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html">
+    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/model/vo/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6666667">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java">
+    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/dao/user/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44198895">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#3892#3907#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64986736">
+          <caret line="1000" column="32" selection-start-line="1000" selection-start-column="32" selection-end-line="1000" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/src/DataSource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.124668434">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4313726">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state vertical-scroll-proportion="-1.1764706">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.958334">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7281553">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
-            <element signature="e#0#35#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.8428574">
+          <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
+          <folding>
+            <element signature="e#4500#4515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6373938">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

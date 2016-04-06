@@ -18,6 +18,10 @@ function login() {
             if(data.result =="SUCCESS"){
                 //window.open("http://www.baidu.com");
                 window.location.href = "user/userManage.html";
+                //for(user in data){
+                //    user['id']
+                //}
+                //var table="<div>.....+<onclick
             }else {
                 return false;
             }

@@ -10,6 +10,17 @@
     <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/dropzone.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/froala_editor.min.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+        section {
+            width: 100%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
     <link href="../../css/css.css" rel="stylesheet">
 </head>
 <body>
@@ -20,22 +31,12 @@
             <ul class="nav" id="side-menu">
                 <!--登录用户信息-->
                 <li class="nav-header">
-                    <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="../../img/profile_small.jpg" />
-                             </span>
+                    <div class="dropdown profile-element">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">登录用户</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <span class="text-muted text-xs block">用户:133576</span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="mailbox.html">Mailbox</a></li>
-                            <li class="divider"></li>
-                            <li><a href="../login.html">Logout</a></li>
+                            <li><a href="../login.html">登出</a></li>
                         </ul>
-                    </div>
-                    <div class="logo-element">
-                        IN+
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -46,16 +47,16 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="customManage.html"><i class="fa fa-th-large"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span></a>
+                    <a href="../custom/custom.html"><i class="fa fa-th-large"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class=""><a href="customManage.html">客户管理</a></li>
+                        <li class=""><a href="../custom/custom.html">客户管理</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="news.html"><i class="fa fa-th-large"></i> <span class="nav-label">新闻动态</span> <span class="fa arrow"></span></a>
+                    <a href="../news/news.html"><i class="fa fa-th-large"></i> <span class="nav-label">新闻动态</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class=""><a href="news.html">业界动态</a></li>
-                        <li class=""><a href="../activity/Activity.html">活动公告</a></li>
+                        <li class="active"><a href="../news/news.html">新闻动态</a></li>
+                        <li class=""><a href="../news/Activity.html">活动公告</a></li>
                     </ul>
                 </li>
                 <li>
@@ -65,18 +66,27 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="../qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
+                    <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class="active"><a href="../qxdp.html">类别管理</a></li>
-                        <li class=""><a href="../upLoadFile.html">图片上传</a></li>
+                        <li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>
+                        <li class=""><a href="../qxdp/upLoadFile.html">图片上传</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../product/series.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
+                    <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
+                        <li class=""><a href="../product/product.html">产品管理</a></li>
                         <li class=""><a href="../product/series.html">系列管理</a></li>
                         <li class=""><a href="../product/Group.html">组合管理</a></li>
-                        <li class="active"><a href="../product/param.html">参数管理</a></li>
+                        <li class=""><a href="../product/param.html">参数管理</a></li>
+                        <li class=""><a href="../product/pictures.html">图片管理</a></li>
+                        <li class=""><a href="../product/category.html">种类管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../order/order.html"><i class="fa fa-th-large"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class=""><a href="../order/order.html">订单管理</a></li>
                     </ul>
                 </li>
             </ul>
@@ -125,7 +135,6 @@
                                 <th>操作</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"></td>
                                 <td>时间</td>
                                 <td>标题</td>
                                 <td>内容</td>
@@ -160,7 +169,13 @@
                             <div id="box">
                                 <div id="test"></div>
                             </div>
-                            <textarea class="form-control" rows="9" placeholder="正文"></textarea>
+                            <section id="editor">
+                                <div id='edit' style="margin-top: 30px;">
+
+                                </div>
+                            </section>
+
+
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -184,10 +199,10 @@
                             <input type="text" class="form-control" placeholder="内容">
                             <!--时间插件-->
                             <input type="text" class="form-control" placeholder="时间">
-                            <!--<div id="box1">-->
-                                <!--<div id="test1"></div>-->
-                            <!--</div>-->
-                            <textarea class="form-control" rows="9" placeholder="正文"></textarea>
+                            <section id="editor1">
+                                <div id='edit1' style="margin-top: 30px;">
+                                </div>
+                            </section>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -216,17 +231,32 @@
 <script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
 
 <script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
+<script src="../../js/libs/jquery-1.11.1.min.js"></script>
+<script src="../../js/froala_editor.min.js"></script>
+<!--[if lt IE 9]>
+<script src="../../js/froala_editor_ie8.min.js"></script>
+<![endif]-->
+<script src="../../js/plugins/tables.min.js"></script>
+<script src="../../js/plugins/lists.min.js"></script>
+<script src="../../js/plugins/colors.min.js"></script>
+<script src="../../js/plugins/media_manager.min.js"></script>
+<script src="../../js/plugins/font_family.min.js"></script>
+<script src="../../js/plugins/font_size.min.js"></script>
+<script src="../../js/plugins/block_styles.min.js"></script>
+<script src="../../js/plugins/video.min.js"></script>
 <script>
     $(function(){
-        $('#test').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
-            }
-        });
+//        $('#test').diyUpload({
+//            url:'../plugin/server/fileupload.php',
+//            success:function( data ) {
+//                console.info( data );
+//            },
+//            error:function( err ) {
+//                console.info( err );
+//            }
+//        });
+        $('#edit').editable({inlineMode: false, alwaysBlank: true})
+        $('#edit1').editable({inlineMode: false, alwaysBlank: true})
     })
 </script>
 </body>

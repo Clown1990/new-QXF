@@ -2,18 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ae0b64-2689-493b-a553-4dcdff218e7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/com/qxjs/controller/user/UserController.class" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/com/qxjs/controller/user/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/com/qxjs/controller/user/UserController.class" afterPath="$PROJECT_DIR$/out/com/qxjs/controller/user/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/old_clock.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/froala_editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/froala_editor.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/froala_page.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/froala_page.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/dark.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/gray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/gray.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/red.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/royal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/royal.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/froala_editor.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/froala_editor_ie8.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/en_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/en_gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/en_us.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/pt_br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/pt_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/zh_cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/zh_tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/libs/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/block_styles.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/char_counter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/colors.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/file_upload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/font_family.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/font_size.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/lists.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/media_manager.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/tables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/plugins/video.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_footer_script.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_header_script.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/activity/Activity.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/Activity.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/qxdp.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/upLoadFile.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/upLoadFile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/describe.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/describe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" afterPath="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/out/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DispatcherServlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/WEB-INF/classes/DispatcherServlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/js/login.js" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/js/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/temple/login.html" afterPath="$PROJECT_DIR$/out/artifacts/QXJS_Server_war_exploded/websrc/temple/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/technology.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/technology.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html" />
     </list>
     <ignored path="QXJS_Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,53 +119,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6373938">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="36" />
+            <state vertical-scroll-proportion="-4.745098">
+              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html">
+      <file leaf-file-name="series.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.958334">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.0392156">
+              <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js">
+      <file leaf-file-name="storeManage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state vertical-scroll-proportion="-1.8039216">
+              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userManage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0392158">
+              <caret line="86" column="17" selection-start-line="25" selection-start-column="11" selection-end-line="86" selection-end-column="17" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DispatcherServlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml">
+      <file leaf-file-name="accessory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1764706">
-              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+            <state vertical-scroll-proportion="-2.6862745">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/demo.html">
+      <file leaf-file-name="qxdp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/qxdp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.1568627">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42045453">
+              <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="red.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/red.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upLoadFile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/upLoadFile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.862745">
+              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -114,19 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/series.html" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/css/style.css" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/Group.html" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/category.html" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/category.js" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/Group.js" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/param.html" />
-        <option value="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/product/product/ProductController.java" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product.html" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/picture.js" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/param.js" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/product.js" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/news.js" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/demo.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/news.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/series.js" />
@@ -156,8 +270,28 @@
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/activity/Activity.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/technology.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/Activity.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/upLoadFile.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/qxdp.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/upLoadFile.html" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html" />
       </list>
     </option>
   </component>
@@ -174,9 +308,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
+    <option name="x" value="-41" />
     <option name="y" value="23" />
-    <option name="width" value="1393" />
+    <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -288,6 +422,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="temple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="websrc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="websrc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,27 +764,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../serial-manage" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/froala_editor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.qxjs.common" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/product" />
-      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/user" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/css" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/fonts" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/img" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/websrc/js" />
+      <recent name="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
@@ -1107,72 +1297,45 @@
       <updated>1459353831954</updated>
       <workItem from="1459353833135" duration="2490000" />
       <workItem from="1459408062189" duration="29995000" />
-      <workItem from="1459699913458" duration="10981000" />
+      <workItem from="1459699913458" duration="12552000" />
+      <workItem from="1459956333759" duration="2866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43466000" />
+    <option name="totallyTimeSpent" value="47903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1393" height="825" extended-state="0" />
-    <editor active="false" />
+    <frame x="-41" y="23" width="1440" height="825" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44747612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944486" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944486" sideWeight="0.5061296" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938564" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24892704" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938564" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944486" sideWeight="0.5061296" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44747612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1199,12 +1362,6 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
@@ -1215,36 +1372,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/order/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/velocity.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/custom/CustomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="74" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/news/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1262,114 +1389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.708334">
-          <caret line="177" column="76" selection-start-line="177" selection-start-column="76" selection-end-line="177" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.625">
-          <caret line="191" column="9" selection-start-line="175" selection-start-column="0" selection-end-line="191" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="181" column="88" selection-start-line="179" selection-start-column="27" selection-end-line="181" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="150" column="67" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#textarea#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="32" selection-start-line="116" selection-start-column="24" selection-end-line="127" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="128" selection-start-line="148" selection-start-column="28" selection-end-line="151" selection-end-column="128" />
-          <folding>
-            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="92" selection-start-line="128" selection-start-column="92" selection-end-line="128" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="238" selection-start-line="113" selection-start-column="166" selection-end-line="113" selection-end-column="238" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02202643">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="69" selection-start-line="151" selection-start-column="55" selection-end-line="151" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/activity/Activity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="82" selection-start-line="141" selection-start-column="82" selection-end-line="141" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.8518518">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246753">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,19 +1434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.25">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-webmvc-4.0.7.RELEASE.jar!/org/springframework/web/servlet/view/InternalResourceView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1111112">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7777777">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,10 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="34" column="30" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1452,7 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,7 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1468,7 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,7 +1480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,7 +1487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,7 +1494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1500,7 +1501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1508,7 +1508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,28 +1515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1429064362000" expanded="true" signature="107648:107719" placeholder="..." />
-            <marker date="1429064362000" expanded="true" signature="107733:107804" placeholder="..." />
-            <marker date="1429064362000" expanded="true" signature="108105:108129" placeholder="..." />
-            <marker date="1429064362000" expanded="true" signature="109890:110003" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_header_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/common/global_footer_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31914893">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1545,11 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1429064362000" expanded="true" signature="14360:14411" placeholder="..." />
-            <marker date="1429064362000" expanded="true" signature="15330:15448" placeholder="..." />
-            <marker date="1429064362000" expanded="true" signature="22883:22957" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1565,7 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1573,6 +1544,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44198895">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64986736">
+          <caret line="1000" column="32" selection-start-line="1000" selection-start-column="32" selection-end-line="1000" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/src/DataSource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.124668434">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95474136">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4827586">
+          <caret line="23" column="48" selection-start-line="20" selection-start-column="18" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2840909">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -1585,62 +1603,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64986736">
-          <caret line="1000" column="32" selection-start-line="1000" selection-start-column="32" selection-end-line="1000" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/DataSource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.124668434">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/DispatcherServlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1764706">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.958334">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.0909091">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/login.js">
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/technology.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82954544">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/custom/custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18644068">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/Activity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2156863">
+          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/order/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9215684">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2156863">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/Group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/param.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.627451">
+          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/pictures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9215684">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.745098">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/product/series.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0392156">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8039216">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/accessory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6862745">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/user/userManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0392158">
+          <caret line="86" column="17" selection-start-line="25" selection-start-column="11" selection-end-line="86" selection-end-column="17" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/upLoadFile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.862745">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/js/langs/ar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/src/com/qxjs/controller/user/UserController.java">
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/css/themes/red.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.8428574">
-          <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
-          <folding>
-            <element signature="e#4500#4515#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/qxdp/qxdp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6373938">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="36" />
+        <state vertical-scroll-proportion="-4.1568627">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/news/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42045453">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding />
         </state>
       </provider>

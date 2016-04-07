@@ -21,11 +21,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="text-muted text-xs block">用户:133576</span> </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="../login.html">登出</a></li>
-                        </ul>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
+                        <a href="../login.html">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -61,7 +58,7 @@
                         <li class=""><a href="../qxdp/upLoadFile.html">图片上传</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class="active"><a href="../product/product.html">产品管理</a></li>
@@ -83,26 +80,6 @@
     </nav>
 
     <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-            <!--用户信息栏-->
-            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="搜索" class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <a href="../login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <!--内容-->
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
@@ -110,16 +87,26 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>&nbsp;<button type="button" class="btn btn-w-m btn-primary">搜索</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+
+
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入产品编号"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                            </button> </span></div>
+
+                            <div class="clear"></div>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>enable</th>
-                                <th>productName</th>
-                                <th>productCd</th>
-                                <th>imgPath</th>
-                                <th>comment</th>
+                                <th>序号</th>
+                                <th>产品编号</th>
+                                <th>类别</th>
+                                <th>套餐</th>
+                                <th>产品名称</th>
+                                <th>图片</th>
+                                <th>产品特点</th>
+                                <th>产品参数</th>
                                 <th>操作</th>
                             </tr>
                             <tr>
@@ -127,12 +114,16 @@
                                 <th>productName</th>
                                 <th>productCd</th>
                                 <th>imgPath</th>
+                                <th>imgPath</th>
+                                <th>imgPath</th>
+                                <th>imgPath</th>
                                 <th>comment</th>
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
                         <!--添加新闻动态的弹出框内容-->
-
+                        <div class="tcdPageCode">
+                        </div>
                     </div>
 
                 </div>
@@ -149,11 +140,26 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addProductForm">
-                            <input type="text" class="form-control" placeholder="enable">
-                            <input type="text" class="form-control" placeholder="productName">
-                            <input type="text" class="form-control" placeholder="productCd">
-                            <input type="text" class="form-control" placeholder="imgPath">
-                            <input type="text" class="form-control" placeholder="comment">
+                            <input type="text" class="form-control" placeholder="产品编号">
+                            <select class="form-control">
+                                <option value="1">类别</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="1">套餐</option>
+                            </select>
+
+                            <input type="text" class="form-control" placeholder="产品名称">
+                            <div class="storeSetAdPhotoImgU">
+                                图片上传
+                                <img src="" />
+                            </div>
+                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
+                            <input type="text" class="form-control" placeholder="产品特点">
+                            <div class="">
+                                 <p>参数</p>
+                                <span>颜色</span><input type="text" class="form-control" placeholder="comment">
+                                <span>尺寸</span><input type="text" class="form-control" placeholder="comment">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -171,12 +177,26 @@
                         <h4 class="modal-title" id="myModalLabel1">修改参数</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="activityForm" id="updateProductForm">
-                            <input type="text" class="form-control" placeholder="enable">
-                            <input type="text" class="form-control" placeholder="productName">
-                            <input type="text" class="form-control" placeholder="productCd">
-                            <input type="text" class="form-control" placeholder="imgPath">
-                            <input type="text" class="form-control" placeholder="comment">
+                        <form class="activityForm" id="">
+                            <input type="text" class="form-control" placeholder="产品编号">
+                            <select class="form-control">
+                                <option value="1">类别</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="1">套餐</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="产品名称">
+                            <div class="storeSetAdPhotoImgU">
+                                图片上传
+                                <img src="" />
+                            </div>
+                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
+                            <input type="text" class="form-control" placeholder="产品特点">
+                            <div class="">
+                                <label>参数</label>
+                                <span>颜色</span><input type="text" class="form-control" placeholder="comment">
+                                <span>尺寸</span><input type="text" class="form-control" placeholder="comment">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -198,6 +218,7 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/jquery.page.js"></script>
 
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
@@ -207,15 +228,33 @@
 <script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
 <script>
     $(function(){
-        $('#test').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
+        $(".tcdPageCode").createPage({
+            pageCount:6,
+            current:1,
+            backFn:function(p){
+                console.log(p);
             }
         });
+        $(".storeSetAdPhotoImgUB").change(function(){
+            var objUrl = getObjectURL(this.files[0]) ;
+            console.log("objUrl = "+objUrl) ;
+            if (objUrl) {
+                $(this).parent().find("img").attr("src", objUrl) ;
+            }
+        }) ;
+
+        //建立一個可存取到該file的url
+        function getObjectURL(file) {
+            var url = null ;
+            if (window.createObjectURL!=undefined) { // basic
+                url = window.createObjectURL(file) ;
+            } else if (window.URL!=undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file) ;
+            } else if (window.webkitURL!=undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file) ;
+            }
+            return url ;
+        }
     })
 </script>
 </body>

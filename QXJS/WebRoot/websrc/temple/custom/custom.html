@@ -21,11 +21,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                             <span class="text-muted text-xs block">用户:133576</span> </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="../login.html">登出</a></li>
-                        </ul>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
+                        <a href="../login.html">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -35,7 +32,7 @@
                         <li class=""><a href="../user/userManage.html">用户管理</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="../custom/custom.html"><i class="fa fa-th-large"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class="active"><a href="../custom/custom.html">客户管理</a></li>
@@ -57,8 +54,8 @@
                 <li>
                     <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>
-                        <li class=""><a href="../qxdp/upLoadFile.html">图片上传</a></li>
+                        <!--<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>-->
+                        <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
                     </ul>
                 </li>
                 <li>
@@ -83,58 +80,53 @@
     </nav>
 
     <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-            <!--用户信息栏-->
-            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="搜索" class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <a href="../login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <!--内容-->
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox-content">
                         <!--按钮组件-->
+                        <!--按钮组件-->
                         <div class="ibox-content">
-                            <div class="col-lg-4">
-                                <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>&nbsp;<button type="button" class="btn btn-w-m btn-primary"> 搜索</button>
-                            </div>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+
+
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入客户姓名"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                            </button> </span></div>
+                            <select class="right form-control" style="width: 20%;margin-right: 1%">
+                                <option>省</option>
+                                <option>省</option>
+                                <option>省</option>
+                            </select>
+
                             <div class="clear"></div>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>customName</th>
-                                <th>address</th>
-                                <th>phone</th>
-                                <th>sex</th>
-                                <th>age</th>
+                                <th>选择</th>
+                                <th>姓名</th>
+                                <th>店铺</th>
+                                <th>地址</th>
+                                <th>电话</th>
+                                <th>性别</th>
+                                <th>年龄</th>
                                 <th>操作</th>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="subBox" class="AAA"></td>
                                 <td>customName</td>
                                 <td>address</td>
+                                <td>phone</td>
                                 <td>phone</td>
                                 <td>sex</td>
                                 <td>age</td>
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
-
+                        <div class="tcdPageCode">
+                        </div>
                     </div>
 
                 </div>
@@ -147,11 +139,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加系列</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加店铺</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="customAddForm">
                             <input type="text" class="form-control" placeholder="customName">
+                            <select class="form-control">
+                                <option>店铺1</option>
+                                <option>店铺1</option>
+                            </select>
                             <input type="text" class="form-control" placeholder="address">
                             <input type="text" class="form-control" placeholder="phone">
                             <select class="form-control">
@@ -173,11 +169,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改系列</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改店铺</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="customAddForm1">
                             <input type="text" class="form-control" placeholder="customName">
+                            <select class="form-control">
+                                <option>店铺1</option>
+                                <option>店铺1</option>
+                            </select>
                             <input type="text" class="form-control" placeholder="address">
                             <input type="text" class="form-control" placeholder="phone">
                             <select class="form-control">
@@ -206,6 +206,8 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<!--分页-->
+<script src="../../js/jquery.page.js"></script>
 
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
@@ -232,6 +234,22 @@
             error:function( err ) {
                 console.info( err );
             }
+        })
+        $(".tcdPageCode").createPage({
+            pageCount: 6,
+            current: 1,
+            backFn: function (p) {
+                console.log(p);
+            }
+        });
+        $(function() {
+            $("#checkAll").click(function() {
+                $('input[name="subBox"]').attr("checked",this.checked);
+            });
+            var $subBox = $("input[name='subBox']");
+            $subBox.click(function(){
+                $("#checkAll").attr("checked",$subBox.length == $("input[name='subBox']:checked").length ? true : false);
+            });
         });
     })
 </script>

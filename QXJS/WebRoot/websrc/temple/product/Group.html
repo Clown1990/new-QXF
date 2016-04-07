@@ -21,11 +21,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="text-muted text-xs block">用户:133576</span> </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="../login.html">登出</a></li>
-                        </ul>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
+                        <a href="../login.html">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -61,7 +58,7 @@
                         <li class=""><a href="../qxdp/upLoadFile.html">图片上传</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class=""><a href="../product/product.html">产品管理</a></li>
@@ -110,26 +107,38 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+
+
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="编号"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                            </button> </span></div>
+
+                            <div class="clear"></div>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
+                                <th>全选</th>
+                                <th>序号</th>
                                 <th>组合编号</th>
-                                <th>组合型号</th>
-                                <th>组合名称</th>
+                                <th>系列</th>
+                                <th>备注</th>
                                 <th>操作</th>
                             </tr>
                             <tr>
+                                <td><input type="checkbox"></td>
                                 <td>组合编号</td>
                                 <td>组合型号</td>
-                                <td>组合名称</td>
+                                <td>组合型号</td>
+                                <td>组合</td>
                                 <!--<td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize">详情</button></td>-->
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
                         <!--添加新闻动态的弹出框内容-->
-
+                        <div class="tcdPageCode">
+                        </div>
                     </div>
 
                 </div>
@@ -146,10 +155,12 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addGroupForm">
-                            <input type="text" class="form-control" placeholder="seriesId">
-                            <input type="text" class="form-control" placeholder="groupCd">
-                            <input type="text" class="form-control" placeholder="groupCd">
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="comment"></textarea>
+                            <input type="text" class="form-control" placeholder="型号">
+                            <input type="text" class="form-control" placeholder="编号">
+                            <select class="form-control">
+                                <option value="1">系列</option>
+                            </select>
+                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注"></textarea>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -169,15 +180,12 @@
                     <!--读出来-->
                     <div class="modal-body">
                         <form class="activityForm" id="updateGroupForm">
-                            <!--<input type="text" class="form-control" placeholder="groupId">-->
-                            <input type="text" class="form-control" placeholder="seriesId">
-                            <input type="text" class="form-control" placeholder="groupCd">
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="comment"></textarea>
-                            <!--<hr>-->
-                            <!--<input type="text" class="form-control" placeholder="产品型号">-->
-                            <!--<input type="text" class="form-control" placeholder="产品名称">-->
-                            <!--<input type="text" class="form-control" placeholder="产品特点">-->
-                            <!--<input type="text" class="form-control" placeholder="产品尺寸">-->
+                            <input type="text" class="form-control" placeholder="型号">
+                            <input type="text" class="form-control" placeholder="编号">
+                            <select class="form-control">
+                                <option value="1">系列</option>
+                            </select>
+                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注"></textarea>
 
                         </form>
                     </div>
@@ -200,13 +208,19 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/jquery.page.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
-<!--上传图片-->
-<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
-
-<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
 </body>
+<script>
+    $(function(){
+        $(".tcdPageCode").createPage({
+            pageCount:6,
+            current:1,
+            backFn:function(p){
+                console.log(p);
+            }
+        });
+    })
+</script>
 
 </html>

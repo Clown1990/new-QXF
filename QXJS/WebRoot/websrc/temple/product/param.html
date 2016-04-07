@@ -21,11 +21,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="text-muted text-xs block">用户:133576</span> </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="../login.html">登出</a></li>
-                        </ul>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
+                        <a href="../login.html">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -57,11 +54,11 @@
                 <li>
                     <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>
-                        <li class=""><a href="../qxdp/upLoadFile.html">图片上传</a></li>
+                        <!--<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>-->
+                        <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class=""><a href="../product/product.html">产品管理</a></li>
@@ -83,26 +80,6 @@
     </nav>
 
     <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-            <!--用户信息栏-->
-            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="搜索" class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <a href="../login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <!--内容-->
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
@@ -115,18 +92,26 @@
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>参数编号</th>
-                                <th>参数名称</th>
+                                <th>全选</th>
+                                <th>参数序号</th>
+                                <th>类别</th>
+                                <th>中文名</th>
+                                <th>英文名称</th>
+                                <th>顺序</th>
                                 <th>操作</th>
                             </tr>
                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td>参数编号</td>
+                                <td>参数编号</td>
+                                <td>参数编号</td>
                                 <td>参数编号</td>
                                 <td>参数名称</td>
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
-                        <!--添加新闻动态的弹出框内容-->
-
+                        <!--<div class="tcdPageCode">-->
+                        <!--</div>-->
                     </div>
 
                 </div>
@@ -143,9 +128,12 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addParamForm">
-                            <input type="text" class="form-control" placeholder="level">
-                            <input type="text" class="form-control" placeholder="cname">
-                            <input type="text" class="form-control" placeholder="ename">
+                            <select class="form-control">
+                                <option value="1">类别</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="中文名称">
+                            <input type="text" class="form-control" placeholder="英文名称">
+                            <input type="text" class="form-control" placeholder="顺序">
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -164,9 +152,12 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="updateParamForm">
-                            <input type="text" class="form-control" placeholder="level">
-                            <input type="text" class="form-control" placeholder="cname">
-                            <input type="text" class="form-control" placeholder="ename">
+                            <select class="form-control">
+                                <option value="1">类别</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="中文名称">
+                            <input type="text" class="form-control" placeholder="英文名称">
+                            <input type="text" class="form-control" placeholder="顺序">
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -188,22 +179,16 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/jquery.page.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
-<!--上传图片-->
-<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
 
-<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
 <script>
     $(function(){
-        $('#test').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
+        $(".tcdPageCode").createPage({
+            pageCount:6,
+            current:1,
+            backFn:function(p){
+                console.log(p);
             }
         });
     })

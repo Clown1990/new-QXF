@@ -9,8 +9,10 @@
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="../../css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/css.css" rel="stylesheet">
+
 </head>
 <body>
 <div id="wrapper">
@@ -88,7 +90,7 @@
                         <!--按钮组件-->
                         <div class="ibox-content">
                             <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
-                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal">批量删除</button>
 
 
                             <div class="input-group" style="width: 50%;float: right;"><select class="form-control right" style="width: 40%">
@@ -103,7 +105,7 @@
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>选择</th>
+                                <th>全选<input type="checkbox" class="checkboxAll" id="checkAll"></th>
                                 <th>编号</th>
                                 <th>客户名称</th>
                                 <th>联系电话</th>
@@ -115,7 +117,7 @@
                                 <th>操作</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" name="checkNum"></td>
                                 <td>编号</td>
                                 <td>苦湖</td>
                                 <td>联系电话</td>
@@ -124,13 +126,12 @@
                                 <td>地址</td>
                                 <td>内容</td>
                                 <td>描述</td>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
+                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button>&nbsp;&nbsp;<a href="orderDetail.html"><button type="button" class="btn btn-primary btnSize">详情</button></a></td>
                             </tr>
                         </table>
                         <div class="tcdPageCode">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -151,9 +152,25 @@
                                 <option value="3">客户</option>
                                 <option value="4">客户</option>
                             </select>
-                            <input type="text" class="form-control" placeholder="开始时间">
-                            <input type="text" class="form-control" placeholder="结束时间">
                             <input type="text" class="form-control" placeholder="地址">
+                            <div class="control-group">
+                                <label class="control-label">开始时间</label>
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">结束时间</label>
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
                             <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="内容"></textarea>
                             <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="描述"></textarea>
                         </form>
@@ -180,9 +197,25 @@
                                 <option value="3">客户</option>
                                 <option value="4">客户</option>
                             </select>
-                            <input type="text" class="form-control" placeholder="开始时间">
-                            <input type="text" class="form-control" placeholder="结束时间">
                             <input type="text" class="form-control" placeholder="地址">
+                            <div class="control-group">
+                                <label class="control-label">开始时间</label>
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">结束时间</label>
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
                             <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="内容"></textarea>
                             <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="描述"></textarea>
                         </form>
@@ -200,6 +233,8 @@
 <!-- Mainly scripts -->
 <script src="../../js/jquery-2.1.1.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.js"></script>
+<!--<script src="../../js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
@@ -207,25 +242,9 @@
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
+<script src="../../js/common.js"></script>
 
 
-<!--<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">-->
-<!--<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">-->
-<!--上传图片-->
-<!--<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>-->
-<!---->
-<!--<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>-->
-<script>
-    $(function(){
-        $(".tcdPageCode").createPage({
-            pageCount:6,
-            current:1,
-            backFn:function(p){
-                console.log(p);
-            }
-        });
-    })
-</script>
 </body>
 
 </html>

@@ -10,8 +10,14 @@
     <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/dropzone.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/css.css" rel="stylesheet">
     <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../../css/froala_editor.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="../../css/froala_editor.min.css" rel="stylesheet" type="text/css">-->
+    <!--编辑器-->
+    <link rel="stylesheet" type="text/css" href="../../dist/css/wangEditor.min.css">
+    <!--时间-->
+    <link href="../../css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+
 
 
     <style>
@@ -91,26 +97,6 @@
     </nav>
 
     <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-            <!--用户信息栏-->
-            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="搜索" class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <a href="../login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <!--内容-->
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
@@ -162,19 +148,31 @@
                     <div class="modal-body">
 
                         <form class="addPictureForm" id="addPictureForm">
+                            <label>标题</label>
                             <input type="text" class="form-control" placeholder="标题">
+                            <label>内容</label>
                             <input type="text" class="form-control" placeholder="内容">
                             <!--时间插件-->
-                            <input type="text" class="form-control" placeholder="时间">
-                            <div id="box">
-                                <div id="test"></div>
-                            </div>
-                            <section id="editor">
-                                <div id='edit' style="margin-top: 30px;">
-
+                            <label class="control-label">时间</label>
+                            <div class="control-group">
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                                 </div>
-                            </section>
-
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
+                            <label class="">输入内容</label>
+                            <div id="editor-container" class="containerA">
+                                <div id="editor-trigger">
+                                    <p>请输入内容...</p>
+                                </div>
+                                <!-- <textarea id="editor-trigger" style="display:none;">
+                                    <p>请输入内容...</p>
+                                </textarea> -->
+                            </div>
+                            <button id="getrow">获取编辑框内容</button>
+                            <p><br></p>
 
                         </form>
                     </div>
@@ -195,18 +193,32 @@
                     <div class="modal-body">
 
                         <form class="updateNewsForm" id="updateNewsForm">
+                            <label>标题</label>
                             <input type="text" class="form-control" placeholder="标题">
+                            <label>内容</label>
                             <input type="text" class="form-control" placeholder="内容">
                             <!--时间插件-->
-                            <div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-                                <input class="span2" size="16" type="text" value="12-02-2012">
-                                <span class="add-on"><i class="icon-remove"></i></span>
-                                <span class="add-on"><i class="icon-th"></i></span>
-                            </div>
-                            <section id="editor1">
-                                <div id='edit1' style="margin-top: 30px;">
+                            <label class="control-label">时间</label>
+                            <div class="control-group">
+                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                                 </div>
-                            </section>
+                                <input type="hidden" id="" value="" /><br/>
+                            </div>
+                            <label class="">输入内容</label>
+                            <!--参照上面的输入框,js 复制一遍,更换为editor-triggerA-->
+                            <div id="editor-containerA" class="containerA">
+                                <div id="editor-triggerA">
+                                    <p>请输入内容...</p>
+                                </div>
+                                <!-- <textarea id="editor-trigger" style="display:none;">
+                                    <p>请输入内容...</p>
+                                </textarea> -->
+                            </div>
+                            <button id="getrowA">获取编辑框内容</button>
+                            <p><br></p>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -228,18 +240,23 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<!--时间-->
+<script src="../../js/bootstrap-datetimepicker.js"></script>
+
+<!--编辑器-->
+<script type="text/javascript" src="../../dist/js/wangEditor.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
 <!--上传图片-->
-<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
+<!--<script src="../../js/libs/jquery-1.11.1.min.js"></script>-->
+<!--<script src="../../js/froala_editor.min.js"></script>-->
+<!--[if lt IE 9]><!---->
+<!--<script src="../../js/froala_editor_ie8.min.js"></script>-->
+<!--<![endif]&ndash;&gt;-->
+<script src="../../js/common.js"></script>
 
-<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
-<script src="../../js/libs/jquery-1.11.1.min.js"></script>
-<script src="../../js/froala_editor.min.js"></script>
-<!--[if lt IE 9]>
-<script src="../../js/froala_editor_ie8.min.js"></script>
-<![endif]-->
 <script src="../../js/plugins/tables.min.js"></script>
 <script src="../../js/plugins/lists.min.js"></script>
 <script src="../../js/plugins/colors.min.js"></script>
@@ -248,20 +265,153 @@
 <script src="../../js/plugins/font_size.min.js"></script>
 <script src="../../js/plugins/block_styles.min.js"></script>
 <script src="../../js/plugins/video.min.js"></script>
+<!--编辑器-->
+<script type="text/javascript">
+    // 阻止输出log
+    // wangEditor.config.printLog = false;
+
+    var editor = new wangEditor('editor-trigger');
+
+    // 上传图片
+    editor.config.uploadImgUrl = '/servlet/UploadHandleServlet';
+
+    // 表情显示项
+    editor.config.emotionsShow = 'value';
+
+    // 跨域上传
+    // editor.config.uploadImgUrl = 'http://localhost:8012/upload';
+
+    // 第三方上传
+    // editor.config.customUpload = true;
+
+    // editor.config.menus = [
+    //     'img',
+    //     'insertcode',
+    //     'eraser',
+    //     'fullscreen'
+    // ];
+
+    // onchange 事件
+    editor.onchange = function () {
+        console.log(this.$txt.html());
+    };
+
+    // 取消过滤js
+    // editor.config.jsFilter = false;
+
+    // 取消粘贴过来
+    // editor.config.pasteFilter = false;
+
+    // 设置 z-index
+    // editor.config.zindex = 20000;
+
+    // 语言
+    // editor.config.lang = wangEditor.langs['en'];
+    // 自定义菜单
+    editor.config.menus = [
+        'source',
+        '|',
+        'bold',
+        'underline',
+        '|',
+        'quote',
+        'fontfamily',
+        'fontsize',
+        'alignleft',
+        'aligncenter',
+        'alignright',
+        '|',
+        'img'
+    ];
+    // 自定义菜单UI
+    editor.UI.menus.bold = {
+        normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+        selected: '.selected'
+    };
+    editor.UI.menus.italic = {
+        normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+        selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+    };
+    editor.create();
+
+
+    var editorA = new wangEditor('editor-triggerA');
+
+    // 上传图片
+    editorA.config.uploadImgUrl = '/servlet/UploadHandleServlet';
+
+    // 表情显示项
+    editorA.config.emotionsShow = 'value';
+
+    // 跨域上传
+    // editor.config.uploadImgUrl = 'http://localhost:8012/upload';
+
+    // 第三方上传
+    // editor.config.customUpload = true;
+
+    // editor.config.menus = [
+    //     'img',
+    //     'insertcode',
+    //     'eraser',
+    //     'fullscreen'
+    // ];
+
+    // onchange 事件
+    editorA.onchange = function () {
+        console.log(this.$txt.html());
+    };
+
+    // 取消过滤js
+    // editor.config.jsFilter = false;
+
+    // 取消粘贴过来
+    // editor.config.pasteFilter = false;
+
+    // 设置 z-index
+    // editor.config.zindex = 20000;
+
+    // 语言
+    // editor.config.lang = wangEditor.langs['en'];
+    // 自定义菜单
+    editorA.config.menus = [
+        'source',
+        '|',
+        'bold',
+        'underline',
+        '|',
+        'quote',
+        'fontfamily',
+        'fontsize',
+        'alignleft',
+        'aligncenter',
+        'alignright',
+        '|',
+        'img'
+    ];
+    // 自定义菜单UI
+    editorA.UI.menus.bold = {
+        normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+        selected: '.selected'
+    };
+    editorA.UI.menus.italic = {
+        normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+        selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+    };
+    editorA.create();
+
+
+</script>
 <script>
-    $(function(){
-//        $('#test').diyUpload({
-//            url:'../plugin/server/fileupload.php',
-//            success:function( data ) {
-//                console.info( data );
-//            },
-//            error:function( err ) {
-//                console.info( err );
-//            }
-//        });
-        $('#edit').editable({inlineMode: false, alwaysBlank: true})
-        $('#edit1').editable({inlineMode: false, alwaysBlank: true})
-    })
+    $('#getrow').click(function () {
+        // 获取编辑器区域完整html代码
+        var html = editor.$txt.html();
+        alert(html);
+    });
+    $('#getrowA').click(function () {
+        // 获取编辑器区域完整html代码
+        var html = editor.$txt.html();
+        alert(html);
+    });
 </script>
 </body>
 

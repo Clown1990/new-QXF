@@ -88,7 +88,7 @@
                         <!--按钮组件-->
                         <div class="ibox-content">
                             <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
-                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal">批量删除</button>
 
 
                             <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入产品编号"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
@@ -99,6 +99,7 @@
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
+                                <th>全选<input type="checkbox" class="checkboxAll" id="checkAll"></th>
                                 <th>序号</th>
                                 <th>产品编号</th>
                                 <th>类别</th>
@@ -110,14 +111,27 @@
                                 <th>操作</th>
                             </tr>
                             <tr>
-                                <th>enable</th>
-                                <th>productName</th>
-                                <th>productCd</th>
-                                <th>imgPath</th>
-                                <th>imgPath</th>
-                                <th>imgPath</th>
-                                <th>imgPath</th>
-                                <th>comment</th>
+                                <td><input type="checkbox" name="checkNum"></td>
+                                <td>enable</td>
+                                <td>productName</td>
+                                <td>productCd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>comment</td>
+                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="checkNum"></td>
+                                <td>enable</td>
+                                <td>productName</td>
+                                <td>productCd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>imgPatd</td>
+                                <td>comment</td>
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
@@ -219,6 +233,7 @@
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
+<script src="../../js/common.js"></script>
 
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">

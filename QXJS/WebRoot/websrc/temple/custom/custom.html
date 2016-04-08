@@ -89,7 +89,8 @@
                         <!--按钮组件-->
                         <div class="ibox-content">
                             <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
-                            <input type="checkbox" style="float: left;margin-top: 13px;" class="btn btn-w-m btn-success" id="checkAll"  ><span  style="line-height: 38px;">批量删除</span>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal">批量删除</button>
+
 
 
                             <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入客户姓名"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
@@ -105,7 +106,7 @@
                         <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>选择</th>
+                                <th>全选<input type="checkbox" class="checkboxAll" id="checkAll"></th>
                                 <th>姓名</th>
                                 <th>店铺</th>
                                 <th>地址</th>
@@ -115,7 +116,7 @@
                                 <th>操作</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="subBox" class="AAA"></td>
+                                <td><input type="checkbox" name="checkNum"></td>
                                 <td>customName</td>
                                 <td>address</td>
                                 <td>phone</td>
@@ -208,51 +209,8 @@
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <!--分页-->
 <script src="../../js/jquery.page.js"></script>
+<script src="../../js/common.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
-<!--上传图片-->
-<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
-
-<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
-<script>
-    $(function(){
-        $('#test').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
-            }
-        });
-        $('#test1').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
-            }
-        })
-        $(".tcdPageCode").createPage({
-            pageCount: 6,
-            current: 1,
-            backFn: function (p) {
-                console.log(p);
-            }
-        });
-        $(function() {
-            $("#checkAll").click(function() {
-                $('input[name="subBox"]').attr("checked",this.checked);
-            });
-            var $subBox = $("input[name='subBox']");
-            $subBox.click(function(){
-                $("#checkAll").attr("checked",$subBox.length == $("input[name='subBox']:checked").length ? true : false);
-            });
-        });
-    })
-</script>
 </body>
 
 </html>

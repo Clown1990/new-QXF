@@ -137,7 +137,10 @@
                                 <td>内容</td>
                                 <td>图片</td>
                                 <td>状态</td>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
+                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;
+                                    <button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button>
+                                    &nbsp;&nbsp;&nbsp;<a href="#"><button type="button" class="btn btn-primary btnSize" >详情</button></a>
+                                </td>
                             </tr>
                         </table>
                         <!--添加新闻动态的弹出框内容-->
@@ -154,7 +157,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加参数</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加</h4>
                     </div>
                     <div class="modal-body">
 
@@ -187,7 +190,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改参数</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改</h4>
                     </div>
                     <div class="modal-body">
 
@@ -195,7 +198,11 @@
                             <input type="text" class="form-control" placeholder="标题">
                             <input type="text" class="form-control" placeholder="内容">
                             <!--时间插件-->
-                            <input type="text" class="form-control" placeholder="时间">
+                            <div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                                <input class="span2" size="16" type="text" value="12-02-2012">
+                                <span class="add-on"><i class="icon-remove"></i></span>
+                                <span class="add-on"><i class="icon-th"></i></span>
+                            </div>
                             <section id="editor1">
                                 <div id='edit1' style="margin-top: 30px;">
                                 </div>

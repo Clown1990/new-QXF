@@ -49,3 +49,7 @@ body {font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细�
 .imgbox-bg {position: absolute;width: 20px;	height: 20px;}
 
 .storeSetAdPhotoImgU img {width: 100px;height: 100px;}
+.checkboxAll {margin-left: 2px!important;margin-top: 2px!important;}
+.table-bordered th {text-align: center}
+.table-bordered td {text-align: center}
+.ibox-content {border-top: none;}

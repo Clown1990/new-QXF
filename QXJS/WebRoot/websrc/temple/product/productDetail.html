@@ -96,31 +96,31 @@
                             </tr>
                             <tr>
                                 <td>产品编号</td>
-                                <td>产品编号</td>
+                                <td id="productCd">产品编号</td>
                             </tr>
                             <tr>
                                 <td>类别</td>
-                                <td>类别</td>
+                                <td id="groupCd">类别</td>
                             </tr>
                             <tr>
                                 <td>套餐</td>
-                                <td>套餐</td>
+                                <td id="categoryCname">套餐</td>
                             </tr>
                             <tr>
                                 <td>产品名称</td>
-                                <td>产品名称</td>
+                                <td id="productname">产品名称</td>
                             </tr>
                             <tr>
                                 <td>图片</td>
-                                <td>图片</td>
+                                <td id="photo">图片</td>
                             </tr>
                             <tr>
                                 <td>产品特点</td>
-                                <td>产品特点</td>
+                                <td id="comment">产品特点</td>
                             </tr>
                             <tr>
                                 <td>产品参数</td>
-                                <td>产品参数</td>
+                                <td id="paramJson">产品参数</td>
                             </tr>
                         </table>
                     </div>
@@ -134,6 +134,20 @@
 <!-- Mainly scripts -->
 <script src="../../js/jquery-2.1.1.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+var thisURL = decodeURI(document.URL);
+var getParam =thisURL.split("?")[1];
+var paramArr = getParam.split("&");
+var paramStr = "productCd="+productCd+"&productname="+productname+"&groupCd="+groupCd+
+			"&categoryCname="+categoryCname+"&photo="+photo+"&paramJson="+paramJson+"&comment="+comment;
+$("#productCd").html(paramArr[0].split("=")[1]);
+$("#productname").html(paramArr[1].split("=")[1]);
+$("#groupCd").html(paramArr[2].split("=")[1]);
+$("#categoryCname").html(paramArr[3].split("=")[1]);
+$("#photo").html(paramArr[4].split("=")[1]);
+$("#paramJson").html(paramArr[5].split("=")[1]);
+$("#comment").html(paramArr[6].split("=")[1]);
+</script>
 </body>
 
 </html>

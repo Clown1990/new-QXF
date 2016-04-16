@@ -10,6 +10,16 @@ public class User {
     private int storeId;
 
     private int role;
+    
+    private String storeName;
+
+	public String getStoreName() {
+		return storeName;
+	}
+
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
 
 	public int getUserId() {
 		return userId;

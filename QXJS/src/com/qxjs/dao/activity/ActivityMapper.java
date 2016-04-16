@@ -19,4 +19,7 @@ public interface ActivityMapper
 	
 	public int selectCount(@Param(value="startDate")String startDate, @Param(value="endDate")String endDate);
 
+	public List<Activity> downloadData();
+	
+	public Activity selectActivityById(@Param(value="activityId")int activityId);
 }

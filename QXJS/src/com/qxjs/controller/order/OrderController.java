@@ -32,7 +32,7 @@ public class OrderController {
 		try{
 			Order vo = new Order();
 			vo.setCustomId(Integer.parseInt(request.getParameter("customId")));
-			vo.setTime(Integer.parseInt(request.getParameter("time")));
+			vo.setTime((int)(System.currentTimeMillis()/1000));
 			vo.setAddress(request.getParameter("address"));
 			vo.setContent(request.getParameter("content"));
 			vo.setComment(request.getParameter("comment"));
@@ -70,7 +70,7 @@ public class OrderController {
 			Order vo = new Order();
 			vo.setOrderId(Integer.parseInt(request.getParameter("orderId")));
 			vo.setCustomId(Integer.parseInt(request.getParameter("customId")));
-			vo.setTime(Integer.parseInt(request.getParameter("time")));
+			vo.setTime((int)(System.currentTimeMillis()/1000));
 			vo.setAddress(request.getParameter("address"));
 			vo.setContent(request.getParameter("content"));
 			vo.setComment(request.getParameter("comment"));
@@ -90,12 +90,29 @@ public class OrderController {
 		try{
 			Order vo = new Order();
 			vo.setCustomName(request.getParameter("customName"));
+			String provinceStr = request.getParameter("provinceStr");
 			PageVo pageVo = new PageVo();
 			pageVo.setPageSize(Integer.parseInt(request.getParameter("pageSize")));
 			pageVo.setCurrentPage(Integer.parseInt(request.getParameter("currentPage")));
-			pageVo.setTotalNumber(mapper.selectCount(vo, request.getParameter("startDate"), request.getParameter("endDate")));
+			String startTime = request.getParameter("startDate");
+			String endTime = request.getParameter("endDate");
+			pageVo.setTotalNumber(mapper.selectCount(vo, startTime, endTime));
 			map.put("pageVo", pageVo);
-			map.put("list", mapper.selectControl(vo, pageVo, request.getParameter("startDate"), request.getParameter("endDate")));
+			map.put("list", mapper.selectControl(vo, pageVo, request.getParameter("startDate"), request.getParameter("endDate"), provinceStr));
+			map.put("result", NameSpace.SUCCESS);
+		}catch(Exception e){
+			e.printStackTrace();
+			map.put("result", NameSpace.FAIL);
+		}
+		return map;
+	}
+	
+	@RequestMapping(value="/downloadData", method = RequestMethod.GET)
+	public @ResponseBody Map<String,Object> downloadData(HttpServletRequest request, HttpServletResponse response)
+	{
+		Map<String,Object> map = new HashMap<String,Object>();
+		try{
+			map.put("list", mapper.downloadData());
 			map.put("result", NameSpace.SUCCESS);
 		}catch(Exception e){
 			e.printStackTrace();

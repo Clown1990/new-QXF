@@ -12,26 +12,26 @@
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/css.css" rel="stylesheet">
     <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--<link href="../../css/froala_editor.min.css" rel="stylesheet" type="text/css">-->
-    <!--编辑器-->
     <link rel="stylesheet" type="text/css" href="../../dist/css/wangEditor.min.css">
-    <!--时间-->
     <link href="../../css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
-
-
-
     <style>
         section {
             width: 100%;
             margin: auto;
             text-align: left;
         }
+        #editor-trigger {
+            height: 400px;
+            max-height: 500px;
+        }
+        #editor-triggerA {
+            height: 400px;
+            max-height: 500px;
+        }
     </style>
-    <link href="../../css/css.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
@@ -104,33 +104,15 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="newsInfoHandle(0,this,'addNews');"><i class="fa fa-plus"></i>添加</button>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
-                            <tr>
-                                <!--<th>ID</th>-->
-                                <th>时间</th>
-                                <th>标题</th>
-                                <th>内容</th>
-                                <th>图片</th>
-                                <th>状态</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr>
-                                <td>时间</td>
-                                <td>标题</td>
-                                <td>内容</td>
-                                <td>图片</td>
-                                <td>状态</td>
-                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;
-                                    <button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button>
-                                    &nbsp;&nbsp;&nbsp;<a href="#"><button type="button" class="btn btn-primary btnSize" >详情</button></a>
-                                </td>
-                            </tr>
+                           <tbody id="newsTable"></tbody>
                         </table>
                         <!--添加新闻动态的弹出框内容-->
-
+						<div class="tcdPageCode">
+                        </div>
                     </div>
 
                 </div>
@@ -145,41 +127,26 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">添加</h4>
                     </div>
-                    <div class="modal-body">
-
-                        <form class="addPictureForm" id="addPictureForm">
-                            <label>标题</label>
-                            <input type="text" class="form-control" placeholder="标题">
-                            <label>内容</label>
-                            <input type="text" class="form-control" placeholder="内容">
-                            <!--时间插件-->
-                            <label class="control-label">时间</label>
-                            <div class="control-group">
-                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control" type="text" value="" readonly>
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                                </div>
-                                <input type="hidden" id="" value="" /><br/>
-                            </div>
+                    <form class="addPictureForm" id="addPictureForm" action="/QXJS/newsServlet" enctype="multipart/form-data" method="post">
+                    	<div class="modal-body">
+                        	<select class="form-control" name="userId" id="userId">
+                            </select>
+                            <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="title">
                             <label class="">输入内容</label>
-                            <div id="editor-container" class="containerA">
-                                <div id="editor-trigger">
-                                    <p>请输入内容...</p>
-                                </div>
-                                <!-- <textarea id="editor-trigger" style="display:none;">
-                                    <p>请输入内容...</p>
-                                </textarea> -->
-                            </div>
-                            <button id="getrow">获取编辑框内容</button>
-                            <p><br></p>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
-                    </div>
+                            <textarea  id="editor-trigger" class="containerA" name="content">
+                            </textarea >
+                            <select class="form-control" style="margin-top: 10px;" name="state" id="state">
+                                <option value="0">未发布</option>
+                                <option value="1">已发布</option>
+                                <option value="2">置顶发布</option>
+                                <option value="3">店长可见</option>
+                            </select>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                        <button type="submit" class="btn btn-primary">保存</button>
+	                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -190,41 +157,27 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel1">修改</h4>
                     </div>
-                    <div class="modal-body">
-
-                        <form class="updateNewsForm" id="updateNewsForm">
-                            <label>标题</label>
-                            <input type="text" class="form-control" placeholder="标题">
-                            <label>内容</label>
-                            <input type="text" class="form-control" placeholder="内容">
-                            <!--时间插件-->
-                            <label class="control-label">时间</label>
-                            <div class="control-group">
-                                <div class="controls input-append input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control" type="text" value="" readonly>
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                                </div>
-                                <input type="hidden" id="" value="" /><br/>
-                            </div>
+                     <form class="addPictureForm" id="addPictureForm" action="/QXJS/newsServlet" enctype="multipart/form-data" method="post">
+                    	<div class="modal-body">
+                        	<select class="form-control" name="userId" id="updateUserId">
+                            </select>
+                            <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="updateTitle">
                             <label class="">输入内容</label>
-                            <!--参照上面的输入框,js 复制一遍,更换为editor-triggerA-->
-                            <div id="editor-containerA" class="containerA">
-                                <div id="editor-triggerA">
-                                    <p>请输入内容...</p>
-                                </div>
-                                <!-- <textarea id="editor-trigger" style="display:none;">
-                                    <p>请输入内容...</p>
-                                </textarea> -->
-                            </div>
-                            <button id="getrowA">获取编辑框内容</button>
-                            <p><br></p>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
-                    </div>
+                            <textarea  id="editor-triggerA" class="containerA" name="content">
+                            </textarea >
+                            <select class="form-control" style="margin-top: 10px;" name="state" id="updateState">
+                                <option value="0">未发布</option>
+                                <option value="1">已发布</option>
+                                <option value="2">置顶发布</option>
+                                <option value="3">店长可见</option>
+                            </select>
+                            <input type="hidden" value="" name="newsId" id="updateNewsId"/><br/>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                        <button type="submit" class="btn btn-primary">保存</button>
+	                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -240,74 +193,22 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
-<!--时间-->
 <script src="../../js/bootstrap-datetimepicker.js"></script>
-
-<!--编辑器-->
-<script type="text/javascript" src="../../dist/js/wangEditor.js"></script>
-
-
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
-<!--上传图片-->
-<!--<script src="../../js/libs/jquery-1.11.1.min.js"></script>-->
-<!--<script src="../../js/froala_editor.min.js"></script>-->
-<!--[if lt IE 9]><!---->
-<!--<script src="../../js/froala_editor_ie8.min.js"></script>-->
-<!--<![endif]&ndash;&gt;-->
+<script src="../../dist/js/wangEditor.js"></script>
 <script src="../../js/common.js"></script>
-
-<script src="../../js/plugins/tables.min.js"></script>
-<script src="../../js/plugins/lists.min.js"></script>
-<script src="../../js/plugins/colors.min.js"></script>
-<script src="../../js/plugins/media_manager.min.js"></script>
-<script src="../../js/plugins/font_family.min.js"></script>
-<script src="../../js/plugins/font_size.min.js"></script>
-<script src="../../js/plugins/block_styles.min.js"></script>
-<script src="../../js/plugins/video.min.js"></script>
+<script src="../../js/jquery.page.js"></script>
+<script src="../../js/newsManage.js"></script>
 <!--编辑器-->
 <script type="text/javascript">
-    // 阻止输出log
-    // wangEditor.config.printLog = false;
-
     var editor = new wangEditor('editor-trigger');
-
     // 上传图片
-    editor.config.uploadImgUrl = '/servlet/UploadHandleServlet';
-
+    editor.config.uploadImgUrl = '/QXJS/uploadServlet/news';
     // 表情显示项
     editor.config.emotionsShow = 'value';
-
-    // 跨域上传
-    // editor.config.uploadImgUrl = 'http://localhost:8012/upload';
-
-    // 第三方上传
-    // editor.config.customUpload = true;
-
-    // editor.config.menus = [
-    //     'img',
-    //     'insertcode',
-    //     'eraser',
-    //     'fullscreen'
-    // ];
-
     // onchange 事件
     editor.onchange = function () {
         console.log(this.$txt.html());
     };
-
-    // 取消过滤js
-    // editor.config.jsFilter = false;
-
-    // 取消粘贴过来
-    // editor.config.pasteFilter = false;
-
-    // 设置 z-index
-    // editor.config.zindex = 20000;
-
-    // 语言
-    // editor.config.lang = wangEditor.langs['en'];
-    // 自定义菜单
     editor.config.menus = [
         'source',
         '|',
@@ -333,46 +234,16 @@
         selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
     };
     editor.create();
-
-
+//-------------------update--------------------------------
     var editorA = new wangEditor('editor-triggerA');
-
     // 上传图片
-    editorA.config.uploadImgUrl = '/servlet/UploadHandleServlet';
-
+    editorA.config.uploadImgUrl = '/QXJS/uploadServlet/news';
     // 表情显示项
     editorA.config.emotionsShow = 'value';
-
-    // 跨域上传
-    // editor.config.uploadImgUrl = 'http://localhost:8012/upload';
-
-    // 第三方上传
-    // editor.config.customUpload = true;
-
-    // editor.config.menus = [
-    //     'img',
-    //     'insertcode',
-    //     'eraser',
-    //     'fullscreen'
-    // ];
-
     // onchange 事件
     editorA.onchange = function () {
         console.log(this.$txt.html());
     };
-
-    // 取消过滤js
-    // editor.config.jsFilter = false;
-
-    // 取消粘贴过来
-    // editor.config.pasteFilter = false;
-
-    // 设置 z-index
-    // editor.config.zindex = 20000;
-
-    // 语言
-    // editor.config.lang = wangEditor.langs['en'];
-    // 自定义菜单
     editorA.config.menus = [
         'source',
         '|',
@@ -398,16 +269,9 @@
         selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
     };
     editorA.create();
-
-
 </script>
 <script>
     $('#getrow').click(function () {
-        // 获取编辑器区域完整html代码
-        var html = editor.$txt.html();
-        alert(html);
-    });
-    $('#getrowA').click(function () {
         // 获取编辑器区域完整html代码
         var html = editor.$txt.html();
         alert(html);

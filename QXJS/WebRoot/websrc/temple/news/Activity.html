@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>动态管理</title>
-
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
-
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/dropzone.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/css.css" rel="stylesheet">
-
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/wangEditor.min.css">
+    <link href="../../css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+	<style>
+        section {
+            width: 100%;
+            margin: auto;
+            text-align: left;
+        }
+        #editor-trigger {
+            height: 400px;
+            max-height: 500px;
+        }
+        #editor-triggerA {
+            height: 400px;
+            max-height: 500px;
+        }
+    </style>
 </head>
-
 <body>
-
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
@@ -95,29 +104,16 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%;margin-bottom: 18px;" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="activityInfoHandle(0,this,'addActivity');"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" onclick="mulitDelete();">批量删除</button>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
-                            <tr>
-                                <th>ID</th>
-                                <th>标题</th>
-                                <th>时间</th>
-                                <th>content</th>
-                                <th>img</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>标题标题标题标题</td>
-                                <td>2016年10月20日</td>
-                                <td>content</td>
-                                <td>img</td>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button>&nbsp;<a href="newsdetaile.html"><button type="button" class="btn btn-primary btnSize">详情</button></a></td>
-                            </tr>
+                           <tbody id="activityTable"></tbody>
                         </table>
                         <!--添加新闻动态的弹出框内容-->
-
+						<div class="tcdPageCode">
+                        </div>
                     </div>
 
                 </div>
@@ -130,19 +126,59 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加管理员</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加活动</h4>
                     </div>
-                    <div class="modal-body">
-                        <form class="activityForm">
-                            <input type="text" class="form-control" placeholder="标题">
-                            <input type="text" class="form-control" placeholder="时间">
-                            <textarea class="form-control" rows="9" placeholder="正文"></textarea>
-                        </form>
+                    <form class="activityForm" action="/QXJS/activityServlet" enctype="multipart/form-data" method="post">
+                    	<div class="modal-body">
+                    		<select class="form-control" name="userId" id="userId">
+                            </select>
+                            <input type="text" class="form-control" placeholder="标题" name="title" id="title">
+                            <label class="">输入内容</label>
+                            <textarea  id="editor-trigger" class="containerA" name="content">
+                            </textarea >
+                            <select class="form-control" style="margin-top: 10px;" name="state" id="state">
+                                <option value="0">未发布</option>
+                                <option value="1">已发布</option>
+                                <option value="2">置顶发布</option>
+                                <option value="3">店长可见</option>
+                            </select>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                        <button type="submit" class="btn btn-primary">保存</button>
+	                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel1">修改活动</h4>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
-                    </div>
+                     <form class="activityForm" action="/QXJS/activityServlet" enctype="multipart/form-data" method="post">
+                    	<div class="modal-body">
+                    		<select class="form-control" name="userId" id="updateUserId">
+                            </select>
+                            <input type="text" class="form-control" placeholder="标题" name="title" id="updateTitle">
+                             <label class="">输入内容</label>
+                            <textarea  id="editor-triggerA" class="containerA" name="content">
+                            </textarea >
+                            <select class="form-control" style="margin-top: 10px;" name="state" id="updateState">
+                                <option value="0">未发布</option>
+                                <option value="1">已发布</option>
+                                <option value="2">置顶发布</option>
+                                <option value="3">店长可见</option>
+                            </select>
+	                        <input type="hidden" value="" name="activityId" id="updateActivityId"/><br/>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                        <button type="submit" class="btn btn-primary">保存</button>
+	                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -152,31 +188,93 @@
 <!-- Mainly scripts -->
 <script src="../../js/jquery-2.1.1.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.js"></script>
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">
-<link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/diyUpload.css">
-<!--上传图片-->
-<script type="text/javascript" src="../../plugin/diyUpload/js/webuploader.html5only.min.js"></script>
-
-<script type="text/javascript" src="../../plugin/diyUpload/js/diyUpload.js"></script>
+<script src="../../js/jquery.page.js"></script>
+<script src="../../dist/js/wangEditor.js"></script>
+<script src="../../js/activityManage.js"></script>
+<script type="text/javascript">
+    var editor = new wangEditor('editor-trigger');
+    // 上传图片
+    editor.config.uploadImgUrl = '/QXJS/uploadServlet';
+    // 表情显示项
+    editor.config.emotionsShow = 'value';
+    // onchange 事件
+    editor.onchange = function () {
+        console.log(this.$txt.html());
+    };
+    editor.config.menus = [
+        'source',
+        '|',
+        'bold',
+        'underline',
+        '|',
+        'quote',
+        'fontfamily',
+        'fontsize',
+        'alignleft',
+        'aligncenter',
+        'alignright',
+        '|',
+        'img'
+    ];
+    // 自定义菜单UI
+    editor.UI.menus.bold = {
+        normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+        selected: '.selected'
+    };
+    editor.UI.menus.italic = {
+        normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+        selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+    };
+    editor.create();
+//-------------------update--------------------------------
+    var editorA = new wangEditor('editor-triggerA');
+    // 上传图片
+    editorA.config.uploadImgUrl = '/QXJS/uploadServlet';
+    // 表情显示项
+    editorA.config.emotionsShow = 'value';
+    // onchange 事件
+    editorA.onchange = function () {
+        console.log(this.$txt.html());
+    };
+    editorA.config.menus = [
+        'source',
+        '|',
+        'bold',
+        'underline',
+        '|',
+        'quote',
+        'fontfamily',
+        'fontsize',
+        'alignleft',
+        'aligncenter',
+        'alignright',
+        '|',
+        'img'
+    ];
+    // 自定义菜单UI
+    editorA.UI.menus.bold = {
+        normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+        selected: '.selected'
+    };
+    editorA.UI.menus.italic = {
+        normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+        selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+    };
+    editorA.create();
+</script>
 <script>
-    $(function(){
-        $('#test').diyUpload({
-            url:'../plugin/server/fileupload.php',
-            success:function( data ) {
-                console.info( data );
-            },
-            error:function( err ) {
-                console.info( err );
-            }
-        });
-    })
+    $('#getrow').click(function () {
+        // 获取编辑器区域完整html代码
+        var html = editor.$txt.html();
+        alert(html);
+    });
 </script>
 </body>
 

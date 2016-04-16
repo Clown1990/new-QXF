@@ -19,4 +19,5 @@ public interface ProductMapper
 	
 	public int selectCount(Product vo);
 
+	public List<Product> downloadData();
 }

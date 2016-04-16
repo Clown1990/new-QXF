@@ -87,28 +87,12 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="paramInfoHandle(0,this,'addParam');"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%;margin-bottom: 20px;" class="btn btn-w-m btn-success" data-toggle="modal" onclick="mulitDelete();">批量删除</button>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
-                            <tr>
-                                <th>全选</th>
-                                <th>参数序号</th>
-                                <th>类别</th>
-                                <th>中文名</th>
-                                <th>英文名称</th>
-                                <th>顺序</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>参数编号</td>
-                                <td>参数编号</td>
-                                <td>参数编号</td>
-                                <td>参数编号</td>
-                                <td>参数名称</td>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
-                            </tr>
+                        	<tbody id="paramTable"></tbody>
                         </table>
                         <!--<div class="tcdPageCode">-->
                         <!--</div>-->
@@ -128,17 +112,17 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addParamForm">
-                            <select class="form-control">
+                            <select class="form-control" name="categoryId" id="categoryId">
                                 <option value="1">类别</option>
                             </select>
-                            <input type="text" class="form-control" placeholder="中文名称">
-                            <input type="text" class="form-control" placeholder="英文名称">
-                            <input type="text" class="form-control" placeholder="顺序">
+                            <input type="text" class="form-control" placeholder="中文名称" name="cname" id="cname">
+                            <input type="text" class="form-control" placeholder="英文名称" name="ename" id="ename">
+                            <input type="text" class="form-control" placeholder="顺序" name="level" id="level">
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
+                        <button type="button" class="btn btn-primary" onclick="insertParamControl();">保存</button>
                     </div>
                 </div>
             </div>
@@ -152,17 +136,18 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="updateParamForm">
-                            <select class="form-control">
+                           <select class="form-control" name="categoryId" id="updateCategoryId">
                                 <option value="1">类别</option>
                             </select>
-                            <input type="text" class="form-control" placeholder="中文名称">
-                            <input type="text" class="form-control" placeholder="英文名称">
-                            <input type="text" class="form-control" placeholder="顺序">
+                            <input type="text" class="form-control" placeholder="中文名称" name="cname" id="updateCname">
+                            <input type="text" class="form-control" placeholder="英文名称" name="ename" id="updateEname">
+                            <input type="text" class="form-control" placeholder="顺序" name="level" id="updateLevel">
+                             <input type="text" hidden="true" name="paramId" id="updateParamId"/>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
+                        <button type="button" class="btn btn-primary" onclick="updateParamControl();">保存</button>
                     </div>
                 </div>
             </div>
@@ -180,19 +165,9 @@
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
+<script src="../../js/paramManage.js"></script>
 
 
-<script>
-    $(function(){
-        $(".tcdPageCode").createPage({
-            pageCount:6,
-            current:1,
-            backFn:function(p){
-                console.log(p);
-            }
-        });
-    })
-</script>
 </body>
 
 </html>

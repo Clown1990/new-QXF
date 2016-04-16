@@ -8,6 +8,16 @@ public class Group {
     private int seriesId;
 
     private String comment;
+    
+    private String seriesName;
+
+	public String getSeriesName() {
+		return seriesName;
+	}
+
+	public void setSeriesName(String seriesName) {
+		this.seriesName = seriesName;
+	}
 
 	public int getGroupId() {
 		return groupId;

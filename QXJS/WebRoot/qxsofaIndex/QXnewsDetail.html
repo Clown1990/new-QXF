@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/02.png">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li><img src="images/02.png"></li>
+        <li class="second"><img src="images/line.png"></li>
+        <li><img src="images/logo1.png"></li>
+        <li class="wechat">
+            <div class="left"><img src="images/03.png"></div>
+            <div class="right" style="margin-top: -9px;">
+                <a href="#"><img src="images/04.png"></a>
+                <a href="#"><img src="images/05.png"></a>
+            </div>
+            <div class="clear"></div>
+        </li>
+        <li style="float:right"><img src="images/01.png"></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<div class="nav">
+    <div class="navContent">
+        <ul class="navList">
+            <li class=""><a href="contactUs.html">联系我们</a></li>
+            <li class="active"><a href="QXactivity.html">千禧百态</a></li>
+            <li class=""><a href="process.html">实力工艺</a></li>
+            <li class=""><a href="brand2.html">企业品牌</a></li>
+            <li class=""><a href="index.html">首页</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="brand QXprovide">
+        <ul>
+            <li><a href="QXactivity.html">活动公告</a></li>
+            <li class="active"><a href="QXnews.html">新闻动态</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="content">
+    <div class="newsContent">
+        <h2 id="title">新闻名新闻名新闻名新闻名新闻名新闻名</h2>
+        <p class="newstime" id="time">2015年6月8日</p>
+        <div class="newsContentC">
+        	<p id="content"></p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    Copyright&nbsp;by &nbsp;&nbsp;成都千禧家私&nbsp;All&nbsp;rights&nbsp;reserved.2010&nbsp;&nbsp;设计制作|家具导购网 &nbsp;苏ICP备12002000号-2
+</footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+var thisURL = document.URL;
+var getParam = thisURL.split("?")[1];
+var newsId = getParam.split("=")[1];
+$.ajax({
+	type : "GET",
+	url : "/QXJS/news/selectNewsById",
+	dataType : "json",
+	contentType : "application/json",
+	data : {"newsId" : newsId},
+	success : function(msg) {
+		var news = msg.list;
+		$("#title").html(news.title);
+		$("#time").html(formatDate(news.time));
+		$("#content").html(news.content);
+	},
+	error: function () {
+		alert("异常！");
+	}
+});
+function formatDate(timeStamp){
+	if(timeStamp == 0) var d = new Date();    //根据时间戳生成的时间对象
+	else var d = new Date(timeStamp*1000);
+	var yyyy = d.getFullYear();      //年
+	var mm = d.getMonth() + 1;     //月
+	var dd = d.getDate();          //日
+	var dateStr = yyyy + "-";
+	if(mm < 10) dateStr += "0";
+	dateStr += mm + "-";
+	if(dd < 10) dateStr += "0";
+	dateStr += dd + " ";
+	return dateStr;
+}
+</script>
+</body>
+
+</html>

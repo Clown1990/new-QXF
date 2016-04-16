@@ -66,6 +66,7 @@ public class ParamController {
 		Map<String,Object> map = new HashMap<String,Object>();
 		try{
 			Param vo = new Param();
+			vo.setParamId(Integer.parseInt(request.getParameter("paramId")));
 			vo.setCategoryId(Integer.parseInt(request.getParameter("categoryId")));
 			vo.setLevel(Integer.parseInt(request.getParameter("level")));
 			vo.setCname(request.getParameter("cname"));
@@ -85,6 +86,35 @@ public class ParamController {
 		Map<String,Object> map = new HashMap<String,Object>();
 		try{
 			map.put("list", mapper.selectControl());
+			map.put("result", NameSpace.SUCCESS);
+		}catch(Exception e){
+			e.printStackTrace();
+			map.put("result", NameSpace.FAIL);
+		}
+		return map;
+	}
+	
+	@RequestMapping(value="/downloadData", method = RequestMethod.GET)
+	public @ResponseBody Map<String,Object> downloadData(HttpServletRequest request, HttpServletResponse response)
+	{
+		Map<String,Object> map = new HashMap<String,Object>();
+		try{
+			map.put("list", mapper.downloadData());
+			map.put("result", NameSpace.SUCCESS);
+		}catch(Exception e){
+			e.printStackTrace();
+			map.put("result", NameSpace.FAIL);
+		}
+		return map;
+	}
+	
+	@RequestMapping(value="/selectParamByCategoryId", method = RequestMethod.GET)
+	public @ResponseBody Map<String,Object> selectParamByCategoryId(HttpServletRequest request, HttpServletResponse response)
+	{
+		Map<String,Object> map = new HashMap<String,Object>();
+		try{
+			int categoryId = Integer.parseInt(request.getParameter("categoryId"));
+			map.put("list", mapper.selectParamByCategoryId(categoryId));
 			map.put("result", NameSpace.SUCCESS);
 		}catch(Exception e){
 			e.printStackTrace();

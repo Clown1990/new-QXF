@@ -4,31 +4,30 @@
 $(function(){
     $('#submit').click(function(){
         login();
-    })
+    });
 
-})
+});
 function login() {
     var logindata = $('#login').serialize();
-    var url = "/spring/user/loginControl";
+    alert(logindata);
+    var url = "/QXJS/user/loginControl";
     $.ajax({
-        type: 'get',
+        type: 'GET',
         url: url,
         data: logindata,
         success: function (data) {
+        	var list = data.list;
             if(data.result =="SUCCESS"){
-                //window.open("http://www.baidu.com");
-                window.location.href = "user/userManage.html";
-                //for(user in data){
-                //    user['id']
-                //}
-                //var table="<div>.....+<onclick
+            	if(list != null)
+            		window.location.href = "user/userManage.html";
+            	else
+            		window.location.href = "login.html";
             }else {
                 return false;
             }
-
         },
         error: function () {
             alert("异常！");
         }
-    })
+    });
 }

@@ -17,6 +17,8 @@ public interface CustomMapper
 	
 	public List<Custom> selectControl(@Param(value="vo")Custom vo,@Param(value="page")PageVo page);
 	
-	public int selectCount(Custom vo);
+	public int selectCount(@Param(value="vo")Custom vo);
 
+	public List<Custom> downloadData(@Param(value="storeId")int storeId);
+	
 }

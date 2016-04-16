@@ -6327,13 +6327,13 @@ _e(function (E, $) {
                 alert(resultText.split('|')[1]);
             } else {
                 E.log('上传成功，即将插入编辑区域，结果为：' + resultText);
-
+                
                 // 将结果插入编辑器
                 img = document.createElement('img');
                 img.onload = function () {
                     var html = '<img src="' + resultText + '" style="max-width:100%;"/>';
                     editor.command(null, 'insertHtml', html);
-
+                    		
                     E.log('已插入图片，地址 ' + resultText);
                     img = null;
                 };

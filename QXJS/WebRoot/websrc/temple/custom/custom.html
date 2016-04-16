@@ -88,43 +88,22 @@
                         <!--按钮组件-->
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
-                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal">批量删除</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="customInfoHandle(0,this,'addCustom');"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" onclick="mulitDelete();">批量删除</button>
 
 
 
-                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入客户姓名"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入客户姓名" id="selectCustomName"> <span class="input-group-btn"> 
+                            <button type="button" class="btn btn-primary" onclick="fuzzySearch();">搜索
                             </button> </span></div>
-                            <select class="right form-control" style="width: 20%;margin-right: 1%">
-                                <option>省</option>
-                                <option>省</option>
-                                <option>省</option>
+                            <select class="right form-control" style="width: 20%;margin-right: 1%" id="provinceId">
                             </select>
 
                             <div class="clear"></div>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
-                            <tr>
-                                <th>全选<input type="checkbox" class="checkboxAll" id="checkAll"></th>
-                                <th>姓名</th>
-                                <th>店铺</th>
-                                <th>地址</th>
-                                <th>电话</th>
-                                <th>性别</th>
-                                <th>年龄</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" name="checkNum"></td>
-                                <td>customName</td>
-                                <td>address</td>
-                                <td>phone</td>
-                                <td>phone</td>
-                                <td>sex</td>
-                                <td>age</td>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
-                            </tr>
+                           <tbody id="customTable"></tbody>
                         </table>
                         <div class="tcdPageCode">
                         </div>
@@ -144,23 +123,21 @@
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="customAddForm">
-                            <input type="text" class="form-control" placeholder="customName">
-                            <select class="form-control">
-                                <option>店铺1</option>
-                                <option>店铺1</option>
+                            <input type="text" class="form-control" placeholder="customName" name="customName" id="customName">
+                            <select class="form-control" name="storeId" id="storeId">
                             </select>
-                            <input type="text" class="form-control" placeholder="address">
-                            <input type="text" class="form-control" placeholder="phone">
-                            <select class="form-control">
-                                <option>男</option>
-                                <option>女</option>
+                            <input type="text" class="form-control" placeholder="address" name="address" id="address">
+                            <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
+                            <select class="form-control" name="sex" id="sex">
+                                <option value="1">男</option>
+                                <option value="2">女</option>
                             </select>
-                            <input type="number" class="form-control" placeholder="age">
+                            <input type="number" class="form-control" placeholder="age" name="age" id="age">
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
+                        <button type="button" class="btn btn-primary" onclick="insertCustomControl();">保存</button>
                     </div>
                 </div>
             </div>
@@ -173,24 +150,23 @@
                         <h4 class="modal-title" id="myModalLabel1">修改店铺</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="activityForm" id="customAddForm1">
-                            <input type="text" class="form-control" placeholder="customName">
-                            <select class="form-control">
-                                <option>店铺1</option>
-                                <option>店铺1</option>
+                        <form class="activityForm" id="customUpdateForm">
+                            <input type="text" hidden="true" name="customId" id="updateCustomId"/>
+                            <input type="text" class="form-control" placeholder="customName" name="customName" id="updateName">
+                            <select class="form-control" name="storeId" id="updateStoreId">
                             </select>
-                            <input type="text" class="form-control" placeholder="address">
-                            <input type="text" class="form-control" placeholder="phone">
-                            <select class="form-control">
-                                <option>男</option>
-                                <option>女</option>
+                            <input type="text" class="form-control" placeholder="address" name="address" id="updateAddress">
+                            <input type="text" class="form-control" placeholder="phone" name="phone" id="updatePhone">
+                            <select class="form-control" name="sex" id="updateSex">
+                                <option value="1">男</option>
+                                <option value="2">女</option>
                             </select>
-                            <input type="number" class="form-control" placeholder="age">
+                            <input type="number" class="form-control" placeholder="age" name="age" id="updateAge">
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
+                        <button type="button" class="btn btn-primary" onclick="updateCustomControl();">保存</button>
                     </div>
                 </div>
             </div>
@@ -210,6 +186,7 @@
 <!--分页-->
 <script src="../../js/jquery.page.js"></script>
 <script src="../../js/common.js"></script>
+<script src="../../js/customManage.js"></script>
 
 </body>
 

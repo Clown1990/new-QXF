@@ -99,4 +99,18 @@ public class GroupController {
 		}
 		return map;
 	}
+	
+	@RequestMapping(value="/downloadData", method = RequestMethod.GET)
+	public @ResponseBody Map<String,Object> downloadData(HttpServletRequest request, HttpServletResponse response)
+	{
+		Map<String,Object> map = new HashMap<String,Object>();
+		try{
+			map.put("list", mapper.downloadData());
+			map.put("result", NameSpace.SUCCESS);
+		}catch(Exception e){
+			e.printStackTrace();
+			map.put("result", NameSpace.FAIL);
+		}
+		return map;
+	}
 }

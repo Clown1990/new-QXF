@@ -17,6 +17,7 @@ public interface StoreMapper
 	
 	public List<Store> selectControl(@Param(value="vo")Store vo,@Param(value="page")PageVo page);
 	
-	public int selectCount(Store vo);
+	public int selectCount(@Param(value="vo")Store vo);
 
+	public List<Store> downloadData();
 }

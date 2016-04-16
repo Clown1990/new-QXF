@@ -22,6 +22,16 @@ public class Product {
     private String categoryCname;;
 
     private String categoryEname;
+    
+    private String groupCd;
+
+	public String getGroupCd() {
+		return groupCd;
+	}
+
+	public void setGroupCd(String groupCd) {
+		this.groupCd = groupCd;
+	}
 
 	public int getGroupId() {
 		return groupId;

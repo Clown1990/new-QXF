@@ -10,6 +10,11 @@
                 ms.bindEvent(obj,args);
             })();
         },
+        clear:function(obj){
+        	return (function(){
+        		ms.clearHtml(obj);
+        	})();
+        },
         //填充html
         fillHtml:function(obj,args){
             return (function(){
@@ -86,8 +91,21 @@
                     }
                 });
             })();
+        },
+        //解除事件
+        clearHtml:function(obj){
+        	return (function(){
+        		obj.empty();
+        		obj.off("click","a.prevPage");
+        		obj.off("click","a.nextPage");
+        		obj.off("click","a.tcdNumber");
+        		obj.remove('.prevPage');
+        		obj.remove('.tcdNumber');
+        		obj.remove('.current');
+        		obj.remove('.nextPage');
+        	})();
         }
-    }
+    };
     $.fn.createPage = function(options){
         var args = $.extend({
             pageCount : 10,
@@ -95,6 +113,9 @@
             backFn : function(){}
         },options);
         ms.init(this,args);
-    }
+    };
+    $.fn.clearPage = function(options){
+    	ms.clear(this);
+    };
 })(jQuery);
 

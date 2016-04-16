@@ -15,8 +15,10 @@ public interface OrderMapper
 	
 	public void updateControl(Order vo);
 	
-	public List<Order> selectControl(@Param(value="vo")Order vo, @Param(value="page")PageVo page, @Param(value="startDate")String startDate, @Param(value="endDate")String endDate);
+	public List<Order> selectControl(@Param(value="vo")Order vo, @Param(value="page")PageVo page, 
+			@Param(value="startDate")String startDate, @Param(value="endDate")String endDate, @Param(value="provinceStr")String provinceStr);
 	
 	public int selectCount(@Param(value="vo")Order vo, @Param(value="startDate")String startDate, @Param(value="endDate")String endDate);
 
+	public List<Order> downloadData();
 }

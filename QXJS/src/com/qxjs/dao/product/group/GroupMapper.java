@@ -19,4 +19,5 @@ public interface GroupMapper
 	
 	public int selectCount(Group vo);
 
+	public List<Group> downloadData();
 }

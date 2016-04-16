@@ -19,4 +19,5 @@ public interface PhotoMapper
 	
 	public int selectCount(Photo vo);
 
+	public List<Photo> downloadData();
 }

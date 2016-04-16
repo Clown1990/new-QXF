@@ -14,4 +14,7 @@ public interface ParamMapper
 	
 	public List<com.qxjs.model.vo.product.param.Param> selectControl();
 
+	public List<com.qxjs.model.vo.product.param.Param> downloadData();
+	
+	public List<com.qxjs.model.vo.product.param.Param> selectParamByCategoryId(@Param(value="categoryId")int categoryId);
 }

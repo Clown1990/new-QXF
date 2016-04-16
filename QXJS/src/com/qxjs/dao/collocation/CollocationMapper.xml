@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qxjs.dao.collocation.CollocationMapper">
+	<resultMap id="CollocationResultMap" type="Collocation">
+		<id column="collocationId" property="collocationId" jdbcType="INTEGER" />
+	    <result column="type" property="type" jdbcType="INTEGER" />
+	    <result column="imgPath" property="imgPath" jdbcType="VARCHAR" />
+	    <result column="xValue" property="xValue" jdbcType="INTEGER" />
+	    <result column="yValue" property="yValue" jdbcType="INTEGER" />
+	    <result column="width" property="width" jdbcType="INTEGER" />
+	    <result column="height" property="height" jdbcType="INTEGER" />
+	    <result column="categoryCname" property="categoryCname" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<insert id="insertControl" parameterType="Collocation">
+    	INSERT INTO collocation (type,imgPath,xValue,yValue,width,height) 
+    		VALUES(#{type},#{imgPath},#{xValue},#{yValue},#{width},#{height})
+  	</insert>
+  	
+  	<delete id="deleteControl" parameterType="String">
+    	DELETE from collocation 
+    	WHERE collocationId in (${collocationIdStr})
+  	</delete>
+  	
+  	<update id="updateControl" parameterType="Collocation">
+    	UPDATE collocation 
+   		SET     type = #{type},
+   				imgPath = #{imgPath},
+   				xValue = #{xValue},
+   				yValue = #{yValue},
+   				width = #{width},
+   				height = #{height}
+   		WHERE collocationId = #{collocationId}
+  	</update>
+  	
+  	<select id="selectCount" parameterType="Collocation" resultType="Integer">
+    	SELECT count(*) FROM collocation a
+    	left join category b on a.type=b.categoryId
+    		where b.categoryCname like CONCAT(CONCAT('%',#{vo.categoryCname}),'%') 
+  	</select>
+	
+	<select id="selectControl" resultMap="CollocationResultMap" resultType="Collocation">
+    	SELECT * FROM collocation a
+    		left join category b on a.type=b.categoryId
+    		where b.categoryCname like CONCAT(CONCAT('%',#{vo.categoryCname}),'%') 
+    	limit #{page.currentPage},#{page.pageSize}
+  	</select>
+  	
+  	<select id="downloadData" resultMap="CollocationResultMap" resultType="Collocation">
+    	SELECT * FROM Collocation
+  	</select>
+</mapper>

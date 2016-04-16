@@ -1349,6 +1349,7 @@
       var $this = $(this),
         data = $this.data('datetimepicker'),
         options = typeof option == 'object' && option;
+      	options.format = "yyyy-mm-dd";	/** 格式化時間格式**/
       if (!data) {
         $this.data('datetimepicker', (data = new Datetimepicker(this, $.extend({}, $.fn.datetimepicker.defaults, options))));
       }

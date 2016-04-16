@@ -19,4 +19,7 @@ public interface NewsMapper
 	
 	public int selectCount(@Param(value="startDate")String startDate, @Param(value="endDate")String endDate);
 
+	public List<News> downloadData();
+	
+	public News selectNewsById(@Param(value="newsId")int newsId);
 }

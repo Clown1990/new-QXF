@@ -96,44 +96,19 @@
                     <div class="ibox-content">
                         <!--按钮组件-->
                         <div class="ibox-content">
-                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
-                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal">批量删除</button>
-
-
-
-                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入店铺名或者省"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="storeInfoHandle(0,this,'addStore');"><i class="fa fa-plus"></i>添加</button>
+                            <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" onclick="mulitDelete();">批量删除</button>
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入店铺名或者省" id="selectStoreName"> <span class="input-group-btn"> 
+                            <button type="button" class="btn btn-primary" onclick="fuzzySearch();">搜索
                             </button> </span></div>
-
                             <div class="clear"></div>
                         </div>
                         <!--新闻列表-->
                         <table class="table table-bordered">
-                            <tr>
-                                <th>全选<input type="checkbox" class="checkboxAll" id="checkAll"></th>
-                                <th>店铺名</th>
-                                <th>省</th>
-                                <th>地址</th>
-                                <th>电话</th>
-                                <th>图片</th>
-                                <th>操作</th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" name="checkNum"></td>
-                                <td>店铺名</td>
-                                <td>省</td>
-                                <td>地址地址</td>
-                                <td>电话</td>
-                                <td><a class="example2" href="../../img/full_height.jpg">
-                                    <img src="../../img/full_height.jpg" />
-                                </a>
-                                <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
-                            </tr>
+                            <tbody id="storeTable"></tbody>
                         </table>
                         <div class="tcdPageCode">
                         </div>
-                        <a class="example2" href="../../img/full_height.jpg">
-                            <img src="../../img/full_height.jpg" />
-                        </a>
                     </div>
 
                 </div>
@@ -148,26 +123,24 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">添加店铺</h4>
                     </div>
-                    <div class="modal-body">
-                        <form class="activityForm">
-                            <input type="text" class="form-control" placeholder="店铺名">
-                            <select class="form-control" >
-                                <option>省</option>
-                                <option>省</option>
-                                <option>省</option>
+                    <form class="activityForm" id="addStoreForm" action="/QXJS/storeServlet" enctype="multipart/form-data" method="post">
+	                    <div class="modal-body">
+                            <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="storeName">
+                            <select class="form-control" name="provinceId" id="provinceId">
                             </select>
-                            <input type="text" class="form-control" placeholder="地址">
+                            <input type="text" class="form-control" placeholder="地址" name="address" id="address">
+                            <input type="text" class="form-control" placeholder="电话" name="phone" id="phone">
                             <label>选择图片</label>
-                                <div class="storeSetAdPhotoImgU">
-                                    <img src="" />
-                                </div>
-                                <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
-                    </div>
+                            <div class="storeSetAdPhotoImgU">
+                                <img src="" />
+                            </div>
+                            <input type="file" class="storeSetAdPhotoImgUB" name="img" id="img"/><br>
+	                    </div>
+	                    <div class="modal-footer">
+    	                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        	                <button type="submit" class="btn btn-primary">保存</button>
+            	        </div>
+                     </form>
                 </div>
             </div>
         </div>
@@ -178,26 +151,25 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel1">修改店铺</h4>
                     </div>
-                    <div class="modal-body">
-                        <form class="activityForm">
-                            <input type="text" class="form-control" placeholder="店铺名">
-                            <select class="form-control" >
-                                <option>省</option>
-                                <option>省</option>
-                                <option>省</option>
+                    <form class="activityForm" id="updateStoreForm" action="/QXJS/storeServlet" enctype="multipart/form-data" method="post">
+                    	<div class="modal-body">
+                        	<input type="text" hidden="true" name="storeId" id="updateStoreId"/>
+                            <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="updateStoreName">
+                            <select class="form-control" name="provinceId" id="updateProvinceId">
                             </select>
-                            <input type="text" class="form-control" placeholder="地址">
+                            <input type="text" class="form-control" placeholder="地址" name="address" id="updateAddress">
+                            <input type="text" class="form-control" placeholder="电话" name="phone" id="updatePhone">
                             <label>选择图片</label>
                             <div class="storeSetAdPhotoImgU">
                                 <img src="" />
                             </div>
-                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">保存</button>
-                    </div>
+                            <input type="file" class="storeSetAdPhotoImgUB" name="img" id="updateImg"/><br>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                        <button type="submit" class="btn btn-primary">保存</button>
+	                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -215,19 +187,7 @@
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
 <script src="../../js/common.js"></script>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/jquery.imgbox.pack.js"></script>
+<script src="../../js/storeManage.js"></script>
 
-<script>
-    $(function(){
-        $(".example2").imgbox({
-            'speedIn'		: 0,
-            'speedOut'		: 0,
-            'alignment'		: 'center',
-            'overlayShow'	: true,
-            'allowMultiple'	: false
-        });
-    })
-</script>
 </body>
 </html>

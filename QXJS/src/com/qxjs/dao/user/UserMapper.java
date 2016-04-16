@@ -20,4 +20,6 @@ public interface UserMapper
 	public int selectCount(User vo);
 
 	public User loginControl(User vo);
+	
+	public List<User> downloadData();
 }

@@ -14,6 +14,16 @@ public class Order {
     private String comment;
     
     private String customName;
+    
+    private String phone;
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
 	public String getCustomName() {
 		return customName;

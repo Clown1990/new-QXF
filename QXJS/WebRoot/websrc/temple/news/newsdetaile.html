@@ -14,13 +14,49 @@
 </head>
 <body>
 <div class="content">
-    <h2>新闻名新闻名新闻名新闻名新闻名新闻名</h2>
-    <p class="time">2015年6月8日</p>
-    <div class="contentC">
+    <h2 id="title">新闻名新闻名新闻名新闻名新闻名新闻名</h2>
+    <p class="time" id="time">2015年6月8日</p>
+    <div class="contentC" id="content">
         内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
         <img src="../../img/p_big1.jpg">
     </div>
 </div>
+<script src="../../js/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+var thisURL = document.URL;
+var getParam = thisURL.split("?")[1];
+var newsId = getParam.split("=")[1];
+$.ajax({
+	type : "GET",
+	url : "/QXJS/news/selectNewsById",
+	dataType : "json",
+	contentType : "application/json",
+	data : {"newsId" : newsId},
+	success : function(msg) {
+		var news = msg.list;
+		$("#title").html(news.title);
+		$("#time").html(formatDate(news.time));
+		$("#content").html(news.content);
+	},
+	error: function () {
+		alert("异常！");
+	}
+});
+
+function formatDate(timeStamp){
+	if(timeStamp == 0) var d = new Date();    //根据时间戳生成的时间对象
+	else var d = new Date(timeStamp*1000);
+	var yyyy = d.getFullYear();      //年
+	var mm = d.getMonth() + 1;     //月
+	var dd = d.getDate();          //日
+	var dateStr = yyyy + "-";
+	if(mm < 10) dateStr += "0";
+	dateStr += mm + "-";
+	if(dd < 10) dateStr += "0";
+	dateStr += dd + " ";
+	return dateStr;
+}
+</script>
 </body>
 
 </html>

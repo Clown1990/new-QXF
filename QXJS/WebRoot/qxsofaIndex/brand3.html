@@ -4,66 +4,101 @@
     <meta charset="UTF-8">
     <title>员工风采</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/02.png">
-
+    <link rel="stylesheet" type="text/css" href="css/zzsc.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/02.png">
+    <link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">
 </head>
 <body>
-<div class="header">
-    <ul>
-        <li><img src="images/02.png"></li>
-        <li class="second"><img src="images/line.png"></li>
-        <li><img src="images/logo1.png"></li>
-        <li class="wechat">
-            <div class="left"><img src="images/03.png"></div>
-            <div class="right" style="margin-top: -9px;">
-                <a href="#"><img src="images/04.png"></a>
-                <a href="#"><img src="images/05.png"></a>
+<header class="header">
+    <section class="headTop clear">
+        <div class="left">
+            <h1><a href="www.qianxichina.cn"><img src="images/02.png" alt=""></a></h1>
+            <div class="line"><img src="images/line.png" alt=""></div>
+            <div class="pro"><img src="images/logo1.png" alt=""></div>
+        </div>
+        <div class="right">
+            <div class="box">
+                <img src="images/03.png" alt="">
+                <a href="" class="weChat"><img src="images/wechat_24px_1164443_easyicon.net.png" alt=""></a>
+                <a href="" class="weBo"><img src="images/sina_weibo_24px_1164436_easyicon.net.png" alt=""></a>
             </div>
-            <div class="clear"></div>
-        </li>
-        <li style="float:right"><img src="images/01.png"></li>
-    </ul>
-    <div class="clear"></div>
-</div>
-<div class="nav">
-    <div class="navContent">
-        <ul class="navList">
-            <li class=""><a href="contactUs.html">联系我们</a></li>
-            <li class=""><a href="QXactivity.html">千禧百态</a></li>
-            <li class=""><a href="process.html">实力工艺</a></li>
-            <li class="active"><a href="brand2.html">企业品牌</a></li>
-            <li class=""><a href="index.html">首页</a></li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-    <div class="brand">
-        <ul>
-            <li class="active"><a href="brand3.html">员工风采</a></li>
-            <li><a href="brand5.html">品牌形象</a></li>
-            <li><a href="brand4.html">企业荣誉</a></li>
-            <li><a href="brand1.html">千禧记事</a></li>
-            <li><a href="brand2.html">企业概况</a></li>
-
-        </ul>
-    </div>
-    <div class="clear"></div>
-</div>
-<div class="content">
-    <div class="staff">
-        <ul>
-            <li><img src="images/staff1.png"></li>
-            <li><img src="images/staff2.png"></li>
-            <li class="right0"><img src="images/staff3.png"></li>
-            <li><img src="images/staff4.png"></li>
-            <li><img src="images/staff5.png"></li>
-            <li class="right0"><img src="images/staff6.png"></li>
+            <div class="QR"><img src="images/01.png" alt=""></div>
+        </div>
+    </section>
+</header>
+<nav>
+    <div>
+        <ul id="navUl">
+            <li><a href="index.html">首页</a></li>
+            <li style=" position: relative;">
+                <a href="javascript:;">企业品牌<i></i></a>
+                <ol class="hide-box">
+                    <li><a href="brand2.html">企业概况</a></li>
+                    <li><a href="brand1.html">千禧记事</a></li>
+                    <li><a href="brand-4.html">企业荣誉</a></li>
+                    <li><a href="brand5.html">品牌形象</a></li>
+                    <li><a href="brand3.html">员工风采</a></li>
+                </ol>
+            </li>
+            <li><a href="process.html">实力工艺</a></li>
+            <li style=" position: relative;">
+                <a href="#">千禧百态<i></i></a>
+                <ol class="hide-box">
+                    <li><a href="QXnews.html">新闻动态</a></li>
+                    <!--<li><a href="QXactivity.html">活动公告</a></li>-->
+                </ol>
+            </li>
+            <li><a href="contactUs.html">联系我们</a></li>
         </ul>
     </div>
+</nav>
+<div style="text-align:center; clear:both;"></div>
+<div id="gallery" class="ad-gallery">
+    <div class="ad-image-wrapper"></div>
+    <div class="ad-controls"></div>
+    <div class="ad-nav">
+        <div class="ad-thumbs">
+            <ul class="ad-thumb-list" id="list">
+                <!--<li>
+                    <a href="images/staff1.png">
+                        <img src="images/staff1.png" class="image0">
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
 </div>
-<div class="clear"></div>
+<div style="text-align:center; clear:both;"></div>
 <footer class="footer">
     Copyright&nbsp;by &nbsp;&nbsp;成都千禧家私&nbsp;All&nbsp;rights&nbsp;reserved.2010&nbsp;&nbsp;设计制作|家具导购网 &nbsp;苏ICP备12002000号-2
 </footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.ad-gallery.js"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+<script>
+
+    $.get('http://www.qianxichina.cn/QXJS/photo/selectControl?type=2', function (data) {
+        var shtml = '';
+        var list =  data.list;
+        for(var i = 0; i < list.length; i ++){
+            shtml += `<li>
+                            <a href="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}">
+                            <img src="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}" class='${i}' alt="${list[i].content}">
+                            </a>
+                        </li>`;
+        };
+        $('#list').append(shtml)
+    })
+//    $.ajax({
+//        url:'http://www.qianxichina.cn/QXJS/photo/selectControl?type=2',
+//        dataType:'jsonp',
+//        jsonp:'jsoncallback',
+//        success:function (result) {
+//            console.log(result)
+//        }
+//    })
+
+
+</script>
 </body>
 </html>

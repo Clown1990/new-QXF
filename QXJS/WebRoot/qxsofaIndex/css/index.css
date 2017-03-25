@@ -726,6 +726,10 @@ ul.navList li.active a {
     margin-top: 50px;
     text-align: center;
 }
+.brandImgP h2 img{
+    width:210px;
+    height:50px;
+}
 
 .brandImgList {
     border: 1px solid #e5e5e5;
@@ -1016,17 +1020,18 @@ ul.navList li.active a {
 
 /*实体工艺*/
 .process {
-    background: url("../images/gy_bg.jpg") center center no-repeat;
+    margin-top: 80px;
+    background: url("../images/sofa2.png") center center no-repeat;
+    background-size: contain;
     width: 100%;
     min-height: 760px;
     min-width: 1200px;
-    background-size: cover;
 }
 
 .processDetail {
-    background: url("../images/gyPhoto.png") no-repeat;
-    min-height: 492px;
-    width: 666px;
+    background-size: contain;
+    min-height: 630px;
+    width: 880px;
     margin: 0 auto;
     position: relative;
     top: 102px;
@@ -1041,64 +1046,73 @@ ul.navList li.active a {
 
 .processDetail ul li a {
     display: inline-block;
-    width: 97px;
-    height: 25px;
+    width: 120px;
+    height: 30px;
     cursor: pointer;
 }
 
 .processDetail ul li.process1 {
-    top: 47px;
-    left: 47px;
+    top: -41px;
+    left: 11px;
 }
 
 .processDetail ul li.process2 {
-    top: 149px;
-    left: 5px;
+    top: 89px;
+    left: -43px;
 }
 
 .processDetail ul li.process3 {
-    top: 274px;
-    left: 36px;
+    top: 249px;
+    left: -3px;
 }
 
 .processDetail ul li.process4 {
-    top: 378px;
-    left: 0;
+    top: 383px;
+    left: -48px;
 }
 
 .processDetail ul li.process5 {
-    top: 0;
-    left: 259px;
+    top: -100px;
+    left: 280px;
 }
 
 .processDetail ul li.process6 {
-    top: 110px;
-    right: 39px;
+    top: 40px;
+    right: 157px;
 }
 
 .processDetail ul li.process7 {
-    top: 29px;
-    right: 124px;
+    top: -63px;
+    right: 270px;
 }
 
 .processDetail ul li.process8 {
-    top: 198px;
-    right: 18px;
+    top: 152px;
+    right: 130px;
 }
 
 .processDetail ul li.process9 {
-    top: 276px;
-    right: 37px;
+    top: 252px;
+    right: 154px;
+}
+.processDetail ul li.process12 {
+    top: 338px;
+    right: 131px;
 }
 
 .processDetail ul li.process10 {
-    top: 398px;
-    right: 0;
+     top: 407px;
+     right: 106px;
+ }
+
+.processDetail ul li.process13 {
+    top: 493px;
+    right: 271px;
 }
 
 .processDetail ul li.process11 {
-    bottom: 0;
-    left: 244px;
+    bottom: 110px;
+    left: 262px;
 }
 
 .processDetail ul li img {

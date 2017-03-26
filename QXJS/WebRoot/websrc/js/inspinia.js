@@ -58,7 +58,7 @@ $(document).ready(function () {
     // Open close small chat
     $('.open-small-chat').click(function(){
         $(this).children().toggleClass('fa-comments').toggleClass('fa-remove');
-        $('.small-chat-box').toggleClass('active');
+        //$('.small-chat-box').toggleClass('active');
     });
 
     // Initialize slimscroll for small chat

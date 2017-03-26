@@ -275,3 +275,4 @@ function initProvince(provinceArr){
 	}
 	$("#provinceId").html(provinceStr);
 }
+

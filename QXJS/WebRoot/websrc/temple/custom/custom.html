@@ -14,7 +14,6 @@
 </head>
 <body>
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
@@ -36,6 +35,9 @@
                     <a href="../custom/custom.html"><i class="fa fa-th-large"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class="active"><a href="../custom/custom.html">客户管理</a></li>
+                    </ul>
+                    <ul class="nav nav-second-level">
+                        <li class=""><a href="../order/order.html">订单管理</a></li>
                     </ul>
                 </li>
                 <li>
@@ -64,17 +66,15 @@
                         <li class=""><a href="../product/product.html">产品管理</a></li>
                         <li class=""><a href="../product/series.html">系列管理</a></li>
                         <li class=""><a href="../product/Group.html">组合管理</a></li>
-                        <li class=""><a href="../product/param.html">参数管理</a></li>
-                        <li class=""><a href="../product/pictures.html">图片管理</a></li>
                         <li class=""><a href="../product/category.html">种类管理</a></li>
+                       <!-- <li class=""><a href="../product/param.html">参数管理</a></li>-->
+                        <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
                 </li>
-                <li>
+                <!--<li>
                     <a href="../order/order.html"><i class="fa fa-th-large"></i> <span class="nav-label">订单管理</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li class=""><a href="../order/order.html">订单管理</a></li>
-                    </ul>
-                </li>
+
+                </li>-->
             </ul>
         </div>
     </nav>
@@ -93,12 +93,10 @@
 
 
 
-                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" placeholder="输入客户姓名" id="selectCustomName"> <span class="input-group-btn"> 
+                            <div class="input-group" style="width: 40%;float: right;"><input type="text" class="form-control" x-id="xxxxxxxxxxx" placeholder="输入客户姓名、店名、地址关键字" id="selectCustomName"style="height:36px"> <span class="input-group-btn">
                             <button type="button" class="btn btn-primary" onclick="fuzzySearch();">搜索
                             </button> </span></div>
-                            <select class="right form-control" style="width: 20%;margin-right: 1%" id="provinceId">
-                            </select>
-
+                            <!--<select class="right form-control" style="width: 20%;margin-right: 1%" id="provinceId"></select>-->
                             <div class="clear"></div>
                         </div>
                         <!--新闻列表-->

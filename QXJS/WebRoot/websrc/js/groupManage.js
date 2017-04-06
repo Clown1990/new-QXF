@@ -12,6 +12,7 @@ function init(){
 		contentType : "application/json",
 		data : {"groupCd":fuzzyGroupCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
 		success : function(msg) {
+			console.log(msg);
 			var list = msg.list;
 			var result = msg.result;
 			initGroupTable(list, result);
@@ -33,8 +34,8 @@ function initGroupTable(list, result){
 							"<td hidden='true'>"+ list[i].seriesId +"</td>" +
 							"<td>"+ list[i].seriesName +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
+							"<td><button type='button' class='btn btn-danger btnSize'  onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
+								"<button type='button' class='btn btn-warning btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
 								"data-target='#myModal1'>修改</button></td></tr>";
 		}
 		$("#groupTable").html(groupTableStr);
@@ -115,6 +116,7 @@ function updateGroupControl(){
 		contentType : "application/json",
 		data : updateData,
 		success : function(msg) {
+			console.log(msg);
 			var result = msg.result;
 		},
 		error: function () {
@@ -132,6 +134,7 @@ function deleteGroupControl(groupIdStr){
 		contentType : "application/json",
 		data : {"groupId":groupIdStr},
 		success : function(msg) {
+
 			var result = msg.result;
 		},
 		error: function () {

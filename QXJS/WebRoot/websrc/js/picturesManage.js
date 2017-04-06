@@ -5,10 +5,11 @@ var startIndex = 0;//当前页号
 
 var groupId = 0;
 /** 初始化照片信息表 **/
+
 function init(){
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/photo/selectControl",
+		url : "/QXJS/photo/selectControl?type=7",
 		dataType : "json",
 		contentType : "application/json",
 		data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
@@ -35,13 +36,13 @@ function initPhotoTable(list, result){
 							"<td>"+ list[i].userName +"</td>" +
 							"<td hidden='true'>"+ list[i].productId +"</td>" +
 							"<td>"+ list[i].productCd +"</td>" +
-							"<td> <a class='example2' href='/QXJS/source/photoImg/"+list[i].path+"'><img src='/QXJS/source/photoImg/"+list[i].path+"' /></a></td>" +
+							"<td> <a class='example2' href='/QXJS/source/userUploadImg/"+list[i].path+"'><img src='/QXJS/source/userUploadImg/"+list[i].path+"' /></a></td>" +
 							"<td>"+ list[i].comment +"</td>" +
 							"<td hidden='true'>"+ list[i].enable +"</td>" +
 							"<td>"+ changeState(list[i].enable) +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
+							"<td><button type='button' class='btn btn-danger btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
 								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"updatePhoto\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+								"data-target='#myModal'>修改</button></td></tr>";
 		}
 		$("#photoTable").html(photoTableStr);
 	}else
@@ -116,6 +117,34 @@ function selectUserInfo(){
         }
 	});
 }
+
+
+/** 添加照片 **/
+function formSubmitAjax() {
+	var reg =/\.(jpg|png)$/;
+	var data =$('.activityForm input').val();
+	var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=7`;
+	console.log(url);
+	if(!reg.test(data)){
+		alert('仅支持jpg和png格式图片 填写正确格式')
+	}
+	var options ={
+		url:url,
+		type:'POST',
+		data:data,
+		dataType:'json',
+		async:true,
+		success:formSubmitAjaxCallback(data)
+
+	};
+
+	$('.activityForm').ajaxSubmit(options).submit();
+}
+function formSubmitAjaxCallback(data) {
+	console.log(data);
+}
+
+
 /** 删除产品信息 **/
 function deletePhotoControl(photoIdStr){
 	$.ajax({
@@ -228,7 +257,8 @@ function selectTotalNum(){
 		contentType : "application/json",
 		data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
 		success : function(msg) {
-			totalNumber = msg.pageVo.totalNumber;
+			//console.log(msg);
+			totalNumber = msg.totalNumber;
 			pageControl();
 		},
 		error: function () {

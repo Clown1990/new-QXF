@@ -12,6 +12,7 @@ function init(){
 		contentType : "application/json",
 		data : {"groupId":groupId, "productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
 		success : function(msg) {
+			console.log(msg);
 			var list = msg.list;
 			var result = msg.result;
 			initProductTable(list, result);
@@ -39,8 +40,8 @@ function initProductTable(list, result){
 							"<td> <a class='example2' href='/QXJS/source/productImg/"+list[i].imgPath+"'><img src='/QXJS/source/productImg/"+list[i].imgPath+"' id='img"+(i+1)+"'/></a></td>" +
 							"<td>"+ list[i].paramJson.replace(/@#/g,"<br>") +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='productInfoHandle("+ (i+1) +",this,\"deleteProduct\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='productInfoHandle("+ (i+1) +",this,\"updateProduct\");' " +
+							"<td><button type='button' class='btn btn-danger btnSize'  onclick='productInfoHandle("+ (i+1) +",this,\"deleteProduct\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
+								"<button type='button' class='btn btn-warning btnSize' data-toggle='modal' onclick='productInfoHandle("+ (i+1) +",this,\"updateProduct\");' " +
 								"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;" +
 								"<button type='button' class='btn btn-primary btnSize' onclick='jumpToDetailPage("+ (i+1) +")'>详情</button></a></td></tr>";
 		}

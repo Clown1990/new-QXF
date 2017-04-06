@@ -9,7 +9,7 @@ $(function(){
 });
 function login() {
     var logindata = $('#login').serialize();
-    alert(logindata);
+    //alert(logindata);
     var url = "/QXJS/user/loginControl";
     $.ajax({
         type: 'GET',

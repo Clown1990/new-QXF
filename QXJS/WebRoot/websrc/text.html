@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        html,body{
+            position: relative;
+        }
+        .add{
+            height:30px;
+            width:100px;
+            line-height: 30px;
+            text-align: center;
+            margin: 100px auto;
+            border:2px solid red;
+        }
+        .box{
+            position: fixed;
+            width: 200px;
+            height:200px;
+            padding: 30px;
+            margin:auto;
+            top:45%;
+            left:45%;
+        }
+    </style>
+</head>
+<body>
+<div class="add">添加</div>
+<div class="box" style="display: none">
+    <form enctype="multipart/form-data" method="post">
+        <input type="file" class="">
+
+        <div>
+            <div class="imgs">
+                <img src="">
+            </div>
+
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="button" onclick="one()">提交</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-2.1.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.add').on('click',function () {
+            $('.box').toggle()
+        })
+    });
+
+    function one() {
+        var formData = new FormData($( "#uploadForm" )[0]);
+        $.ajax({
+            url: `../../../uploadServlet/imgName=${new Date().getTime()}&type=7` ,  /*这是处理文件上传的servlet*/
+            type: 'POST',
+            data: formData,
+            async: false,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (returndata) {
+               console.log(returndata)
+            },
+            error: function (returndata) {
+                alert('上传失败');
+            }
+        });
+    }
+
+    var reg =/\.(jpg|png)$/;
+    console.log(reg.test("C:\/fakepath\/1491349509.jpg"))
+</script>

@@ -118,15 +118,30 @@ function selectUserInfo(){
 	});
 }
 
-
 /** 添加照片 **/
 function formSubmitAjax() {
-	var reg =/\.(jpg|png)$/;
+	var reg =/(\.(jpg|png))$/;
+	var re = /([^?#&=]+)=([^?#&=]+)/g;
 	var data =$('.activityForm input').val();
 	var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=7`;
-	console.log(url);
+
+	var productId = $('#productId').val();
+	var userId  =$('#userId').val();
+	var enable = $('#enable').val();
+	var path = re.exec(url)[2];
+	console.log(productId,userId,enable,path);
+
+	var info ={
+		productId,
+		userId,
+		enable,
+		path
+	};
 	if(!reg.test(data)){
 		alert('仅支持jpg和png格式图片 填写正确格式')
+	}
+	if(data==''){
+		alert('请上传图片！')
 	}
 	var options ={
 		url:url,
@@ -134,14 +149,24 @@ function formSubmitAjax() {
 		data:data,
 		dataType:'json',
 		async:true,
-		success:formSubmitAjaxCallback(data)
+		success:formSubmitAjaxCallback(info)
 
 	};
 
 	$('.activityForm').ajaxSubmit(options).submit();
 }
-function formSubmitAjaxCallback(data) {
-	console.log(data);
+function formSubmitAjaxCallback(info) {
+	var url =`../../../photo/insertControl?userId=${info.userId}&productId=${info.productId}&enable=${info.enable}&path=${info.path}&type=7`;
+	console.log(url);
+	$.ajax({
+		url:url,
+		type:'POST',
+		dataType:'json',
+		data:info,
+		success(result){
+			console.log(result)
+		}
+	})
 }
 
 

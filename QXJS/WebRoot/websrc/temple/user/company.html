@@ -130,25 +130,45 @@
                     </div>
                     <form class="activityForm" action="/QXJS/photoServlet" enctype="multipart/form-data" method="post">
                         <div class="modal-body">
-                            <div class="storeSetAdPhotoImgU">
-                                <img src="" />
+                            <!--<div>
+                                <h4>产品选择:</h4>
+                                <select class="form-control" name="productId" id="productId">
+                                </select>
+                            </div>-->
+                            <!-- <div>
+                                 <h4>用户选择:</h4>
+                                 <select class="form-control" name="userId" id="userId">
+                                 </select>
+                             </div>-->
+                            <div>
+                                <h4>产品图片:</h4>
+                                <div class="storeSetAdPhotoImgU">
+                                    <img src="" />
+                                </div>
                             </div>
-                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
-                            <select class="form-control"  name="enable" id="enable">
-                                <option value="1">审核通过</option>
-                                <option value="0">审核失败</option>
-                            </select>
+                            <input type="file" name="file" class="storeSetAdPhotoImgUB" id="file"/><br>
+                            <div>
+                                <h4>备注:</h4>
+                                <textarea  class="form-control" style="margin: 10px 0;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
+                            </div>
+                            <!-- <div>
+                                 <h4>审核状态:</h4>
+                                 <select class="form-control"  name="enable" id="enable">
+                                     <option value="1">审核通过</option>
+                                     <option value="0">审核失败</option>
+                                 </select>
+                             </div>-->
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                            <button type="submit" class="btn btn-primary">保存</button>
+                            <button type="button" class="btn btn-primary" onclick="formSubmitAjax()">保存</button>
+                            <!--onClick="addPhotos()"-->
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <!-- <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -170,7 +190,7 @@
                             <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
                             <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="updateComment"></textarea>
                             <select class="form-control"  name="enable" id="updateEnable">
-                                <option value="1">审核通过</option>
+                                <option value="1" selected="selected">审核通过</option>
                                 <option value="0">审核失败</option>
                             </select>
                             <input type="text" hidden="true" name="photoId" id="updatePhotoId">
@@ -182,7 +202,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
 
@@ -191,6 +211,8 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../../node_modules/jquery-form/dist/jquery.form.min.js"></script>
+
 
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>

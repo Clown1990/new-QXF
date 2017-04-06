@@ -30,22 +30,22 @@ function init(){
 function initPhotoTable(list, result){
     if(result == "SUCCESS"){
         var photoTableStr = "<tr><th>全选<input type='checkbox' class='checkboxAll' id='checkAll'></th>" +
-            "<th>ID</th><th hidden='true'>userId</th><th>上传人</th><th>上传时间</th>" +
-            "<th>图片</th><th>备注</th><th hidden='true'>审核状态Id</th><th>审核状态</th><th>操作</th></tr>";
+            "<th>ID</th><!--<th hidden='true'>userId</th><th>上传人</th><th>上传时间</th>-->" +
+            "<th>图片</th><th>备注</th><!--<th hidden='true'>审核状态Id</th><th>审核状态</th>--><th>操作</th></tr>";
         for(var i = 0;i < list.length;i++){
             photoTableStr += "<tr><td><input type='checkbox' name='checkNum'></td>" +
                 "<td>"+ list[i].photoId +"</td>" +
-                "<td hidden='true'>"+ list[i].userId +"</td>" +
+                /*"<td hidden='true'>"+ list[i].userId +"</td>" +
                 "<td>"+ list[i].userName +"</td>" +
                 "<td hidden='true'>"+ list[i].productId +"</td>" +
-                "<td>"+ list[i].productCd +"</td>" +
+                "<td>"+ list[i].productCd +"</td>" +*/
                 "<td> <a class='example2' href='/QXJS/source/photoImg/"+list[i].path+"'><img src='/QXJS/source/photoImg/"+list[i].path+"' /></a></td>" +
                 "<td>"+ list[i].comment +"</td>" +
-                "<td hidden='true'>"+ list[i].enable +"</td>" +
-                "<td>"+ changeState(list[i].enable) +"</td>" +
-                "<td><button type='button' class='btn btn-primary btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
+                /*"<td hidden='true'>"+ list[i].enable +"</td>" +
+                "<td>"+ changeState(list[i].enable) +"</td>" +*/
+                "<td><button type='button' class='btn btn-danger btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;";  /* +
                 "<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"updatePhoto\");' " +
-                "data-target='#myModal1'>修改</button></td></tr>";
+                "data-target='#myModal1'>修改</button></td></tr>";*/
         }
         $("#photoTable").html(photoTableStr);
     }else
@@ -60,7 +60,7 @@ function photoInfoHandle(num,obj,action){
     if(action == "addPhoto"){
         $("#comment").val("");
         $("#enable").val("");
-        document.getElementById("productId").selectedIndex = 0;
+        //document.getElementById("productId").selectedIndex = 0;
     }else if(action == "updatePhoto"){
         var photoID = $("table").find("tr").eq(num).find("td").eq(1).text();
         var userId = $("table").find("tr").eq(num).find("td").eq(2).text();
@@ -120,6 +120,53 @@ function selectUserInfo(){
         }
     });
 }
+/** 添加照片 **/
+function formSubmitAjax() {
+    var reg =/(\.(jpg|png))$/;
+    var re = /([^?#&=]+)=([^?#&=]+)/g;
+    var data =$('.activityForm input').val();
+    var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=3`;
+
+    var path = re.exec(url)[2];
+    console.log(path);
+
+    var info ={
+        path
+    };
+    if(!reg.test(data)){
+        alert('仅支持jpg和png格式图片 填写正确格式')
+    }
+    if(data==''){
+        alert('请上传图片！')
+    }
+    var options ={
+        url:url,
+        type:'POST',
+        data:data,
+        dataType:'json',
+        async:true,
+        success:formSubmitAjaxCallback(info)
+
+    };
+
+    $('.activityForm').ajaxSubmit(options).submit();
+}
+function formSubmitAjaxCallback(info) {
+    var url =`../../../photo/insertControl?userId=0&productId=0&enable=1&path=${info.path}&type=3`;
+    console.log(url);
+    $.ajax({
+        url:url,
+        type:'POST',
+        dataType:'json',
+        data:info,
+        success(result){
+            console.log(result)
+        }
+    })
+}
+
+
+
 /** 删除产品信息 **/
 function deletePhotoControl(photoIdStr){
     $.ajax({

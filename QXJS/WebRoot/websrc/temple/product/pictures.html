@@ -127,24 +127,36 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">添加</h4>
                     </div>
-                    <form class="activityForm" action="/QXJS/photoServlet" enctype="multipart/form-data" method="post">
+                    <form class="activityForm" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
-                            <select class="form-control" name="productId" id="productId">
-                                <option value="1">产品编号1</option>
-                                <option value="2">产品编号2</option>
-                                <option value="3">产品编号3</option>
-                            </select>
-                            <select class="form-control" name="userId" id="userId">
-                            </select>
-                            <div class="storeSetAdPhotoImgU">
-                                <img src="" />
+                            <div>
+                                <h4>产品选择:</h4>
+                                <select class="form-control" name="productId" id="productId">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>用户选择:</h4>
+                                <select class="form-control" name="userId" id="userId">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>产品图片:</h4>
+                                <div class="storeSetAdPhotoImgU">
+                                    <img src="" />
+                                </div>
                             </div>
                             <input type="file" name="file" class="storeSetAdPhotoImgUB" id="file"/><br>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
-                            <select class="form-control"  name="enable" id="enable">
-                                <option value="1">审核通过</option>
-                                <option value="0">审核失败</option>
-                            </select>
+                            <div>
+                                <h4>备注:</h4>
+                                <textarea  class="form-control" style="margin: 10px 0;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
+                            </div>
+                            <div>
+                                <h4>审核状态:</h4>
+                                <select class="form-control"  name="enable" id="enable">
+                                    <option value="1">审核通过</option>
+                                    <option value="0">审核失败</option>
+                                </select>
+                            </div>
 	                    </div>
 	                    <div class="modal-footer">
 	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -163,30 +175,42 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel1">修改</h4>
                     </div>
-                    <form class="activityForm" action="/QXJS/photoServlet" enctype="multipart/form-data" method="post">
-                    	<div class="modal-body">
-                            <select class="form-control" name="productId" id="updateProductId">
-                                <option value="1">产品编号1</option>
-                                <option value="1">产品编号1</option>
-                                <option value="1">产品编号1</option>
-                            </select>
-                            <select class="form-control" name="userId" id="updateUserId">
-                            </select>
-                            <div class="storeSetAdPhotoImgU">
-                                <img src="" />
+                    <form class="activityForm" enctype="multipart/form-data" method="post">
+                        <div class="modal-body">
+                            <div>
+                                <h4>产品选择:</h4>
+                                <select class="form-control" name="productId" id="updateProductId">
+                                </select>
                             </div>
-                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="updateComment"></textarea>
-                            <select class="form-control"  name="enable" id="updateEnable">
-                               	<option value="1">审核通过</option>
-                                <option value="0">审核失败</option>
-                            </select>
-                            <input type="text" hidden="true" name="photoId" id="updatePhotoId">
-	                    </div>
-	                    <div class="modal-footer">
-	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                        <button type="submit" class="btn btn-primary">保存</button>
-	                    </div>
+                            <div>
+                                <h4>用户选择:</h4>
+                                <select class="form-control" name="userId" id="updateUserId">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>产品图片:</h4>
+                                <div class="storeSetAdPhotoImgU">
+                                    <img src="" />
+                                </div>
+                            </div>
+                            <input type="file" name="file" class="storeSetAdPhotoImgUB" id="updateFile"/><br>
+                            <div>
+                                <h4>备注:</h4>
+                                <textarea  class="form-control" style="margin: 10px 0;" rows="5" placeholder="备注" name="comment" id="updateComment"></textarea>
+                            </div>
+                            <div>
+                                <h4>审核状态:</h4>
+                                <select class="form-control"  name="enable" id="updateEnable">
+                                    <option value="1">审核通过</option>
+                                    <option value="0">审核失败</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" onclick="formSubmitAjax()">保存</button>
+                            <!--onClick="addPhotos()"-->
+                        </div>
                     </form>
                 </div>
             </div>

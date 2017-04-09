@@ -12,9 +12,10 @@ function init(){
 		url : "/QXJS/photo/selectControl?type=7",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			var list = msg.list;
+			console.log(list);
 			var result = msg.result;
 			initPhotoTable(list, result);
 			listenCheckbox();
@@ -38,20 +39,29 @@ function initPhotoTable(list, result){
 							"<td>"+ list[i].productCd +"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/userUploadImg/"+list[i].path+"'><img src='/QXJS/source/userUploadImg/"+list[i].path+"' /></a></td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td hidden='true'>"+ list[i].enable +"</td>" +
-							"<td>"+ changeState(list[i].enable) +"</td>" +
-							"<td><button type='button' class='btn btn-danger btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"updatePhoto\");' " +
-								"data-target='#myModal'>修改</button></td></tr>";
+							"<td hidden='true' id='state'>"+ list[i].enable +"</td>" +
+							"<td id='show'>"+ '未审核' +"</td>" +
+							"<td>" +
+								"<button type='button' class='btn btn-danger btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");' " +
+								">删除</button>&nbsp;&nbsp;&nbsp;" +"<button type='button' class='btn btn-info btnSize'  onclick='pass(event);'>审核通过</button>&nbsp;&nbsp;&nbsp;"+"<button type='button' class='btn btn-danger btnSize'  onclick='pass(event);'>审核不通过</button>"+
+				"</td></tr>";
 		}
 		$("#photoTable").html(photoTableStr);
 	}else
 		alert("init photo table fail.");
 }
-function changeState(state){
+function pass(event) {
+	var e = event || window.event;
+	var enable = e.target.find('#state').text();
+	if(enable == 1)
+		return $('#show').text("审核通过");
+	else return $('#show').text("审核失败");
+}
+
+/*function changeState(state){
 	if(state == 1) return "审核通过";
 	else return "审核失败";
-}
+}*/
 /** 照片信息操作 **/
 function photoInfoHandle(num,obj,action){
 	if(action == "addPhoto"){
@@ -160,7 +170,7 @@ function formSubmitAjaxCallback(info) {
 	console.log(url);
 	$.ajax({
 		url:url,
-		type:'POST',
+		type:'GET',
 		dataType:'json',
 		data:info,
 		success(result){
@@ -275,15 +285,18 @@ function listenCheckbox(){
 	});
 }
 function selectTotalNum(){
+	var url ="/QXJS/photo/selectControl";
+	console.log(url);
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/photo/selectControl",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
-		data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			//console.log(msg);
-			totalNumber = msg.totalNumber;
+			console.log(msg);
+			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
 		},
 		error: function () {

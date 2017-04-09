@@ -189,7 +189,7 @@ function fuzzySearch(){
 	fuzzyCustomname = $("#selectCustomName").val();
 	provinceStr = $("#provinceId").find("option:selected").text();
 	currentPage = 1;
-//	if(fuzzyCustomname.length == 0) alert("请输入用户名！");return;
+    //if(fuzzyCustomname.length == 0) {alert("请输入用户名！");return;}
 	$(".tcdPageCode").clearPage({});
 	selectTotalNum();
 	init();

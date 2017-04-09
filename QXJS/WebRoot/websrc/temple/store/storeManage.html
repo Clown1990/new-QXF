@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>新闻动态</title>
-
+    <title>店铺管理</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
-
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
     <link href="../../css/plugins/dropzone/dropzone.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/css.css" rel="stylesheet" type="text/css">
     <!--<link href="../../css/lanrenzhijia.css" rel="stylesheet" type="text/css">-->
-
 </head>
-
 <body>
-
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
@@ -65,21 +56,12 @@
                         <li class="active"><a href="../store/storeManage.html">店铺管理</a></li>
                     </ul>
                 </li>
-                <!--  <li>
-                      <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
-                      <ul class="nav nav-second-level">
-                          &lt;!&ndash;<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>&ndash;&gt;
-                          <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
-                      </ul>
-                  </li>-->
                 <li>
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class=""><a href="../product/product.html">产品管理</a></li>
-                        <li class=""><a href="../product/series.html">系列管理</a></li>
-                        <li class=""><a href="../product/Group.html">组合管理</a></li>
-                        <li class=""><a href="../product/category.html">种类管理</a></li>
-                        <!-- <li class=""><a href="../product/param.html">参数管理</a></li>-->
+                        <li class=""><a href="../product/Group.html">套餐管理</a></li>
+                        <li class=""><a href="../product/param.html">参数管理</a></li>
                         <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
                 </li>
@@ -125,22 +107,33 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">添加店铺</h4>
                     </div>
-                    <form class="activityForm" id="addStoreForm" action="/QXJS/storeServlet" enctype="multipart/form-data" method="post">
+                    <form class="activityForm" id="addStoreForm" enctype="multipart/form-data" method="post">
 	                    <div class="modal-body">
-                            <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="storeName">
-                            <select class="form-control" name="provinceId" id="provinceId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="地址" name="address" id="address">
-                            <input type="text" class="form-control" placeholder="电话" name="phone" id="phone">
+                            <div>
+                                <h4>店铺名称:</h4>
+                                <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="storeName">
+                            </div>
+                            <div>
+                                <h4>省份:</h4>
+                                <select class="form-control" name="provinceId" id="provinceId"></select>
+                            </div>
+                            <div>
+                                <h4>店铺地址:</h4>
+                                <input type="text" class="form-control" placeholder="地址" name="address" id="address">
+                            </div>
+                            <div>
+                                <h4>联系电话:</h4>
+                                <input type="text" class="form-control" placeholder="电话" name="phone" id="phone">
+                            </div>
                             <label>选择图片</label>
                             <div class="storeSetAdPhotoImgU">
                                 <img src="" />
                             </div>
-                            <input type="file" class="storeSetAdPhotoImgUB" name="img" id="img"/><br>
+                            <input type="file"  class="storeSetAdPhotoImgUB" name="img" id="img"/><br>
 	                    </div>
 	                    <div class="modal-footer">
     	                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-        	                <button type="submit" class="btn btn-primary">保存</button>
+        	                <button type="button" class="btn btn-primary" onclick="formSubmitAjax()">保存</button>
             	        </div>
                      </form>
                 </div>
@@ -183,12 +176,12 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../../node_modules/jquery-form/dist/jquery.form.min.js"></script>
 
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
-<script src="../../js/common.js"></script>
 <script src="../../js/storeManage.js"></script>
 
 </body>

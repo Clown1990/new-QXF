@@ -10,7 +10,7 @@ function init(){
 		url : "/QXJS/store/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"storeName":fuzzyStorename, "province":provinceStr, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"storeName":fuzzyStorename, "province":provinceStr, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			var list = msg.list;
 			var result = msg.result;
@@ -62,7 +62,7 @@ function selectProvinceInfo(num, action){
 		url : "/QXJS/province/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"provinceName":'', "currentPage":(currentPage-1)*pageSize, "pageSize":1000},
+		data : {"provinceName":'', "currentPage":(currentPage-1), "pageSize":1000},
 		success : function(msg) {
 			list = msg.list;
 			var provinceStr = "";
@@ -95,7 +95,9 @@ function selectProvinceInfo(num, action){
         }
 	});
 }
-/** 增加店铺信息 **/
+/*
+
+/!** 增加店铺信息 **!/
 function insertStoreControl(){
 	var addData = $('#addStoreForm').serialize();
 	$.ajax({
@@ -113,7 +115,7 @@ function insertStoreControl(){
 	});
 	init();
 }
-/** 修改店铺信息 **/
+/!** 修改店铺信息 **!/
 function updateStoreControl(){
 	var updateData = $('#updateStoreForm').serialize();
 	$.ajax({
@@ -131,6 +133,63 @@ function updateStoreControl(){
 	});
 	init();
 }
+
+*/
+
+/** 添加照片 **/
+function formSubmitAjax() {
+	var reg =/(\.(jpg|png))$/;
+	var re = /([^?#&=]+)=([^?#&=]+)/g;
+	var data =$('.activityForm #img').val();
+	var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=11`;
+
+	var img = re.exec(url)[2];
+	var provinceId  = $('#provinceId').val();
+	var address = $('#address').val();
+	var storeName =$('#storeName').val();
+	var phone =$('#phone').val();
+	//var img =$('#img').val();
+	console.log(provinceId,address,storeName,phone,img);
+
+	var info ={
+		provinceId,
+		address,
+		storeName,
+		phone,
+		img
+	};
+	if(!reg.test(data)){
+		alert('仅支持jpg和png格式图片 填写正确格式')
+	}
+	if(data==''){
+		alert('请上传图片！')
+	}
+	var options ={
+		url:url,
+		type:'POST',
+		data:data,
+		dataType:'json',
+		async:true,
+		success:formSubmitAjaxCallback(info)
+
+	};
+
+	$('.activityForm').ajaxSubmit(options).submit();
+}
+function formSubmitAjaxCallback(info) {
+	var url =`../../../storeServlet?provinceId=${info.provinceId}&address=${info.address}&storeName=${info.storeName}&img=1.png&phone=${info.phone}&type=11`;
+	console.log(url);
+	$.ajax({
+		type:'GET',
+		url:url,
+		dataType:'json',
+		success(result){
+			console.log(result)
+		}
+	})
+}
+
+
 /** 删除客户信息 **/
 function deleteStoreControl(storeIdStr){
 	$.ajax({
@@ -207,7 +266,6 @@ function pageControl(){
         pageCount:totalPage(),
         current:currentPage,
         backFn:function(p){
-            console.log(p);
             setViewByPageVo(p);
         }
 	});
@@ -240,7 +298,7 @@ function selectTotalNum(){
 		url : "/QXJS/store/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"storeName":'', "province":provinceStr, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"storeName":'', "province":provinceStr, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
@@ -258,7 +316,7 @@ function selectProvince(){
 		url : "/QXJS/province/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"provinceName":'', "currentPage":(currentPage-1)*pageSize, "pageSize":1000},
+		data : {"provinceName":'', "currentPage":(currentPage-1), "pageSize":1000},
 		success : function(msg) {
 			list = msg.list;
 			initProvince(list);

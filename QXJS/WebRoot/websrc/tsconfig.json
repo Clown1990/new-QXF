@@ -1,0 +1,24 @@
+{
+  "result": "SUCCESS",
+  "list": [
+    {
+      "groupId": 60,
+      "groupCd": null,
+      "categoryCname": "沙发",
+      "categoryEname": "sofa",
+      "categoryId": 1,
+      "enable": 1,
+      "productName": "C-118-3",
+      "productCd": "C-118-3",
+      "productId": 54,
+      "imgPath": "1462255988.png",
+      "paramJson": "风格：诺爱@#空间：客厅@#规格：1+3+G@#尺寸：3.78M@#颜色：米黄@#价格：0",
+      "comment": "后现代布艺系列"
+    }
+  ],
+  "pageVo": {
+    "currentPage": 0,
+    "totalNumber": 1,
+    "pageSize": 15
+  }
+}

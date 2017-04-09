@@ -10,7 +10,7 @@ function init(){
 		url : "/QXJS/group/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"groupCd":fuzzyGroupCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"groupCd":fuzzyGroupCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			console.log(msg);
 			var list = msg.list;
@@ -26,7 +26,7 @@ function init(){
 function initGroupTable(list, result){
 	if(result == "SUCCESS"){
 		var groupTableStr = "<tr><th>全选<input type='checkbox' class='checkboxAll' id='checkAll'></th>" +
-				"<th>序号</th><th>组合编号</th><th hidden='true'>系列号</th><th>系列名</th><th>备注</th><th>操作</th></tr>";
+				"<th>序号</th><th>套餐编号</th><th hidden='true'>系列号</th><th>系列名</th><th>备注</th><th>操作</th></tr>";
 		for(var i = 0;i < list.length;i++){
 			groupTableStr += "<tr><td><input type='checkbox' name='checkNum'></td>" +
 							"<td>"+ list[i].groupId +"</td>" +
@@ -90,20 +90,32 @@ function selectSeriesInfo(num, action){
 }
 /** 增加组合信息 **/
 function insertGroupControl(){
-	var addData = $('#addGroupForm').serialize();
-	$.ajax({
-		type : "GET",
-		url : "/QXJS/group/insertControl",
-		dataType : "json",
-		contentType : "application/json",
-		data : addData,
-		success : function(msg) {
-			var result = msg.result;
-		},
-		error: function () {
-            alert("异常！");
-        }
-	});
+	var groupCd = $('#groupCd').val();
+	var seriesId =$('#seriesId').val();
+	var comment = $('#comment').val();
+	console.log(groupCd,seriesId,comment);
+	var addData ={
+		groupCd,
+		seriesId,
+		comment
+	};
+	var url =`/QXJS/group/insertControl?seriesId=${addData.seriesId}&groupCd=${addData.groupCd}&comment=${addData.comment}`;
+	console.log(url);
+		$.ajax({
+			type : "GET",
+			data : addData,
+			url : url,
+			dataType : "json",
+			contentType : "application/json",
+			success : function(msg) {
+				var result = msg.result;
+				console.log(result);
+				location.reload()
+			},
+			error: function () {
+				alert("异常！");
+			}
+		});
 	init();
 }
 /** 修改组合信息 **/

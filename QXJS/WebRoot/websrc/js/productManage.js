@@ -10,7 +10,7 @@ function init(){
 		url : "/QXJS/product/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"groupId":groupId, "productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"groupId":groupId, "productCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			console.log(msg);
 			var list = msg.list;
@@ -33,7 +33,7 @@ function initProductTable(list, result){
 							"<td>"+ list[i].productId +"</td>" +
 							"<td>"+ list[i].productCd +"</td>" +
 							"<td>"+ list[i].productName +"</td>" +
-							"<td hidden='true'>"+ list[i].groupId +"</td>" +
+							/*"<td hidden='true'>"+ list[i].groupId +"</td>" +*/
 							"<td>"+ list[i].groupCd +"</td>" +
 							"<td hidden='true'>"+ list[i].categoryId +"</td>" +
 							"<td>"+ list[i].categoryCname +"</td>" +
@@ -82,7 +82,7 @@ function productInfoHandle(num,obj,action){
 function selectGroupInfo(){
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/group/selectControl",
+		url : "/QXJS/group/downloadData",
 		dataType : "json",
 		contentType : "application/json",
 		data : {"groupCd":"", "currentPage":0, "pageSize":1000},

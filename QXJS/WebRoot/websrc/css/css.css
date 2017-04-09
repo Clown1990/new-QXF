@@ -106,11 +106,11 @@ body {
     font-weight:bolder;
 }
 .activityForm input {
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .activityForm select {
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .activityForm #box {

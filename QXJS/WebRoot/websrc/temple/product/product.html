@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻动态</title>
+    <title>产品管理</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../css/animate.css" rel="stylesheet">
@@ -56,21 +56,12 @@
                         <li class=""><a href="../store/storeManage.html">店铺管理</a></li>
                     </ul>
                 </li>
-                <!--  <li>
-                      <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
-                      <ul class="nav nav-second-level">
-                          &lt;!&ndash;<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>&ndash;&gt;
-                          <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
-                      </ul>
-                  </li>-->
                 <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li class="active"><a href="../product/product.html">产品管理</a></li>
-                        <li class=""><a href="../product/series.html">系列管理</a></li>
-                        <li class=""><a href="../product/Group.html">组合管理</a></li>
-                        <li class=""><a href="../product/category.html">种类管理</a></li>
-                        <!-- <li class=""><a href="../product/param.html">参数管理</a></li>-->
+                        <li class=""><a href="../product/Group.html">套餐管理</a></li>
+                        <li class=""><a href="../product/param.html">参数管理</a></li>
                         <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
                 </li>
@@ -91,6 +82,9 @@
                         <div class="ibox-content">
                             <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal" onclick="productInfoHandle(0,this,'addProduct');"><i class="fa fa-plus"></i>添加</button>
                             <button type="button" style="float: left;margin-right: 1%" class="btn btn-w-m btn-success" data-toggle="modal" onclick="mulitDelete();">批量删除</button>
+                           <!-- <div>
+                                <select name="" id=""></select>
+                            </div>-->
                             <div class="input-group" style="width: 40%;float: right;">
                             	<input type="text" class="form-control" placeholder="输入产品编号" id="selectProductName"> <span class="input-group-btn"> 
                             	<button type="button" class="btn btn-primary" onclick="fuzzySearch();">搜索
@@ -195,7 +189,6 @@
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script src="../../js/jquery.page.js"></script>
-<script src="../../js/common.js"></script>
 <script src="../../js/productManage.js"></script>
 
 <link rel="stylesheet" type="text/css" href="../../plugin/diyUpload/css/webuploader.css">

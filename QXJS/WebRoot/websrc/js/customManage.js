@@ -3,6 +3,28 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('.dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
 /** 初始化客户信息表 **/
 function init(){
 	$.ajax({
@@ -10,7 +32,7 @@ function init(){
 		url : "/QXJS/custom/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"customName":fuzzyCustomname, "province":provinceStr, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"customName":fuzzyCustomname, "province":provinceStr, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			var list = msg.list;
 			var result = msg.result;
@@ -36,9 +58,9 @@ function initCustomTable(list, result){
 							"<td>"+ list[i].phone +"</td>" +
 							"<td>"+ changeSex(list[i].sex) +"</td>" +
 							"<td>"+ list[i].age +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='customInfoHandle("+ (i+1) +",this,\"deleteCustom\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='customInfoHandle("+ (i+1) +",this,\"updateCustom\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='customInfoHandle("+ (i+1) +",this,\"updateCustom\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='customInfoHandle("+ (i+1) +",this,\"deleteCustom\");'>删除</button>" +
+								"</td></tr>";
 		}
 		$("#customTable").html(customTableStr);
 	}else
@@ -232,9 +254,9 @@ function selectTotalNum(){
 		url : "/QXJS/custom/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"customName":'', "province":provinceStr, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"customName":'', "province":provinceStr, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
-			totalNumber = msg.pageVo.totalNumber;
+			//totalNumber = msg.pageVo.totalNumber;
 			pageControl();
 		},
 		error: function () {
@@ -250,7 +272,7 @@ function selectProvince(){
 		url : "/QXJS/province/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"provinceName":'', "currentPage":(currentPage-1)*pageSize, "pageSize":1000},
+		data : {"provinceName":'', "currentPage":(currentPage-1), "pageSize":1000},
 		success : function(msg) {
 			list = msg.list;
 			initProvince(list);

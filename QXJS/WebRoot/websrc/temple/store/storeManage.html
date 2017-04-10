@@ -20,9 +20,9 @@
             <ul class="nav" id="side-menu">
                 <!--登录用户信息-->
                 <li class="nav-header">
-                    <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
-                        <a href="../login.html">退出</a>
+                    <div class="dropdown profile-element" id="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="margin: 10px 0;"></span> </a>
+                        <a href="../login.html" class="dropout">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -149,11 +149,23 @@
                     <form class="activityForm" id="updateStoreForm" action="/QXJS/storeServlet" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
                         	<input type="text" hidden="true" name="storeId" id="updateStoreId"/>
-                            <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="updateStoreName">
-                            <select class="form-control" name="provinceId" id="updateProvinceId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="地址" name="address" id="updateAddress">
-                            <input type="text" class="form-control" placeholder="电话" name="phone" id="updatePhone">
+                            <div>
+                                <h4>修改店铺:</h4>
+                                <input type="text" class="form-control" placeholder="店铺名" name="storeName" id="updateStoreName">
+                            </div>
+                            <div>
+                                <h4>省份:</h4>
+                                <select class="form-control" name="provinceId" id="updateProvinceId">
+                                </select>
+                            </div>
+                           <div>
+                               <h4>店铺地址:</h4>
+                               <input type="text" class="form-control" placeholder="地址" name="address" id="updateAddress">
+                           </div>
+                           <div>
+                               <h4>联系电话:</h4>
+                               <input type="text" class="form-control" placeholder="电话" name="phone" id="updatePhone">
+                           </div>
                             <label>选择图片</label>
                             <div class="storeSetAdPhotoImgU">
                                 <img src="" />

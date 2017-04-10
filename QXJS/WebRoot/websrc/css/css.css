@@ -106,11 +106,11 @@ body {
     font-weight:bolder;
 }
 .activityForm input {
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .activityForm select {
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 
 .activityForm #box {
@@ -277,7 +277,7 @@ body {
 }
 
 .modal-dialog form label {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .control-group input {

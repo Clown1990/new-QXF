@@ -20,8 +20,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
-                        <a href="../login.html">退出</a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="margin: 10px 0;"></span> </a>
+                        <a href="../login.html" class="dropout">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -117,20 +117,37 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加店铺</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加客户</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="customAddForm">
-                            <input type="text" class="form-control" placeholder="customName" name="customName" id="customName">
-                            <select class="form-control" name="storeId" id="storeId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="address" name="address" id="address">
-                            <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
-                            <select class="form-control" name="sex" id="sex">
-                                <option value="1">男</option>
-                                <option value="2">女</option>
-                            </select>
-                            <input type="number" class="form-control" placeholder="age" name="age" id="age">
+                            <div>
+                                <h4>添加客户姓名:</h4>
+                                <input type="text" class="form-control" placeholder="请输入添加客户姓名" name="customName" id="customName">
+                            </div>
+                           <div>
+                               <h4>所属店铺:</h4>
+                               <select class="form-control" name="storeId" id="storeId"></select>
+                           </div>
+                            <div>
+                                <h4>客户地址:</h4>
+                                <input type="text" class="form-control" placeholder="请输入客户地址" name="address" id="address">
+                            </div>
+                            <div>
+                                <h4>客户电话:</h4>
+                                <input type="text" class="form-control" placeholder="请输入电话" name="phone" id="phone">
+                            </div>
+                            <div>
+                                <h4>性别:</h4>
+                                <select class="form-control" name="sex" id="sex">
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h4>年龄:</h4>
+                                <input type="number" class="form-control" placeholder="请输入年龄" name="age" id="age">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -145,21 +162,38 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改店铺</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改客户信息</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="customUpdateForm">
                             <input type="text" hidden="true" name="customId" id="updateCustomId"/>
-                            <input type="text" class="form-control" placeholder="customName" name="customName" id="updateName">
-                            <select class="form-control" name="storeId" id="updateStoreId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="address" name="address" id="updateAddress">
-                            <input type="text" class="form-control" placeholder="phone" name="phone" id="updatePhone">
-                            <select class="form-control" name="sex" id="updateSex">
-                                <option value="1">男</option>
-                                <option value="2">女</option>
-                            </select>
-                            <input type="number" class="form-control" placeholder="age" name="age" id="updateAge">
+                            <div>
+                                <h4>修改客户姓名:</h4>
+                                <input type="text" class="form-control" placeholder="customName" name="customName" id="updateName">
+                            </div>
+                            <div>
+                                <h4>修改店铺所属:</h4>
+                                <select class="form-control" name="storeId" id="updateStoreId"> </select>
+                            </div>
+                            <div>
+                                <h4>修改客户地址:</h4>
+                                <input type="text" class="form-control" placeholder="address" name="address" id="updateAddress">
+                            </div>
+                            <div>
+                                <h4>修改客户电话:</h4>
+                                <input type="text" class="form-control" placeholder="phone" name="phone" id="updatePhone">
+                            </div>
+                            <div>
+                                <h4>性别:</h4>
+                                <select class="form-control" name="sex" id="updateSex">
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h4>年龄:</h4>
+                                <input type="number" class="form-control" placeholder="age" name="age" id="updateAge">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">

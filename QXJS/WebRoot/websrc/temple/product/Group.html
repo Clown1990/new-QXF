@@ -21,8 +21,8 @@
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
-                        <a href="../login.html">退出</a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="margin: 10px 0">用户:133576</span> </a>
+                        <a href="../login.html" class="dropout">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -136,7 +136,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加组合</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加套餐</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addGroupForm">
@@ -168,15 +168,24 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改组合</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改套餐</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="updateGroupForm">
-                             <input type="text" class="form-control" placeholder="编号" name="groupCd" id="updateGroupCd">
-                            <select class="form-control" name="seriesId" id="updateSeriesId">
-                                <option value="1">系列</option>
-                            </select>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="updateComment"></textarea>
+                           <div>
+                               <h4>套餐型号:</h4>
+                               <input type="text" class="form-control" placeholder="编号" name="groupCd" id="updateGroupCd">
+                           </div>
+                            <div>
+                                <h4>套餐系列:</h4>
+                                <select class="form-control" name="seriesId" id="updateSeriesId">
+                                    <option value="1">系列</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h4>备注:</h4>
+                                <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="备注" name="comment" id="updateComment"></textarea>
+                            </div>
 							<input type="text" hidden="true" name="groupId" id="updateGroupId"/>
                         </form>
                     </div>

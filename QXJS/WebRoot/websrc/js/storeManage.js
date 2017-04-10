@@ -3,6 +3,28 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('#dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
 /** 初始化店铺信息表 **/
 function init(){
 	$.ajax({
@@ -35,9 +57,9 @@ function initStoreTable(list, result){
 							"<td>"+ list[i].address +"</td>" +
 							"<td>"+ list[i].phone +"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/storeImg/"+list[i].img+"'><img src='/QXJS/source/storeImg/"+list[i].img+"' /></a></td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='storeInfoHandle("+ (i+1) +",this,\"deleteStore\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='storeInfoHandle("+ (i+1) +",this,\"updateStore\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='storeInfoHandle("+ (i+1) +",this,\"updateStore\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='storeInfoHandle("+ (i+1) +",this,\"deleteStore\");'>删除</button>" +
+								"</td></tr>";
 		}
 		$("#storeTable").html(storeTableStr);
 	}else
@@ -166,7 +188,7 @@ function formSubmitAjax() {
 	}
 	var options ={
 		url:url,
-		type:'POST',
+		type:'GET',
 		data:data,
 		dataType:'json',
 		async:true,

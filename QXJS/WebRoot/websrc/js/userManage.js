@@ -3,6 +3,28 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('.dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
 /** 初始化用户信息表 **/
 function init(){
 	$.ajax({
@@ -10,8 +32,9 @@ function init(){
 		url : "/QXJS/user/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"username":fuzzyUsername, "role":0, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"username":fuzzyUsername, "role":0, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
+			console.log(msg);
 			var list = msg.list;
 			var result = msg.result;
 			totalNumber = msg.pageVo.totalNumber;
@@ -35,9 +58,8 @@ function initUserTable(list, result){
 							"<td>"+ changeRole(list[i].role) +"</td>" +
 							"<td>"+ list[i].storeName +"</td>" +
 							"<td hidden='true'>"+ list[i].storeId +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='userInfoHandle("+ (i+1) +",this,\"deleteUser\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='userInfoHandle("+ (i+1) +",this,\"updateUser\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='userInfoHandle("+ (i+1) +",this,\"updateUser\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='userInfoHandle("+ (i+1) +",this,\"deleteUser\");'>删除</button>" +"</td></tr>";
 		}
 		$("#userTable").html(userTableStr);
 	}else
@@ -113,7 +135,8 @@ function insertUserControl(){
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
-			insertUserResult(result);
+			$('#myModal').toggle();
+			$('.modal-backdrop').toggle();
 		},
 		error: function () {
             alert("异常！");
@@ -132,6 +155,8 @@ function updateUserControl(){
 		data : updateData,
 		success : function(msg) {
 			var result = msg.result;
+			$('.modal-dialog').hide();
+			$('.modal-backdrop').hide();
 		},
 		error: function () {
             alert("异常！");
@@ -154,7 +179,7 @@ function deleteUserControl(userIdStr){
             alert("异常！");
         }
 	});
-	init();
+	location.reload();
 }
 
 $(function(){
@@ -227,8 +252,9 @@ function selectTotalNum(){
 		url : "/QXJS/user/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"username":fuzzyUsername, "role":0, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"username":fuzzyUsername, "role":0, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
+			console.log(msg);
 			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
 		},

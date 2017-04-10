@@ -1,3 +1,26 @@
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('#dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
+
 /** 初始化参数信息表 **/
 function init(){
 	$.ajax({
@@ -28,9 +51,9 @@ function initParamTable(list, result){
 							"<td>"+ list[i].cname +"</td>" +
 							"<td>"+ list[i].ename +"</td>" +
 							"<td>"+ list[i].level +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='paramInfoHandle("+ (i+1) +",this,\"deleteParam\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='paramInfoHandle("+ (i+1) +",this,\"updateParam\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='paramInfoHandle("+ (i+1) +",this,\"updateParam\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='paramInfoHandle("+ (i+1) +",this,\"deleteParam\");'>删除</button>" +
+								"</td></tr>";
 		}
 		$("#paramTable").html(paramTableStr);
 	}else

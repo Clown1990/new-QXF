@@ -37,9 +37,9 @@
             <ul class="nav" id="side-menu">
                 <!--登录用户信息-->
                 <li class="nav-header">
-                    <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
-                        <a href="../login.html">退出</a>
+                    <div class="dropdown profile-element" id="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="margin: 10px 0 ;"></span> </a>
+                        <a href="../login.html" class="dropout">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -73,13 +73,6 @@
                         <li class=""><a href="../store/storeManage.html">店铺管理</a></li>
                     </ul>
                 </li>
-                <!--  <li>
-                      <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
-                      <ul class="nav nav-second-level">
-                          &lt;!&ndash;<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>&ndash;&gt;
-                          <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
-                      </ul>
-                  </li>-->
                 <li>
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -126,22 +119,31 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加新闻</h4>
                     </div>
                     <form class="addPictureForm" id="addPictureForm" action="/QXJS/newsServlet" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
-                        	<select class="form-control" name="userId" id="userId">
-                            </select>
-                            <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="title">
-                            <label class="">输入内容</label>
+                        	<div>
+                                <h4>发布人:</h4>
+                                <select class="form-control" name="userId" id="userId" style="margin: 10px 0;">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>新闻标题:</h4>
+                                <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="title">
+                            </div>
+                            <label class="">输入内容:</label>
                             <textarea  id="editor-trigger" class="containerA" name="content">
                             </textarea >
-                            <select class="form-control" style="margin-top: 10px;" name="state" id="state">
-                                <option value="0">未发布</option>
-                                <option value="1">已发布</option>
-                                <option value="2">置顶发布</option>
-                                <option value="3">店长可见</option>
-                            </select>
+                            <div>
+                                <h4>发布方式:</h4>
+                                <select class="form-control" style="margin-top: 10px;" name="state" id="state">
+                                    <option value="0">未发布</option>
+                                    <option value="1">已发布</option>
+                                    <option value="2">置顶发布</option>
+                                    <option value="3">店长可见</option>
+                                </select>
+                            </div>
 	                    </div>
 	                    <div class="modal-footer">
 	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -156,22 +158,31 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改新闻</h4>
                     </div>
                      <form class="addPictureForm" id="updateAddPictureForm" action="/QXJS/newsServlet" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
-                        	<select class="form-control" name="userId" id="updateUserId">
-                            </select>
-                            <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="updateTitle">
-                            <label class="">输入内容</label>
+                        	<div>
+                                <h4>发布人:</h4>
+                                <select class="form-control" name="userId" id="updateUserId" style="margin: 10px 0 ">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>新闻标题:</h4>
+                                <input type="text" class="form-control" style="margin-top: 10px;" placeholder="标题" name="title" id="updateTitle">
+                            </div>
+                            <label class="">输入内容:</label>
                             <textarea  id="editor-triggerA" class="containerA" name="content">
                             </textarea >
-                            <select class="form-control" style="margin-top: 10px;" name="state" id="updateState">
-                                <option value="0">未发布</option>
-                                <option value="1">已发布</option>
-                                <option value="2">置顶发布</option>
-                                <option value="3">店长可见</option>
-                            </select>
+                            <div>
+                               <h4>发布方式:</h4>
+                               <select class="form-control" style="margin-top: 10px;" name="state" id="updateState">
+                                   <option value="0">未发布</option>
+                                   <option value="1">已发布</option>
+                                   <option value="2">置顶发布</option>
+                                   <option value="3">店长可见</option>
+                               </select>
+                           </div>
                             <input type="hidden" value="" name="newsId" id="updateNewsId"/><br/>
 	                    </div>
 	                    <div class="modal-footer">

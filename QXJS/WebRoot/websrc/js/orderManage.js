@@ -7,6 +7,29 @@ var startTime = "2000-01-01";
 var endTime = "";
 var customName = "";
 
+
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('#dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
 /** 初始化订单信息表 **/
 function init(){
 	$.ajax({
@@ -14,8 +37,9 @@ function init(){
 		url : "/QXJS/order/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"customName":customName, "provinceStr":provinceStr, "startDate":startTime, "endDate":endTime, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"customName":customName, "provinceStr":provinceStr, "startDate":startTime, "endDate":endTime, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
+			console.log(msg);
 			var list = msg.list;
 			var result = msg.result;
 			initOrderTable(list, result);
@@ -41,10 +65,9 @@ function initOrderTable(list, result){
 							"<td>"+ list[i].address +"</td>" +
 							"<td>"+ list[i].content +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='orderInfoHandle("+ (i+1) +",this,\"deleteOrder\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='orderInfoHandle("+ (i+1) +",this,\"updateOrder\");' " +
-								"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' onclick='jumpToDetailPage("+ (i+1) +")'>详情</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='orderInfoHandle("+ (i+1) +",this,\"updateOrder\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-info btnSize' onclick='jumpToDetailPage("+ (i+1) +")'>详情</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='orderInfoHandle("+ (i+1) +",this,\"deleteOrder\");'>删除</button>" +
+								 "</td></tr>";
 		}
 		$("#orderTable").html(orderTableStr);
 	}else
@@ -74,6 +97,7 @@ function selectCustomInfo(customName, province, num, action){
 		success : function(msg) {
 			var result = msg.result;
 			var list = msg.list;
+			console.log(list);
 			var storeStr = "";
 			for(var i = 0; i < list.length;i++){
 				storeStr += "<option value='"+ list[i].customId +"'>"+ list[i].customName +"</option>";
@@ -111,7 +135,6 @@ function insertOrderControl(){
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
-			insertOrderResult(result);
 		},
 		error: function () {
             alert("异常！");
@@ -246,7 +269,7 @@ function selectTotalNum(){
 		url : "/QXJS/order/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"customName":customName, "provinceStr":provinceStr, "startDate":startTime, "endDate":endTime, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"customName":customName, "provinceStr":provinceStr, "startDate":startTime, "endDate":endTime, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
@@ -264,7 +287,7 @@ function selectProvince(){
 		url : "/QXJS/province/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"provinceName":'', "currentPage":(currentPage-1)*pageSize, "pageSize":1000},
+		data : {"provinceName":'', "currentPage":(currentPage-1), "pageSize":1000},
 		success : function(msg) {
 			list = msg.list;
 			initProvince(list);

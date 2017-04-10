@@ -22,8 +22,8 @@
             <ul class="nav" id="side-menu">
                 <!--登录用户信息-->
                 <li class="nav-header">
-                    <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
+                    <div class="dropdown profile-element" id="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="margin: 10px 0"></span> </a>
                         <a href="../login.html">退出</a>
                     </div>
                 </li>
@@ -118,15 +118,27 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加系列</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加订单</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="addOrderForm">
-                            <select class="form-control" name="customId" id="customId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="地址" name="address" id="address">
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="内容" name="content" id="content"></textarea>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="描述" name="comment" id="comment"></textarea>
+                            <div>
+                                <h4>订单系列:</h4>
+                                <select class="form-control" name="customId" id="customId">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>订单地址:</h4>
+                                <input type="text" class="form-control" placeholder="地址" name="address" id="address">
+                            </div>
+                            <div>
+                                <h4>订单内容:</h4>
+                                <textarea  class="form-control" style="margin: 10px;" rows="5" placeholder="内容" name="content" id="content"></textarea>
+                            </div>
+                            <div>
+                                <h4>订单描述:</h4>
+                                <textarea  class="form-control" style="margin: 10px;" rows="5" placeholder="描述" name="comment" id="comment"></textarea>
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -141,15 +153,27 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改系列</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改订单</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm" id="updateOrderForm">
-                            <select class="form-control" name="customId" id="updateCustomId">
-                            </select>
-                            <input type="text" class="form-control" placeholder="地址" name="address" id="updateAddress">
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="内容" id="updateContent" name="content"></textarea>
-                            <textarea  class="form-control" style="margin-top: 20px;" rows="5" placeholder="描述" id="updateComment" name="comment"></textarea>
+                            <div>
+                                <h4>修改订单系列:</h4>
+                                <select class="form-control" name="customId" id="updateCustomId">
+                                </select>
+                            </div>
+                            <div>
+                                <h4>修改订单地址:</h4>
+                                <input type="text" class="form-control" placeholder="地址" name="address" id="updateAddress">
+                            </div>
+                           <div>
+                               <h4>修改订单内容:</h4>
+                               <textarea  class="form-control" style="margin: 10px;" rows="5" placeholder="内容" id="updateContent" name="content"></textarea>
+                           </div>
+                            <div>
+                                <h4>修改订单描述:</h4>
+                                <textarea  class="form-control" style="margin: 10px;" rows="5" placeholder="描述" id="updateComment" name="comment"></textarea>
+                            </div>
                             <input type="text" hidden="true" name="orderId" id="updateOrderId"/>
                         </form>
                     </div>

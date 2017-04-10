@@ -3,8 +3,30 @@ var currentPage = 1;//当前页号
 var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
+var fuzzyProductCd = "";
 
-var groupId = 0;
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+    return localStorage.getItem(key)
+}
+function clearStorage(key){
+    localStorage.removeItem(key);
+}
+if(user){
+    $('#dropdown span').text(`您好! ${user}`)
+}else{
+    window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+    clearStorage(USER_KEY);
+    location.reload();
+});
+
 /** 初始化照片信息表 **/
 function init(){
     $.ajax({
@@ -12,11 +34,12 @@ function init(){
         url : "/QXJS/photo/selectControl?type=2",
         dataType : "json",
         contentType : "application/json",
-        data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+        data : {"productCd":fuzzyProductCd, "role":0,"currentPage":(currentPage-1), "pageSize":pageSize},
         success : function(msg) {
             console.log(msg);
             var list = msg.list;
             var result = msg.result;
+            totalNumber = msg.pageVo.totalNumber;
             initPhotoTable(list, result);
             listenCheckbox();
         },
@@ -139,7 +162,7 @@ function formSubmitAjax() {
     }
     var options ={
         url:url,
-        type:'POST',
+        type:'GET',
         data:data,
         dataType:'json',
         async:true,
@@ -154,7 +177,7 @@ function formSubmitAjaxCallback(info) {
     console.log(url);
     $.ajax({
         url:url,
-        type:'POST',
+        type:'GET',
         dataType:'json',
         data:info,
         success(result){
@@ -227,15 +250,7 @@ function mulitDelete(){
         deletePhotoControl(photoIdStr);
     }
 }
-var fuzzyProductCd = "";
-function fuzzyPictureSearch(){
-    fuzzyProductCd = $("#selectProductName").val();
-    currentPage = 1;
-    $(".tcdPageCode").clearPage({});
-    selectTotalNum();
-//	if(fuzzyProductname.length == 0) alert("请输入产品名！");return;
-    init();
-}
+
 function pageControl(){
     $(".tcdPageCode").createPage({
         pageCount:totalPage(),
@@ -271,13 +286,13 @@ function listenCheckbox(){
 function selectTotalNum(){
     $.ajax({
         type : "GET",
-        url : "/QXJS/photo/selectControl",
+        url : "/QXJS/photo/selectControl?type=2",
         dataType : "json",
         contentType : "application/json",
-        data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+        data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
         success : function(msg) {
             console.log(msg);
-            //totalNumber = msg.pageVo.totalNumber;
+            totalNumber = msg.pageVo.totalNumber;
             pageControl();
         },
         error: function () {

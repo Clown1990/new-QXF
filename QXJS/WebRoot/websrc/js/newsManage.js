@@ -6,6 +6,31 @@ var startIndex = 0;//当前页号
 var startTime = "2000-01-01";
 var endTime = "";
 
+
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+function clearStorage(key){
+	localStorage.removeItem(key);
+}
+if(user){
+	$('#dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+/*退出清除localStorage*/
+$('.dropout').click(function(){
+	clearStorage(USER_KEY);
+	location.reload();
+});
+
+
+
 /** 初始化新闻信息表 **/
 function init(){
 	$.ajax({
@@ -39,10 +64,8 @@ function initNewsTable(list, result){
 							"<td>"+ getLengthProcessField(list[i].content) +"</td>" +
 							"<td hidden='true'>"+ list[i].state +"</td>" +
 							"<td>"+ changeState(list[i].state) +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize'  onclick='newsInfoHandle("+ (i+1) +",this,\"deleteNews\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='newsInfoHandle("+ (i+1) +",this,\"updateNews\");' " +
-								"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-primary btnSize' onclick='jumpToDetailPage("+ list[i].newsId +")'>详情</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='newsInfoHandle("+ (i+1) +",this,\"updateNews\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-info btnSize' onclick='jumpToDetailPage("+ list[i].newsId +")'>详情</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='newsInfoHandle("+ (i+1) +",this,\"deleteNews\");'>删除</button>" +"</td></tr>";
 		}
 		$("#newsTable").html(newsTableStr);
 	}else

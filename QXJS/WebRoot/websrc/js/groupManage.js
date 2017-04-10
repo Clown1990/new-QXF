@@ -3,6 +3,21 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+	return localStorage.getItem(key)
+}
+
+if(user){
+	$('.dropdown span').text(`您好! ${user}`)
+}else{
+	window.location.href = "../login.html";
+}
+
 /** 初始化组合信息表 **/
 function init(){
 	$.ajax({
@@ -34,9 +49,9 @@ function initGroupTable(list, result){
 							"<td hidden='true'>"+ list[i].seriesId +"</td>" +
 							"<td>"+ list[i].seriesName +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td><button type='button' class='btn btn-danger btnSize'  onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
-								"<button type='button' class='btn btn-warning btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
-								"data-target='#myModal1'>修改</button></td></tr>";
+							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
+				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");'>删除</button>" +
+								"</td></tr>";
 		}
 		$("#groupTable").html(groupTableStr);
 	}else

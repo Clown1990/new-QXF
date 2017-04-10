@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>系统管理</title>
@@ -11,21 +9,17 @@
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/css.css" rel="stylesheet">
-
 </head>
-
 <body>
-
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
                 <!--登录用户信息-->
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block">用户:133576</span> </a>
-                        <a href="../login.html">退出</a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="text-muted text-xs block" style="display: block;margin: 10px 0"></span> </a>
+                        <a href="../login.html" class="dropout">退出</a>
                     </div>
                 </li>
                 <!--菜单栏-->
@@ -114,9 +108,9 @@
                     </div>
                     <div class="modal-body">
                         <form class="addManage" id="addManage">
-                            <label>用户名</label><input type="text" class="form-control" name="username" id="userName">
-                            <label>密码</label><input type="password" class="form-control" name="password" id="passWord">
-                            <label>权限</label>
+                            <label>用户名:</label><input type="text" class="form-control" name="username" id="userName">
+                            <label>密码:</label><input type="password" class="form-control" name="password" id="passWord">
+                            <label>权限:</label>
                             <select class="form-control" name="role" id="role">
                             <option value="1">店员</option>
                             <option value="2">店长</option>
@@ -146,16 +140,16 @@
                     <div class="modal-body">
                         <form class="updateManage" id="updateManage">
                             <input type="text" hidden="true" name="userId" id="updateUserId"/>
-                            <label>用户名</label><input type="text" class="form-control" name="username" id="updateName">
-                            <label>密码</label><input type="password" class="form-control" name="password" id="updatePasswd">
-                            <label>权限</label>
+                            <label>用户名:</label><input type="text" class="form-control" name="username" id="updateName">
+                            <label>密码:</label><input type="password" class="form-control" name="password" id="updatePasswd">
+                            <label>权限:</label>
                             <select class="form-control" name="role" id="updateRole">
                                 <option value="1">店员</option>
                                 <option value="2">店长</option>
                                 <option value="3">管理员</option>
                                 <option value="4">高级管理员</option>
                             </select>
-                            <label>店铺</label>
+                            <label>店铺:</label>
                             <select class="form-control" name="storeId" id="updateStoreId">
                             </select>
                         </form>
@@ -178,7 +172,6 @@
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <!--分页-->
 <script src="../../js/jquery.page.js"></script>
-<script src="../../js/common.js"></script>
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>

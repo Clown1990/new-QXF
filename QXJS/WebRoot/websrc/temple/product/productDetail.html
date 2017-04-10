@@ -141,6 +141,22 @@ $("#categoryCname").html(paramArr[3].split("=")[1]);
 $("#photo").html(paramArr[4].split("=")[1]);
 $("#paramJson").html(paramArr[5].split("=")[1]);
 $("#comment").html(paramArr[6].split("=")[1]);
+
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+    return localStorage.getItem(key)
+}
+
+if(user){
+    $('.dropdown span').text(`您好! ${user}`)
+}else{
+    window.location.href = "../login.html";
+}
+
 </script>
 </body>
 

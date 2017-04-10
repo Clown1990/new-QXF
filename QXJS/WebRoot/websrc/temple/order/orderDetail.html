@@ -70,7 +70,7 @@
 
                         <li class=""><a href="../product/Group.html">套餐管理</a></li>
 
-                        <!-- <li class=""><a href="../product/param.html">参数管理</a></li>-->
+                         <li class=""><a href="../product/param.html">参数管理</a></li>
                         <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
                 </li>
@@ -143,6 +143,22 @@ $("#time").html(paramArr[2].split("=")[1]);
 $("#address").html(paramArr[3].split("=")[1]);
 $("#conten").html(paramArr[4].split("=")[1]);
 $("#comment").html(paramArr[5].split("=")[1]);
+
+/** 判断是否有User登陆**/
+const USER_KEY = 'user';
+let  user = getStorage(USER_KEY);
+user =JSON.parse(user);
+
+function getStorage(key){
+    return localStorage.getItem(key)
+}
+
+if(user){
+    $('.dropdown span').text(`您好! ${user}`)
+}else{
+    window.location.href = "../login.html";
+}
+
 </script>
 </body>
 

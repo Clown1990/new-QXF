@@ -39,7 +39,7 @@ function init(){
             console.log(msg);
             var list = msg.list;
             var result = msg.result;
-            totalNumber = msg.pageVo.totalNumber;
+            //totalNumber = msg.pageVo.totalNumber;
             initPhotoTable(list, result);
             listenCheckbox();
         },
@@ -149,10 +149,12 @@ function formSubmitAjax() {
     var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=2`;
 
     var path = re.exec(url)[2];
+    var comment = $('#comment').val();
     console.log(path);
 
     var info ={
-        path
+        path,
+        comment
     };
     if(!reg.test(data)){
         alert('仅支持jpg和png格式图片 填写正确格式')
@@ -173,7 +175,7 @@ function formSubmitAjax() {
     $('.activityForm').ajaxSubmit(options).submit();
 }
 function formSubmitAjaxCallback(info) {
-    var url =`../../../photo/insertControl?userId=0&productId=0&enable=1&path=${info.path}&type=2`;
+    var url =`../../../photo/insertControl?userId=0&productId=0&enable=1&path=${info.path}&comment=${info.comment}&type=2`;
     console.log(url);
     $.ajax({
         url:url,
@@ -292,7 +294,7 @@ function selectTotalNum(){
         data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
         success : function(msg) {
             console.log(msg);
-            totalNumber = msg.pageVo.totalNumber;
+            //totalNumber = msg.pageVo.totalNumber;
             pageControl();
         },
         error: function () {

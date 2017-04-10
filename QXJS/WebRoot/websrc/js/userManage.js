@@ -1,6 +1,6 @@
 var currentPage = 1;//当前页号
 var totalNumber = 0;//总记录数
-var pageSize = 15;//页面大小
+var pageSize = 999;//页面大小
 var startIndex = 0;//当前页号
 
 /** 判断是否有User登陆**/

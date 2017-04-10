@@ -151,10 +151,12 @@ function formSubmitAjax() {
     var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=3`;
 
     var path = re.exec(url)[2];
+    var comment = $('#comment').val();
     console.log(path);
 
     var info ={
-        path
+        path,
+        comment
     };
     if(!reg.test(data)){
         alert('仅支持jpg和png格式图片 填写正确格式')
@@ -164,7 +166,7 @@ function formSubmitAjax() {
     }
     var options ={
         url:url,
-        type:'POST',
+        type:'GET',
         data:data,
         dataType:'json',
         async:true,
@@ -175,11 +177,11 @@ function formSubmitAjax() {
     $('.activityForm').ajaxSubmit(options).submit();
 }
 function formSubmitAjaxCallback(info) {
-    var url =`../../../photo/insertControl?userId=0&productId=0&enable=1&path=${info.path}&type=3`;
+    var url =`../../../photo/insertControl?userId=0&productId=0&enable=1&path=${info.path}&comment=${info.comment}&type=3`;
     console.log(url);
     $.ajax({
         url:url,
-        type:'POST',
+        type:'GET',
         dataType:'json',
         data:info,
         success(result){
@@ -300,8 +302,7 @@ function selectTotalNum(){
         contentType : "application/json",
         data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
         success : function(msg) {
-            console.log(msg);
-            totalNumber = msg.pageVo.totalNumber;
+            //totalNumber = msg.pageVo.totalNumber;
             pageControl();
         },
         error: function () {

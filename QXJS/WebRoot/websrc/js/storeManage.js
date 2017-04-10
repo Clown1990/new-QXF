@@ -159,11 +159,11 @@ function updateStoreControl(){
 */
 
 /** 添加照片 **/
-function formSubmitAjax() {
+/*function formSubmitAjax() {
 	var reg =/(\.(jpg|png))$/;
 	var re = /([^?#&=]+)=([^?#&=]+)/g;
 	var data =$('.activityForm #img').val();
-	var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=11`;
+	var url =`../../../storeServlet?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=11`;
 
 	var img = re.exec(url)[2];
 	var provinceId  = $('#provinceId').val();
@@ -193,22 +193,37 @@ function formSubmitAjax() {
 		dataType:'json',
 		async:true,
 		success:formSubmitAjaxCallback(info)
-
 	};
-
 	$('.activityForm').ajaxSubmit(options).submit();
-}
-function formSubmitAjaxCallback(info) {
+}*/
+function formSubmitAjaxCallback() {
+	var img = '';
+	var provinceId  = $('#provinceId').val();
+	var address = $('#address').val();
+	var storeName =$('#storeName').val();
+	var phone =$('#phone').val();
+	//var img =$('#img').val();
+	console.log(provinceId,address,storeName,phone,img);
+
+	var info ={
+		provinceId,
+		address,
+		storeName,
+		phone,
+		img
+	};
 	var url =`../../../storeServlet?provinceId=${info.provinceId}&address=${info.address}&storeName=${info.storeName}&img=1.png&phone=${info.phone}&type=11`;
 	console.log(url);
-	$.ajax({
+	var options = ({
 		type:'GET',
 		url:url,
 		dataType:'json',
+		async:true,
 		success(result){
 			console.log(result)
 		}
-	})
+	});
+	$('.activityForm').ajaxSubmit(options).submit();
 }
 
 

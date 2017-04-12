@@ -215,7 +215,7 @@ function formSubmitAjaxCallback() {
 	var url =`../../../storeServlet?provinceId=${info.provinceId}&address=${info.address}&storeName=${info.storeName}&img=1.png&phone=${info.phone}&type=11`;
 	console.log(url);
 	var options = ({
-		type:'GET',
+		type:'POST',
 		url:url,
 		dataType:'json',
 		async:true,

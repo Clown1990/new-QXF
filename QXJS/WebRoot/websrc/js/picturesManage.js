@@ -64,9 +64,9 @@ function initPhotoTable(list, result){
 							"<td> <a class='example2' href='/QXJS/source/userUploadImg/"+list[i].path+"'><img src='/QXJS/source/userUploadImg/"+list[i].path+"' /></a></td>" +
 							"<td>"+ list[i].comment +"</td>" +
 							"<td hidden='true' id='state'>"+ list[i].enable +"</td>" +
-							"<td id='show'>"+ '未审核' +"</td>" +
+							"<td id='show'>"+ changeState(list[i].enable) +"</td>" +
 							"<td>" +
-								"<button type='button' class='btn btn-danger btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");' " +
+								"<button type='button' class='btn btn-danger btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");' " +
 								">删除</button>&nbsp;&nbsp;&nbsp;" +"<button type='button' class='btn btn-info btnSize'  onclick='pass(event);'>审核通过</button>&nbsp;&nbsp;&nbsp;"+"<button type='button' class='btn btn-danger btnSize'  onclick='pass(event);'>审核不通过</button>"+
 				"</td></tr>";
 		}
@@ -82,10 +82,10 @@ function pass(event) {
 	else return $('#show').text("审核失败");
 }
 
-/*function changeState(state){
+function changeState(state){
 	if(state == 1) return "审核通过";
 	else return "审核失败";
-}*/
+}
 /** 照片信息操作 **/
 function photoInfoHandle(num,obj,action){
 	if(action == "addPhoto"){
@@ -163,13 +163,15 @@ function formSubmitAjax() {
 	var userId  =$('#userId').val();
 	var enable = $('#enable').val();
 	var path = re.exec(url)[2];
+	var comment =$('#comment').val();
 	console.log(productId,userId,enable,path);
 
 	var info ={
 		productId,
 		userId,
 		enable,
-		path
+		path,
+		comment
 	};
 	if(!reg.test(data)){
 		alert('仅支持jpg和png格式图片 填写正确格式')
@@ -190,7 +192,7 @@ function formSubmitAjax() {
 	$('.activityForm').ajaxSubmit(options).submit();
 }
 function formSubmitAjaxCallback(info) {
-	var url =`../../../photo/insertControl?userId=${info.userId}&productId=${info.productId}&enable=${info.enable}&path=${info.path}&type=7`;
+	var url =`../../../photo/insertControl?userId=${info.userId}&productId=${info.productId}&enable=${info.enable}&path=${info.path}&comment=${info.comment}&type=7`;
 	console.log(url);
 	$.ajax({
 		url:url,
@@ -309,7 +311,7 @@ function listenCheckbox(){
 	});
 }
 function selectTotalNum(){
-	var url ="/QXJS/photo/selectControl";
+	var url ="/QXJS/photo/insertControl";
 	console.log(url);
 	$.ajax({
 		type : "GET",

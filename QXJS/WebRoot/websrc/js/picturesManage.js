@@ -36,12 +36,12 @@ function init(){
 		url : "/QXJS/photo/selectControl?type=7",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
+		data : {"productCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize, "user":user},
 		success : function(msg) {
 			var list = msg.list;
-			console.log(list);
+			//console.log(list);
 			var result = msg.result;
-			initPhotoTable(list, result);
+			initPhotoTable(list, result, user);
 			listenCheckbox();
 		},
 		error: function () {
@@ -49,7 +49,7 @@ function init(){
         }
 	});
 }
-function initPhotoTable(list, result){
+function initPhotoTable(list, result, user){
 	if(result == "SUCCESS"){
 		var photoTableStr = "<tr><th>全选<input type='checkbox' class='checkboxAll' id='checkAll'></th>" +
 			"<th>ID</th><th hidden='true'>userId</th><th>用户名称</th><th hidden='true'>productId</th><th>产品编号</th>" +
@@ -58,30 +58,22 @@ function initPhotoTable(list, result){
 			photoTableStr += "<tr><td><input type='checkbox' name='checkNum'></td>" +
 							"<td>"+ list[i].photoId +"</td>" +
 							"<td hidden='true'>"+ list[i].userId +"</td>" +
-							"<td>"+ list[i].userName +"</td>" +
+							"<td>"+ ""+"</td>" +
 							"<td hidden='true'>"+ list[i].productId +"</td>" +
-							"<td>"+ list[i].productCd +"</td>" +
+							"<td>"+ ""+"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/userUploadImg/"+list[i].path+"'><img src='/QXJS/source/userUploadImg/"+list[i].path+"' /></a></td>" +
 							"<td>"+ list[i].comment +"</td>" +
 							"<td hidden='true' id='state'>"+ list[i].enable +"</td>" +
 							"<td id='show'>"+ changeState(list[i].enable) +"</td>" +
 							"<td>" +
 								"<button type='button' class='btn btn-danger btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");' " +
-								">删除</button>&nbsp;&nbsp;&nbsp;" +"<button type='button' class='btn btn-info btnSize'  onclick='pass(event);'>审核通过</button>&nbsp;&nbsp;&nbsp;"+"<button type='button' class='btn btn-danger btnSize'  onclick='pass(event);'>审核不通过</button>"+
+								">删除</button>&nbsp;&nbsp;&nbsp;" +"<button type='button' class='btn btn-info btnSize' id='pass' onclick='photoInfoHandle("+ (i+1) +",this,\"updateControl\");'>审核通过</button>&nbsp;&nbsp;&nbsp;"+"<button type='button' class='btn btn-danger btnSize' id='unpass' onclick='photoInfoHandle("+ (i+1) +",this,\"updateControl\");'>审核不通过</button>"+
 				"</td></tr>";
 		}
 		$("#photoTable").html(photoTableStr);
 	}else
 		alert("init photo table fail.");
 }
-function pass(event) {
-	var e = event || window.event;
-	var enable = e.target.find('#state').text();
-	if(enable == 1)
-		return $('#show').text("审核通过");
-	else return $('#show').text("审核失败");
-}
-
 function changeState(state){
 	if(state == 1) return "审核通过";
 	else return "审核失败";
@@ -107,8 +99,62 @@ function photoInfoHandle(num,obj,action){
 	}else if(action == "deletePhoto"){
 		var photoID = $("table").find("tr").eq(num).find("td").eq(1).text();
 		deletePhotoControl(photoID);
+	}else if(action == "updateControl"){
+		var photoID = $("table").find("tr").eq(num).find("td").eq(1).text();
+		var userId = $("table").find("tr").eq(num).find("td").eq(2).text();
+		var productId = $("table").find("tr").eq(num).find("td").eq(4).text();
+		var productCd = $("table").find("tr").eq(num).find("td").eq(5).text();
+		var comment = $("table").find("tr").eq(num).find("td").eq(7).text();
+
+		var data ={
+			photoID,userId,productId,productCd,comment
+		};
+		passUpdateControl(data,event)
+	}
+
+}
+/**审核信息**/
+function passUpdateControl(data,event){
+	var ev = ev || window.event;
+	var target = ev.target || ev.srcElement;
+	if(target.id == "pass"){
+		url ="/QXJS/photo/updateControl?enable=1";
+		console.log(data,url);
+		$.ajax({
+			type : "GET",
+			url : url,
+			dataType : "json",
+			contentType : "application/json",
+			data : {"photoId":data.photoID,"userId":data.userId,"productId":data.productId,"productCd":data.productCd,"comment":data.comment},
+			success : function(msg) {
+				var result = msg.result;
+			},
+			error: function () {
+				alert("异常！");
+			}
+		});
+		init();
+	}
+	if(target.id=="unpass"){
+		var url ="/QXJS/photo/updateControl?enable=0";
+		console.log(data,url);
+		$.ajax({
+			type : "GET",
+			url : url,
+			dataType : "json",
+			contentType : "application/json",
+			data : {"photoId":data.photoID,"userId":data.userId,"productId":data.productId,"productCd":data.productCd,"comment":data.comment},
+			success : function(msg) {
+				var result = msg.result;
+			},
+			error: function () {
+				alert("异常！");
+			}
+		});
+		init();
 	}
 }
+
 function selectProductInfo(){
 	$.ajax({
 		type : "GET",
@@ -151,7 +197,6 @@ function selectUserInfo(){
         }
 	});
 }
-
 /** 添加照片 **/
 function formSubmitAjax() {
 	var reg =/(\.(jpg|png))$/;
@@ -173,6 +218,7 @@ function formSubmitAjax() {
 		path,
 		comment
 	};
+	console.log(userId);
 	if(!reg.test(data)){
 		alert('仅支持jpg和png格式图片 填写正确格式')
 	}
@@ -204,8 +250,6 @@ function formSubmitAjaxCallback(info) {
 		}
 	})
 }
-
-
 /** 删除产品信息 **/
 function deletePhotoControl(photoIdStr){
 	$.ajax({
@@ -311,7 +355,7 @@ function listenCheckbox(){
 	});
 }
 function selectTotalNum(){
-	var url ="/QXJS/photo/insertControl";
+	var url ="/QXJS/photo/searchControl";
 	console.log(url);
 	$.ajax({
 		type : "GET",
@@ -320,7 +364,6 @@ function selectTotalNum(){
 		contentType : "application/json",
 		data : {"photoCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
-			//console.log(msg);
 			console.log(msg);
 			totalNumber = msg.pageVo.totalNumber;
 			pageControl();

@@ -120,7 +120,7 @@
                         <h4 class="modal-title" id="myModalLabel">添加客户</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="activityForm" id="customAddForm">
+                        <form class="activityForm" id="customAddForm" enctype="multipart/form-data" method="post">
                             <div>
                                 <h4>添加客户姓名:</h4>
                                 <input type="text" class="form-control" placeholder="请输入添加客户姓名" name="customName" id="customName">
@@ -165,7 +165,7 @@
                         <h4 class="modal-title" id="myModalLabel1">修改客户信息</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="activityForm" id="customUpdateForm">
+                        <form class="activityForm" id="customUpdateForm" method="post" enctype="multipart/form-data">
                             <input type="text" hidden="true" name="customId" id="updateCustomId"/>
                             <div>
                                 <h4>修改客户姓名:</h4>
@@ -211,6 +211,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../../node_modules/jquery-form/dist/jquery.form.min.js"></script>
 
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>

@@ -131,39 +131,47 @@ function selectStoreInfo(storeName, province, num, action){
 /** 增加客户信息 **/
 function insertCustomControl(){
 	var addData = $('#customAddForm').serialize();
-	$.ajax({
+	var url =`/QXJS/custom/insertControl?customId=${new Date().getTime()}`;
+	console.log(addData,url);
+	$.ajax ({
 		type : "GET",
-		url : "/QXJS/custom/insertControl",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
+		async:true,
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
-			insertCustomResult(result);
+			console.log(msg,result)
+
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	location.reload()
 }
 /** 修改客户信息 **/
 function updateCustomControl(){
 	var updateData = $('#customUpdateForm').serialize();
+	var url = `/QXJS/custom/updateControl?`;
+	console.log(updateData,url);
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/custom/updateControl",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
 		data : updateData,
 		success : function(msg) {
+			console.log(msg);
 			var result = msg.result;
+
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	location.reload();
 }
 /** 删除客户信息 **/
 function deleteCustomControl(customIdStr){
@@ -256,7 +264,7 @@ function selectTotalNum(){
 		contentType : "application/json",
 		data : {"customName":'', "province":provinceStr, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
-			//totalNumber = msg.pageVo.totalNumber;
+			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
 		},
 		error: function () {
@@ -274,6 +282,7 @@ function selectProvince(){
 		contentType : "application/json",
 		data : {"provinceName":'', "currentPage":(currentPage-1), "pageSize":1000},
 		success : function(msg) {
+			console.log(msg);
 			list = msg.list;
 			initProvince(list);
 		},

@@ -72,10 +72,10 @@ function initPhotoTable(list, result){
     }else
         alert("init photo table fail.");
 }
-function changeState(state){
+/*function changeState(state){
     if(state == 1) return "审核通过";
     else return "审核失败";
-}
+}*/
 /** 照片信息操作 **/
 function photoInfoHandle(num,obj,action){
     if(action == "addPhoto"){

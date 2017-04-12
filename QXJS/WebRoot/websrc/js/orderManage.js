@@ -50,6 +50,7 @@ function init(){
         }
 	});
 }
+
 function initOrderTable(list, result){
 	if(result == "SUCCESS"){
 		var orderTableStr = "<tr><th>全选<input type='checkbox' class='checkboxAll' id='checkAll'></th>" +
@@ -127,21 +128,25 @@ function selectCustomInfo(customName, province, num, action){
 /** 增加订单信息 **/
 function insertOrderControl(){
 	var addData = $('#addOrderForm').serialize();
+	var url ="/QXJS/order/insertControl";
+	console.log(addData,url);
+
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/order/insertControl",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
+			console.log( msg,result);
 		},
 		error: function () {
             alert("异常！");
         }
 	});
 	endTime = formatDate(0);
-	init();
+	location.reload();
 }
 /** 修改订单信息 **/
 function updateOrderControl(){
@@ -160,7 +165,7 @@ function updateOrderControl(){
         }
 	});
 	endTime = formatDate(0);
-	init();
+	location.reload();
 }
 /** 删除客户信息 **/
 function deleteOrderControl(orderIdStr){
@@ -228,7 +233,7 @@ function fuzzySearch(){
 	$(".tcdPageCode").clearPage({});
 	selectTotalNum();
 //	if(fuzzyOrdername.length == 0) alert("请输入客户名！");return;
-	init();
+
 }
 function pageControl(){
 	 $(".tcdPageCode").createPage({

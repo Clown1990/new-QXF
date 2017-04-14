@@ -135,14 +135,12 @@ function insertUserControl(){
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
-			$('#myModal').toggle();
-			$('.modal-backdrop').toggle();
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	location.reload();
 }
 /** 修改用户信息 **/
 function updateUserControl(){
@@ -155,14 +153,12 @@ function updateUserControl(){
 		data : updateData,
 		success : function(msg) {
 			var result = msg.result;
-			$('.modal-dialog').hide();
-			$('.modal-backdrop').hide();
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	location.reload;
 }
 /** 删除用户信息 **/
 function deleteUserControl(userIdStr){

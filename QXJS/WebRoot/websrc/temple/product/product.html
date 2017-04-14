@@ -128,7 +128,7 @@
                             </div>
                             <input type="file" name="imgPath" id="imgPath" class="storeSetAdPhotoImgUB" /><br>
                             <input type="text" class="form-control" placeholder="产品特点" name="comment" id="comment">
-                            <div id="paramList" class="paramJson">
+                            <div id="paramList" class="">
                             </div>
 	                    </div>
 	                    <div class="modal-footer">
@@ -148,12 +148,12 @@
                     </div>
                     <form class="activityForm" id="updateProductForm" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
-                    		<input type="text" class="form-control" hidden="true" name="productId" id="updateProductId">
+                    		<input type="text" class="form-control" hidden="true" name="productId" id="updateProductId" placeholder="产品ID">
                         	<input type="text" class="form-control" placeholder="套餐编号" name="productCd" id="updateProductCd">
                           <!-- <select class="form-control" name="groupId" id="updateGroupId" hidden="true">
                                 <option value="1">类别</option>
                             </select>-->
-                            <select class="form-control" name="categoryId" id="updateCategoryId" onchange="showParam(1);">
+                            <select class="form-control" name="categoryId" id="updateCategoryId" onchange="showParam1(1);">
                                 <option value="1">套餐</option>
                             </select>
 
@@ -162,7 +162,7 @@
                                 	图片上传
                                 <img src="" />
                             </div>
-                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
+                            <input type="file" name="imgPath" id="updateImgPath" class="storeSetAdPhotoImgUB" /><br>
                             <input type="text" class="form-control" placeholder="产品特点" name="comment" id="updateComment">
                             <div class="" id="updateParamList">
                             </div>

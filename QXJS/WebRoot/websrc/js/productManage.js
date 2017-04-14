@@ -64,7 +64,8 @@ function initProductTable(list, result){
 							"<td hidden='true'>"+ list[i].categoryId +"</td>" +
 							"<td>"+ list[i].categoryCname +"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/productImg/"+list[i].imgPath+"'><img src='/QXJS/source/productImg/"+list[i].imgPath+"' id='img"+(i+1)+"'/></a></td>" +
-							"<td id='paramJson'>"+ list[i].paramJson.replace(/@#/g,"<br>") +"</td>" +
+							"<td id='paramJson' hidden='true'>"+ list[i].paramJson +"</td>" +
+							"<td>"+ list[i].paramJson.replace(/@#/g,"<br>") +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
 							"<td><button type='button' class='btn btn-danger btnSize'  onclick='productInfoHandle("+ (i+1) +",this,\"deleteProduct\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
 								"<button type='button' class='btn btn-warning btnSize' data-toggle='modal' onclick='productInfoHandle("+ (i+1) +",this,\"updateProduct\");' " +
@@ -83,7 +84,8 @@ function productInfoHandle(num,obj,action,groupId){
 		$("#comment").val();
 		$("#imgcolor").val();
 		$("#imgsize").val();
-		$("table").find("tr").eq(num).find("td").eq(8).val();
+		$("table").find("tr").eq(num).find("td").eq(9).val();
+		$("table").find("tr").eq(num).find("td").eq(10).val();
 		//document.getElementById("groupId");
 		groupId =reg.exec(thisURL)[1];
 		console.log(groupId);
@@ -96,15 +98,17 @@ function productInfoHandle(num,obj,action,groupId){
 		var categoryId = $("table").find("tr").eq(num).find("td").eq(5).text();
 		var imgPath = $("table").find("tr").eq(num).find("td").eq(7).text();
 		var paramJson = $("table").find("tr").eq(num).find("td").eq(8).text();
-		var comment = $("table").find("tr").eq(num).find("td").eq(9).text();
-		console.log(paramJson);
+		var comment = $("table").find("tr").eq(num).find("td").eq(10).text();
 		$("#updateProductId").val(productID);
 		$("#updateProductCd").val(productCd);
 		$("#updateProductName").val(productname);
 		//$("#updateGroupId").val(groupId);
 		$("#updateCategoryId").val(categoryId);
 		$("#updateComment").val(comment);
+		$("#updateParamList").val(paramJson);
+		console.log(paramJson);
 		showParam(categoryId);
+		showParam1(categoryId,paramJson)
 	}else if(action == "deleteProduct"){
 		var productID = $("table").find("tr").eq(num).find("td").eq(1).text();
 		deleteProductControl(productID);
@@ -155,52 +159,59 @@ function selectCategoryInfo(){
 }
 /** 增加产品信息 **/
 function insertProductControl(num){
-	var addData = $('#addProductForm').serialize();
+	var addData =$('#addProductForm').serialize();
 	var reg =/(\.(jpg|png))$/;
-	var data = $(".activityForm #imgPath").val();
+	var reg1 = /param1/;
+	var re =/&param\d+=/g;
+	var data = $("#addProductForm #imgPath").val();
 	var imgPath = new Date().getTime() + reg.exec(data)[0];
-	var paramJson ='';
-	var len = $(".paramJson input").length;
-	console.log($(".paramJson input").val().length);
-	for(var i=0;i<len;i++){
+	addData=addData + `&groupId=${groupId}&enable=1&imgPath=${imgPath}`;
+	console.log(addData);
+	addData=addData.replace(reg1,"paramJson");
+	addData=addData.replace(re,"@#");
 
-	}
-	console.log(paramJson);
-
-	var url =`/QXJS/product/insertControl?groupId=${groupId}&enable=1&imgPath=${imgPath}&paramJson=${paramJson}`;
-	console.log(paramJson);
+	var url =`/QXJS/product/insertControl`;
 	$.ajax({
 		type : "POST",
 		url : url,
 		dataType : "json",
-		contentType : "application/json",
 		data : addData,
 		success : function(msg) {
 			console.log(msg);
 			var result = msg.result;
 		},
 		error: function () {
-            alert("异常！");
-        }
+			alert("异常！");
+		}
 	});
 	window.location.href=thisURL;
 }
 /** 修改产品信息 **/
-function updateProductControl(){
-	var updateData = $('#updateManage').serialize();
+function updateProductControl(paramJson){
+	var updateData = $('#updateProductForm').serialize();
+	var reg =/(\.(jpg|png))$/;
+
+	var data = $("#updateProductForm #updateImgPath").val();
+	var imgPath = new Date().getTime() + reg.exec(data)[0];
+	var reg1 = /param1/;
+	var re =/&param\d+=/g;
+	updateData=updateData + `&groupId=${groupId}&enable=1&imgPath=${imgPath}`;
+	updateData=updateData.replace(reg1,"paramJson");
+	updateData=updateData.replace(re,"@#");
+	console.log(updateData);
 	$.ajax({
 		type : "POST",
-		url : `/QXJS/product/updateControl?${groupId}`,
+		url : `/QXJS/product/updateControl`,
 		dataType : "json",
-		contentType : "application/json",
 		data : updateData,
 		success : function(msg) {
-			var result = msg.result;
+			console.log(msg)
 		},
 		error: function () {
             alert("异常！");
         }
 	});
+
 	window.location.href=thisURL;
 }
 /** 删除产品信息 **/
@@ -338,28 +349,18 @@ function jumpToDetailPage(num){
 	url = encodeURI("productDetail.html?"+paramStr);//加码
 	window.location.href = url;
 }
-function showParam(ID){
-	var categoryId = 0;
-	var paramHtmlId = "";
-	if(ID == 0){
-		categoryId = $("#categoryId").val();
-		paramHtmlId = "paramList";
-	}else if(ID == 1){
-		categoryId = $("#updateCategoryId").val();
-		paramHtmlId = "updateParamList";
-	}else {
-		categoryId = ID;
-		paramHtmlId = "updateParamList";
-	}
+function showParam(){
+	var categoryId = $("#categoryId").val();
+	var paramHtmlId = "paramList";
 	$.ajax({
 		type : "GET",
 		url : "/QXJS/param/selectParamByCategoryId",
 		dataType : "json",
-		contentType : "application/json",
 		data : {"categoryId" : categoryId},
 		success : function(msg) {
 			var paramList = msg.list;
 			insertHtmlParam(paramList, paramHtmlId);
+			//console.log(paramList,paramHtmlId,paramJson)
 		},
 		error: function () {
 			alert("异常！");
@@ -368,8 +369,44 @@ function showParam(ID){
 }
 function insertHtmlParam(paramList, paramHtmlID){
 	var paramStr = "";
-	for(var i = 0; i < paramList.length; i++){
-		paramStr += "<input type='text' class='form-control' name='param"+ (i+1) +"' value='"+ paramList[i].cname +":"+ paramList[i].level +"'>";
+		for(var i = 0; i < paramList.length; i++){
+
+			paramStr += "<input type='text' class='form-control' name='param"+ (i+1) +"' id='param"+ (i+1) +"' value='"+ paramList[i].cname +":'>";
+		}
+	$("#"+paramHtmlID).html(paramStr);
+}
+
+function showParam1(categoryId,paramJson){
+	var categoryId = $("#updateCategoryId").val();
+	var paramHtmlId = "updateParamList";
+
+	$.ajax({
+		type : "GET",
+		url : "/QXJS/param/selectParamByCategoryId",
+		dataType : "json",
+		data : {"categoryId" : categoryId},
+		success : function(msg) {
+			var paramList = msg.list;
+			insertHtmlParam1(paramList, paramHtmlId, paramJson);
+		},
+		error: function () {
+			alert("异常！");
+		}
+	});
+}
+function insertHtmlParam1(paramList, paramHtmlID, paramJson){
+	var paramStr = "";
+	var paramJson =paramJson.split('@#');
+	for(var j=0;j<paramJson.length;j++){
+		var cur = paramJson[j];
+		console.log(cur);
+		for(var i = 0; i < paramList.length; i++){
+			var curName = paramList[i].cname;
+			if(cur.localeCompare(curName)==1){
+				paramStr += "<input type='text' class='form-control' name='param"+ (i+1) +"' id='param"+ (i+1) +"' value='"+ cur +"'>";
+				break;
+			}
+		}
 	}
 	$("#"+paramHtmlID).html(paramStr);
 }

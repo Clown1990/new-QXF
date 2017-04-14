@@ -14,7 +14,6 @@
 </head>
 <body>
 <div id="wrapper">
-
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
@@ -56,19 +55,13 @@
                         <li class=""><a href="../store/storeManage.html">店铺管理</a></li>
                     </ul>
                 </li>
-                <!--  <li>
-                      <a href="../qxdp/qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
-                      <ul class="nav nav-second-level">
-                          &lt;!&ndash;<li class=""><a href="../qxdp/qxdp.html">类别管理</a></li>&ndash;&gt;
-                          <li class=""><a href="../qxdp/upLoadFile.html">千禧搭配</a></li>
-                      </ul>
-                  </li>-->
+
                 <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class=""><a href="../product/product.html">产品管理</a></li>
+                        <!--<li class=""><a href="../product/product.html">产品管理</a></li>-->
                         <li class="active"><a href="../product/Group.html">套餐管理</a></li>
-                         <li class=""><a href="../product/param.html">参数管理</a></li>
+                        <li class=""><a href="../product/param.html">参数管理</a></li>
                         <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
                 </li>
@@ -79,7 +72,6 @@
             </ul>
         </div>
     </nav>
-
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
             <!--用户信息栏-->
@@ -152,14 +144,15 @@
                             </div>
                             <div>
                                 <h4>备注:</h4>
-                                <textarea  class="form-control" style="margin: 10px;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
+                                <textarea  class="form-control" style="margin: 10px 0;" rows="5" placeholder="备注" name="comment" id="comment"></textarea>
                             </div>
                         </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" onclick="insertGroupControl();">保存</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary" onclick="insertGroupControl();">保存</button>
-                    </div>
+
                 </div>
             </div>
         </div>

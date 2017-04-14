@@ -1,6 +1,6 @@
 var currentPage = 1;//当前页号
 var totalNumber = 0;//总记录数
-var pageSize = 15;//页面大小
+var pageSize = 99;//页面大小
 var startIndex = 0;//当前页号
 
 var groupId = 0;
@@ -26,8 +26,6 @@ $('.dropout').click(function(){
 	clearStorage(USER_KEY);
 	location.reload();
 });
-
-
 
 /** 初始化照片信息表 **/
 function init(){

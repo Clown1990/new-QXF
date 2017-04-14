@@ -112,21 +112,23 @@ function selectCategoryInfo(num, action){
 /** 增加参数信息 **/
 function insertParamControl(){
 	var addData = $('#addParamForm').serialize();
+	var url = "/QXJS/param/insertControl";
+	console.log(addData,url);
 	$.ajax({
 		type : "GET",
-		url : "/QXJS/param/insertControl",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
 		data : addData,
 		success : function(msg) {
 			var result = msg.result;
-			insertParamResult(result);
+			//insertParamResult(result);
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	location.reload();
 }
 /** 修改参数信息 **/
 function updateParamControl(){
@@ -144,7 +146,7 @@ function updateParamControl(){
             alert("异常！");
         }
 	});
-	init();
+	location.reload();
 }
 /** 删除参数信息 **/
 function deleteParamControl(paramIdStr){

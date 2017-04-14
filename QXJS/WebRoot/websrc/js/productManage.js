@@ -2,7 +2,10 @@ var currentPage = 1;//当前页号
 var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
-var groupId = 1;
+var thisURL = document.location.href;
+var reg = /=(\d+)$/;
+var id =reg.exec(thisURL)[1];
+var groupId = id;
 
 /** 判断是否有User登陆**/
 const USER_KEY = 'user';
@@ -61,7 +64,7 @@ function initProductTable(list, result){
 							"<td hidden='true'>"+ list[i].categoryId +"</td>" +
 							"<td>"+ list[i].categoryCname +"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/productImg/"+list[i].imgPath+"'><img src='/QXJS/source/productImg/"+list[i].imgPath+"' id='img"+(i+1)+"'/></a></td>" +
-							"<td>"+ list[i].paramJson.replace(/@#/g,"<br>") +"</td>" +
+							"<td id='paramJson'>"+ list[i].paramJson.replace(/@#/g,"<br>") +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
 							"<td><button type='button' class='btn btn-danger btnSize'  onclick='productInfoHandle("+ (i+1) +",this,\"deleteProduct\");'>删除</button>&nbsp;&nbsp;&nbsp;" +
 								"<button type='button' class='btn btn-warning btnSize' data-toggle='modal' onclick='productInfoHandle("+ (i+1) +",this,\"updateProduct\");' " +
@@ -73,27 +76,32 @@ function initProductTable(list, result){
 		alert("init product table fail.");
 }
 /** 产品信息操作 **/
-function productInfoHandle(num,obj,action){
+function productInfoHandle(num,obj,action,groupId){
 	if(action == "addProduct"){
-		$("#productName").val("");
-		$("#productCd").val("");
-		$("#comment").val("");
-		$("#imgcolor").val("");
-		$("#imgsize").val("");
-		document.getElementById("groupId").selectedIndex = 0;
+		$("#productName").val();
+		$("#productCd").val();
+		$("#comment").val();
+		$("#imgcolor").val();
+		$("#imgsize").val();
+		$("table").find("tr").eq(num).find("td").eq(8).val();
+		//document.getElementById("groupId");
+		groupId =reg.exec(thisURL)[1];
+		console.log(groupId);
 		document.getElementById("categoryId").selectedIndex = 0;
 	}else if(action == "updateProduct"){
 		var productID = $("table").find("tr").eq(num).find("td").eq(1).text();
 		var productCd = $("table").find("tr").eq(num).find("td").eq(2).text();
 		var productname = $("table").find("tr").eq(num).find("td").eq(3).text();
-		var groupId = $("table").find("tr").eq(num).find("td").eq(4).text();
-		var categoryId = $("table").find("tr").eq(num).find("td").eq(6).text();
-		var paramJson = $("table").find("tr").eq(num).find("td").eq(9).text();
-		var comment = $("table").find("tr").eq(num).find("td").eq(10).text();
+		//var groupId = $("table").find("tr").eq(num).find("td").eq(4).text();
+		var categoryId = $("table").find("tr").eq(num).find("td").eq(5).text();
+		var imgPath = $("table").find("tr").eq(num).find("td").eq(7).text();
+		var paramJson = $("table").find("tr").eq(num).find("td").eq(8).text();
+		var comment = $("table").find("tr").eq(num).find("td").eq(9).text();
+		console.log(paramJson);
 		$("#updateProductId").val(productID);
 		$("#updateProductCd").val(productCd);
 		$("#updateProductName").val(productname);
-		$("#updateGroupId").val(groupId);
+		//$("#updateGroupId").val(groupId);
 		$("#updateCategoryId").val(categoryId);
 		$("#updateComment").val(comment);
 		showParam(categoryId);
@@ -146,29 +154,43 @@ function selectCategoryInfo(){
 	});
 }
 /** 增加产品信息 **/
-function insertProductControl(){
-	var addData = $('#addManage').serialize();
+function insertProductControl(num){
+	var addData = $('#addProductForm').serialize();
+	var reg =/(\.(jpg|png))$/;
+	var data = $(".activityForm #imgPath").val();
+	var imgPath = new Date().getTime() + reg.exec(data)[0];
+	var paramJson ='';
+	var len = $(".paramJson input").length;
+	console.log($(".paramJson input").val().length);
+	for(var i=0;i<len;i++){
+
+	}
+	console.log(paramJson);
+
+	var url =`/QXJS/product/insertControl?groupId=${groupId}&enable=1&imgPath=${imgPath}&paramJson=${paramJson}`;
+	console.log(paramJson);
 	$.ajax({
-		type : "GET",
-		url : "/QXJS/product/insertControl",
+		type : "POST",
+		url : url,
 		dataType : "json",
 		contentType : "application/json",
 		data : addData,
 		success : function(msg) {
+			console.log(msg);
 			var result = msg.result;
 		},
 		error: function () {
             alert("异常！");
         }
 	});
-	init();
+	window.location.href=thisURL;
 }
 /** 修改产品信息 **/
 function updateProductControl(){
 	var updateData = $('#updateManage').serialize();
 	$.ajax({
-		type : "GET",
-		url : "/QXJS/product/updateControl",
+		type : "POST",
+		url : `/QXJS/product/updateControl?${groupId}`,
 		dataType : "json",
 		contentType : "application/json",
 		data : updateData,
@@ -179,7 +201,7 @@ function updateProductControl(){
             alert("异常！");
         }
 	});
-	init();
+	window.location.href=thisURL;
 }
 /** 删除产品信息 **/
 function deleteProductControl(productIdStr){
@@ -291,7 +313,7 @@ function selectTotalNum(){
 		url : "/QXJS/product/selectControl",
 		dataType : "json",
 		contentType : "application/json",
-		data : {"groupId":groupId, "productCd":fuzzyProductCd, "currentPage":(currentPage-1)*pageSize, "pageSize":pageSize},
+		data : {"groupId":groupId, "productCd":fuzzyProductCd, "currentPage":(currentPage-1), "pageSize":pageSize},
 		success : function(msg) {
 			totalNumber = msg.pageVo.totalNumber;
 			pageControl();
@@ -304,10 +326,10 @@ function selectTotalNum(){
 function jumpToDetailPage(num){
 	var productCd = $("table").find("tr").eq(num).find("td").eq(2).text();
 	var productname = $("table").find("tr").eq(num).find("td").eq(3).text();
-	var groupCd = $("table").find("tr").eq(num).find("td").eq(5).text();
-	var categoryCname = $("table").find("tr").eq(num).find("td").eq(7).text();
-	var paramJson = $("table").find("tr").eq(num).find("td").eq(9).text();
-	var comment = $("table").find("tr").eq(num).find("td").eq(10).text();
+	var groupCd = $("table").find("tr").eq(num).find("td").eq(4).text();
+	var categoryCname = $("table").find("tr").eq(num).find("td").eq(6).text();
+	var paramJson = $("table").find("tr").eq(num).find("td").eq(8).text();
+	var comment = $("table").find("tr").eq(num).find("td").eq(9).text();
 	var imgSrc = document.getElementById('img'+num).src;
 	var photo = imgSrc.split("/")[imgSrc.split("/").length-1];
 	photo = decodeURI(photo);
@@ -347,7 +369,7 @@ function showParam(ID){
 function insertHtmlParam(paramList, paramHtmlID){
 	var paramStr = "";
 	for(var i = 0; i < paramList.length; i++){
-		paramStr += "<input type='text' class='form-control' name='param"+ (i+1) +"' value='"+ paramList[i].cname +"："+ paramList[i].level +"'>";
+		paramStr += "<input type='text' class='form-control' name='param"+ (i+1) +"' value='"+ paramList[i].cname +":"+ paramList[i].level +"'>";
 	}
 	$("#"+paramHtmlID).html(paramStr);
 }

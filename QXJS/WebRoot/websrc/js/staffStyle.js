@@ -56,26 +56,14 @@ function initPhotoTable(list, result){
         for(var i = 0;i < list.length;i++){
             photoTableStr += "<tr><td><input type='checkbox' name='checkNum'></td>" +
                 "<td>"+ list[i].photoId +"</td>" +
-               /* "<td hidden='true'>"+ list[i].userId +"</td>" +
-                "<td>"+ list[i].userName +"</td>" +*/
-                /*"<td hidden='true'>"+ list[i].productId +"</td>" +
-                "<td>"+ list[i].productCd +"</td>" +*/
                 "<td> <a class='example2' href='/QXJS/source/photoImg/"+list[i].path+"'><img src='/QXJS/source/photoImg/"+list[i].path+"' /></a></td>" +
                 "<td>"+ list[i].comment +"</td>" +
-                /*"<td hidden='true'>"+ list[i].enable +"</td>" +
-                "<td>"+ changeState(list[i].enable) +"</td>" +*/
                 "<td><button type='button' class='btn btn-danger btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;"
-                /*"<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='photoInfoHandle("+ (i+1) +",this,\"updatePhoto\");' " +
-                "data-target='#myModal1'>修改</button></td></tr>";*/
         }
         $("#photoTable").html(photoTableStr);
     }else
         alert("init photo table fail.");
 }
-/*function changeState(state){
-    if(state == 1) return "审核通过";
-    else return "审核失败";
-}*/
 /** 照片信息操作 **/
 function photoInfoHandle(num,obj,action){
     if(action == "addPhoto"){

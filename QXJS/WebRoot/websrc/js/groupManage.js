@@ -49,7 +49,7 @@ function initGroupTable(list, result){
 							"<td hidden='true'>"+ list[i].seriesId +"</td>" +
 							"<td>"+ list[i].seriesName +"</td>" +
 							"<td>"+ list[i].comment +"</td>" +
-							"<td><button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
+							"<td><button type='button' class='btn btn-info btnSize' data-toggle='modal' onclick='change("+ (i+1) +")'>产品管理</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-primary btnSize' data-toggle='modal' onclick='groupInfoHandle("+ (i+1) +",this,\"updateGroup\");' " +
 				"data-target='#myModal1'>修改</button>&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-danger btnSize'  onclick='groupInfoHandle("+ (i+1) +",this,\"deleteGroup\");'>删除</button>" +
 								"</td></tr>";
 		}
@@ -71,6 +71,7 @@ function groupInfoHandle(num,obj,action){
 	}
 }
 function selectSeriesInfo(num, action){
+	console.log(num);
 	$.ajax({
 		type : "GET",
 		url : "/QXJS/series/selectControl",
@@ -131,7 +132,7 @@ function insertGroupControl(){
 				alert("异常！");
 			}
 		});
-	init();
+	location.reload();
 }
 /** 修改组合信息 **/
 function updateGroupControl(){
@@ -250,4 +251,10 @@ function selectTotalNum(){
 			alert("异常！");
 		}
 	});
+}
+
+function change(num) {
+	var groupID = $("table").find("tr").eq(num).find("td").eq(1).text();
+	window.location.href=`../product/product.html?groupId=${groupID}`;
+
 }

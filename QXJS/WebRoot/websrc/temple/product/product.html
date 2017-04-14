@@ -59,8 +59,8 @@
                 <li class="active">
                     <a href="../product/product.html"><i class="fa fa-th-large"></i> <span class="nav-label">产品管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class="active"><a href="../product/product.html">产品管理</a></li>
-                        <li class=""><a href="../product/Group.html">套餐管理</a></li>
+                        <!--<li class="active"><a href="../product/product.html">产品管理</a></li>-->
+                        <li class="active"><a href="../product/Group.html">套餐管理</a></li>
                         <li class=""><a href="../product/param.html">参数管理</a></li>
                         <li class=""><a href="../product/pictures.html">用户上传图片</a></li>
                     </ul>
@@ -110,31 +110,30 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加参数</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加产品</h4>
                     </div>
-                    <form class="activityForm" id="addProductForm" action="/QXJS/productServlet" enctype="multipart/form-data" method="post">
+                    <form class="activityForm" id="addProductForm" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
-                        	<input type="text" class="form-control" placeholder="产品编号" name="productCd" id="productCd">
-                            <select class="form-control" name="groupId" id="groupId">
+                        	<input type="text" class="form-control" placeholder="套餐编号" name="productCd" id="productCd">
+                           <!--<select class="form-control" name="groupId" id="groupId" hidden="true">
                                 <option value="1">类别</option>
-                            </select>
+                            </select>-->
                             <select class="form-control" name="categoryId" id="categoryId" onchange="showParam(0);">
                                 <option value="1">套餐</option>
                             </select>
-
-                            <input type="text" class="form-control" placeholder="产品名称" name="productName" id="productName">
+                            <input type="text" class="form-control" placeholder="套餐名称" name="productName" id="productName">
                             <div class="storeSetAdPhotoImgU">
                                 	图片上传
                                 <img src="" />
                             </div>
-                            <input type="file" name="file" class="storeSetAdPhotoImgUB" /><br>
+                            <input type="file" name="imgPath" id="imgPath" class="storeSetAdPhotoImgUB" /><br>
                             <input type="text" class="form-control" placeholder="产品特点" name="comment" id="comment">
-                            <div class="" id="paramList">
+                            <div id="paramList" class="paramJson">
                             </div>
 	                    </div>
 	                    <div class="modal-footer">
 	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                        <button type="submit" class="btn btn-primary">保存</button>
+	                        <button type="button" class="btn btn-primary" onclick="insertProductControl()">保存</button>
 	                    </div>
                     </form>
                 </div>
@@ -145,20 +144,20 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel1">修改参数</h4>
+                        <h4 class="modal-title" id="myModalLabel1">修改产品</h4>
                     </div>
-                    <form class="activityForm" id="updateProductForm" action="/QXJS/productServlet" enctype="multipart/form-data" method="post">
+                    <form class="activityForm" id="updateProductForm" enctype="multipart/form-data" method="post">
                     	<div class="modal-body">
                     		<input type="text" class="form-control" hidden="true" name="productId" id="updateProductId">
-                        	<input type="text" class="form-control" placeholder="产品编号" name="productCd" id="updateProductCd">
-                            <select class="form-control" name="groupId" id="updateGroupId">
+                        	<input type="text" class="form-control" placeholder="套餐编号" name="productCd" id="updateProductCd">
+                          <!-- <select class="form-control" name="groupId" id="updateGroupId" hidden="true">
                                 <option value="1">类别</option>
-                            </select>
+                            </select>-->
                             <select class="form-control" name="categoryId" id="updateCategoryId" onchange="showParam(1);">
                                 <option value="1">套餐</option>
                             </select>
 
-                            <input type="text" class="form-control" placeholder="产品名称" name="productName" id="updateProductName">
+                            <input type="text" class="form-control" placeholder="套餐名称" name="productName" id="updateProductName">
                             <div class="storeSetAdPhotoImgU">
                                 	图片上传
                                 <img src="" />
@@ -170,7 +169,7 @@
 	                    </div>
 	                    <div class="modal-footer">
 	                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                        <button type="submit" class="btn btn-primary">保存</button>
+	                        <button type="button" class="btn btn-primary" onclick="updateProductControl()">保存</button>
 	                    </div>
                     </form>
                 </div>

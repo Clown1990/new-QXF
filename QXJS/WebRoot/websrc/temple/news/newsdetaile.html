@@ -3,21 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻动态的详情和公告的详情</title>
+    <title>新闻动态详情</title>
     <style>
-        .content{text-align: center;font-size: 14px;padding: 20px 15px;}
+        html body{
+            word-break: break-all;
+            -ms-word-wrap:break-word;
+            word-wrap:break-word;
+        }
+        .content{
+            width:980px; text-align: center;font-size: 14px;padding: 20px 15px;
+        margin: auto}
         .content h2{font-size: 20px;}
         .time {color: #666;font-size: 12px;}
-        .contentC {color: #666;text-align: left;text-indent: 2em;line-height: 20px;}
-        .contentC img {width: 100%;max-width: 600px;text-align: center;display: block;margin: 10px auto;}
+        .contentC {
+            height:100%;
+            width:100%;
+            color: #666;text-align: left;text-indent: 2em;line-height: 20px;}
+        .contentC img { width: 100%; max-width: 500px;text-align: center;display: block;margin: 10px auto;}
     </style>
 </head>
 <body>
 <div class="content">
-    <h2 id="title">新闻名新闻名新闻名新闻名新闻名新闻名</h2>
-    <p class="time" id="time">2015年6月8日</p>
+    <h2 id="title"></h2>
+    <h4 class="time" id="time"></h4>
     <div class="contentC" id="content">
-        内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+
         <img src="">
     </div>
 </div>
@@ -58,5 +68,4 @@ function formatDate(timeStamp){
 }
 </script>
 </body>
-
 </html>

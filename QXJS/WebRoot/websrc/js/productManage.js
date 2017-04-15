@@ -3,10 +3,14 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 var thisURL = document.location.href;
-var reg = /=(\d+)$/;
-var id =reg.exec(thisURL)[1];
-var groupId = id;
-
+var reg = /([^?#&=]+)=([^?#&=]+)/g;
+var obj ={};
+thisURL.replace(reg,function () {
+	obj[arguments[1]] = [arguments[2]]
+});
+var groupId = obj.groupId.join("");
+var groupCd = obj.groupCd.join("");
+console.log(groupId,groupCd);
 /** 判断是否有User登陆**/
 const USER_KEY = 'user';
 let  user = getStorage(USER_KEY);
@@ -60,7 +64,7 @@ function initProductTable(list, result){
 							"<td>"+ list[i].productCd +"</td>" +
 							"<td>"+ list[i].productName +"</td>" +
 							/*"<td hidden='true'>"+ list[i].groupId +"</td>" +*/
-							"<td>"+ list[i].groupCd +"</td>" +
+							"<td>"+ groupCd +"</td>" +
 							"<td hidden='true'>"+ list[i].categoryId +"</td>" +
 							"<td>"+ list[i].categoryCname +"</td>" +
 							"<td> <a class='example2' href='/QXJS/source/productImg/"+list[i].imgPath+"'><img src='/QXJS/source/productImg/"+list[i].imgPath+"' id='img"+(i+1)+"'/></a></td>" +

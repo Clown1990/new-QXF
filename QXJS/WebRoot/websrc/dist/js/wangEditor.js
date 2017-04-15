@@ -6334,11 +6334,11 @@ _e(function (E, $) {
                     var html = '<img src="' + resultText + '" style="max-width:100%;"/>';
                     editor.command(null, 'insertHtml', html);
                     		
-                    E.log('已插入图片，地址 ' + resultText);
+                    E.log('已插入图片，地址 ' + resultText );
                     img = null;
                 };
                 img.onerror = function () {
-                    E.error('使用返回的结果获取图片，发生错误。请确认以下结果是否正确：' + resultText);
+                    E.error('使用返回的结果获取图片，发生错误。请确认以下结果是否正确：' + resultText );
                     img = null;
                 };
                 img.src = resultText;
@@ -6616,7 +6616,6 @@ _e(function (E, $) {
         // 如果不支持html5的文档操作，直接返回
         return;
     }
-
     // 构造函数
     var UploadFile = function (opt) {
         this.editor = opt.editor;
@@ -6648,7 +6647,7 @@ _e(function (E, $) {
         var acceptTpl = fileAccept ? 'accept="' + fileAccept + '"' : '';
         var multiple = self.multiple;
         var multipleTpl = multiple ? 'multiple="multiple"' : '';
-        var $input = $('<input type="file" ' + acceptTpl + ' ' + multipleTpl + '/>');
+        var $input = $('<input type="file" ' + acceptTpl + ' ' + multipleTpl + ' id="imgName" />');
         var $container = $('<div style="visibility:hidden;"></div>');
 
         $container.append($input);

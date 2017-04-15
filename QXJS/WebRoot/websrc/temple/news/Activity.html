@@ -214,7 +214,7 @@
 <script type="text/javascript">
     var editor = new wangEditor('editor-trigger');
     // 上传图片
-    editor.config.uploadImgUrl = '/QXJS/uploadServlet';
+    editor.config.uploadImgUrl = `/QXJS/uploadServlet?type=9&imgName=${new Date().getTime()}.jpg`;
     // 表情显示项
     editor.config.emotionsShow = 'value';
     // onchange 事件
@@ -249,7 +249,7 @@
 //-------------------update--------------------------------
     var editorA = new wangEditor('editor-triggerA');
     // 上传图片
-    editorA.config.uploadImgUrl = '/QXJS/uploadServlet';
+    editorA.config.uploadImgUrl = `/QXJS/uploadServlet?type=9&imgName=${new Date().getTime()}.jpg`;
     // 表情显示项
     editorA.config.emotionsShow = 'value';
     // onchange 事件

@@ -255,6 +255,7 @@ function selectTotalNum(){
 
 function change(num) {
 	var groupID = $("table").find("tr").eq(num).find("td").eq(1).text();
-	window.location.href=`../product/product.html?groupId=${groupID}`;
+	var groupCD = $("table").find("tr").eq(num).find("td").eq(2).text();
+	window.location.href=`../product/product.html?groupId=${groupID}&groupCd=${groupCD}`;
 
 }

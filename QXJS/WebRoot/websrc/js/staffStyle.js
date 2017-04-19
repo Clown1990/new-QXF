@@ -36,7 +36,6 @@ function init(){
         contentType : "application/json",
         data : {"productCd":fuzzyProductCd, "role":0,"currentPage":(currentPage-1), "pageSize":pageSize},
         success : function(msg) {
-            console.log(msg);
             var list = msg.list;
             var result = msg.result;
             //totalNumber = msg.pageVo.totalNumber;
@@ -56,7 +55,7 @@ function initPhotoTable(list, result){
         for(var i = 0;i < list.length;i++){
             photoTableStr += "<tr><td><input type='checkbox' name='checkNum'></td>" +
                 "<td>"+ list[i].photoId +"</td>" +
-                "<td> <a class='example2' href='/QXJS/source/photoImg/"+list[i].path+"'><img src='/QXJS/source/photoImg/"+list[i].path+"' /></a></td>" +
+                "<td> <a class='example2' href='/QXJS/source/companyStuffImg/"+list[i].path+"'><img src='/QXJS/source/companyStuffImg/"+list[i].path+"' /></a></td>" +
                 "<td>"+ list[i].comment +"</td>" +
                 "<td><button type='button' class='btn btn-danger btnSize'  onclick='photoInfoHandle("+ (i+1) +",this,\"deletePhoto\");'>删除</button>&nbsp;&nbsp;&nbsp;"
         }
@@ -134,7 +133,7 @@ function formSubmitAjax() {
     var reg =/(\.(jpg|png))$/;
     var re = /([^?#&=]+)=([^?#&=]+)/g;
     var data =$('.activityForm input').val();
-    var url =`../../../uploadServlet/?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=2`;
+    var url =`../../../uploadServlet?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=2`;
 
     var path = re.exec(url)[2];
     var comment = $('#comment').val();
@@ -144,21 +143,13 @@ function formSubmitAjax() {
         path,
         comment
     };
-    if(!reg.test(data)){
-        alert('仅支持jpg和png格式图片 填写正确格式')
-    }
-    if(data==''){
-        alert('请上传图片！')
-    }
-    var options ={
+    var options =({
         url:url,
-        type:'GET',
-        data:data,
+        type:'POST',
         dataType:'json',
         async:true,
         success:formSubmitAjaxCallback(info)
-
-    };
+    });
 
     $('.activityForm').ajaxSubmit(options).submit();
 }
@@ -169,7 +160,7 @@ function formSubmitAjaxCallback(info) {
         url:url,
         type:'GET',
         dataType:'json',
-        data:info,
+        contentType:"multipart/form-data",
         success(result){
             console.log(result)
         }

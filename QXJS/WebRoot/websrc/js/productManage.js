@@ -162,7 +162,7 @@ function selectCategoryInfo(){
 	});
 }
 /** 增加产品信息 **/
-function insertProductControl(num){
+function insertProductControl(){
 	var addData =$('#addProductForm').serialize();
 	var reg =/(\.(jpg|png))$/;
 	var reg1 = /param1/;

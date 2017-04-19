@@ -62,7 +62,7 @@ function initPhotoTable(list, result){
                 "<td>"+ list[i].userName +"</td>" +
                 "<td hidden='true'>"+ list[i].productId +"</td>" +
                 "<td>"+ list[i].productCd +"</td>" +*/
-                "<td> <a class='example2' href='/QXJS/source/photoImg/"+list[i].path+"'><img src='/QXJS/source/photoImg/"+list[i].path+"' /></a></td>" +
+                "<td> <a class='example2' href='/QXJS/source/companyHonourImg/"+list[i].path+"'><img src='/QXJS/source/companyHonourImg/"+list[i].path+"' /></a></td>" +
                 "<td>"+ list[i].comment +"</td>" +
                 /*"<td hidden='true'>"+ list[i].enable +"</td>" +
                 "<td>"+ changeState(list[i].enable) +"</td>" +*/
@@ -83,7 +83,6 @@ function photoInfoHandle(num,obj,action){
     if(action == "addPhoto"){
         $("#comment").val("");
         $("#enable").val("");
-        //document.getElementById("productId").selectedIndex = 0;
     }else if(action == "updatePhoto"){
         var photoID = $("table").find("tr").eq(num).find("td").eq(1).text();
         var userId = $("table").find("tr").eq(num).find("td").eq(2).text();
@@ -164,15 +163,14 @@ function formSubmitAjax() {
     if(data==''){
         alert('请上传图片！')
     }
-    var options ={
+    var options =({
         url:url,
-        type:'GET',
-        data:data,
+        type:'POST',
         dataType:'json',
         async:true,
         success:formSubmitAjaxCallback(info)
 
-    };
+    });
 
     $('.activityForm').ajaxSubmit(options).submit();
 }
@@ -183,7 +181,6 @@ function formSubmitAjaxCallback(info) {
         url:url,
         type:'GET',
         dataType:'json',
-        data:info,
         success(result){
             console.log(result)
         }

@@ -117,85 +117,6 @@ function selectProvinceInfo(num, action){
         }
 	});
 }
-/*
-
-/!** 增加店铺信息 **!/
-function insertStoreControl(){
-	var addData = $('#addStoreForm').serialize();
-	$.ajax({
-		type : "GET",
-		url : "/QXJS/store/insertControl",
-		dataType : "json",
-		contentType : "application/json",
-		data : addData,
-		success : function(msg) {
-			var result = msg.result;
-		},
-		error: function () {
-            alert("异常！");
-        }
-	});
-	init();
-}
-/!** 修改店铺信息 **!/
-function updateStoreControl(){
-	var updateData = $('#updateStoreForm').serialize();
-	$.ajax({
-		type : "GET",
-		url : "/QXJS/store/updateControl",
-		dataType : "json",
-		contentType : "application/json",
-		data : updateData,
-		success : function(msg) {
-			var result = msg.result;
-		},
-		error: function () {
-            alert("异常！");
-        }
-	});
-	init();
-}
-
-*/
-
-/** 添加照片 **/
-/*function formSubmitAjax() {
-	var reg =/(\.(jpg|png))$/;
-	var re = /([^?#&=]+)=([^?#&=]+)/g;
-	var data =$('.activityForm #img').val();
-	var url =`../../../storeServlet?imgName=${new Date().getTime() + reg.exec(data)[0]}&type=11`;
-
-	var img = re.exec(url)[2];
-	var provinceId  = $('#provinceId').val();
-	var address = $('#address').val();
-	var storeName =$('#storeName').val();
-	var phone =$('#phone').val();
-	//var img =$('#img').val();
-	console.log(provinceId,address,storeName,phone,img);
-
-	var info ={
-		provinceId,
-		address,
-		storeName,
-		phone,
-		img
-	};
-	if(!reg.test(data)){
-		alert('仅支持jpg和png格式图片 填写正确格式')
-	}
-	if(data==''){
-		alert('请上传图片！')
-	}
-	var options ={
-		url:url,
-		type:'GET',
-		data:data,
-		dataType:'json',
-		async:true,
-		success:formSubmitAjaxCallback(info)
-	};
-	$('.activityForm').ajaxSubmit(options).submit();
-}*/
 function formSubmitAjaxCallback() {
 	var img = '';
 	var provinceId  = $('#provinceId').val();
@@ -203,8 +124,6 @@ function formSubmitAjaxCallback() {
 	var storeName =$('#storeName').val();
 	var phone =$('#phone').val();
 	//var img =$('#img').val();
-	console.log(provinceId,address,storeName,phone,img);
-
 	var info ={
 		provinceId,
 		address,

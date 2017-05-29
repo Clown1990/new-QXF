@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>员工风采</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/02.png">
-    <link rel="stylesheet" type="text/css" href="css/zzsc.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">-->
 </head>
 <body>
 <header class="header">
@@ -35,7 +36,7 @@
                 <ol class="hide-box">
                     <li><a href="brand2.html">企业概况</a></li>
                     <li><a href="brand1.html">千禧记事</a></li>
-                    <li><a href="brand-4.html">企业荣誉</a></li>
+                    <li><a href="brand4.html">企业荣誉</a></li>
                     <li><a href="brand5.html">品牌形象</a></li>
                     <li><a href="brand3.html">员工风采</a></li>
                 </ol>
@@ -52,43 +53,50 @@
         </ul>
     </div>
 </nav>
-<div style="text-align:center; clear:both;"></div>
-<div id="gallery" class="ad-gallery">
-    <div class="ad-image-wrapper"></div>
-    <div class="ad-controls"></div>
-    <div class="ad-nav">
-        <div class="ad-thumbs">
-            <ul class="ad-thumb-list" id="list">
-                <!--<li>
-                    <a href="images/staff1.png">
-                        <img src="images/staff1.png" class="image0">
-                    </a>
-                </li>-->
-            </ul>
+<div class="swiper-container gallery-top brand5 brand3 ">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;">
+            <img src="images/brandImg1.png" alt="">
+        </div>
+    </div>
+    Add Arrows
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+</div>
+<div class="swiper-container gallery-thumbs brand5 brand3 bottom">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size:
+        contain;">
+
         </div>
     </div>
 </div>
-<div style="text-align:center; clear:both;"></div>
+
+
 <footer class="footer">
-    Copyright&nbsp;by &nbsp;&nbsp;成都千禧家私&nbsp;All&nbsp;rights&nbsp;reserved.2010&nbsp;&nbsp;设计制作|家具导购网 &nbsp;苏ICP备12002000号-2
+    Copyright&nbsp;by &nbsp;&nbsp;成都千禧家私&nbsp;All&nbsp;rights&nbsp;reserved.2017&nbsp;&nbsp;设计制作|家具导购网
+    &nbsp;苏ICP备12002000号-2
 </footer>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.ad-gallery.js"></script>
-<script type="text/javascript" src="js/zzsc.js"></script>
+<!--<script type="text/javascript" src="js/jquery.ad-gallery.js"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>-->
+<script src="js/swiper.jquery.js"></script>
 <script>
-
     $.get('http://www.qianxichina.cn/QXJS/photo/selectControl?type=2', function (data) {
         var shtml = '';
         var list =  data.list;
-        for(var i = 0; i < list.length; i ++){
+       /* for(var i = 0; i < list.length; i ++){
             shtml += `<li>
                             <a href="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}">
                             <img src="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}" class='${i}' alt="${list[i].content}">
                             </a>
                         </li>`;
-        };
+        };*/
+       for(var i =0 ; i<list.length;i++){
+           shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+       }
         $('#list').append(shtml)
-    })
+    });
 //    $.ajax({
 //        url:'http://www.qianxichina.cn/QXJS/photo/selectControl?type=2',
 //        dataType:'jsonp',
@@ -97,6 +105,27 @@
 //            console.log(result)
 //        }
 //    })
+
+    var galleryTop = new Swiper('.gallery-top', {
+        nextButton:'.swiper-button-next',
+        prevButton:'.swiper-button-prev',
+        spaceBetween: 10,
+        loop:true,
+        loopedSlides: 9, //looped slides should be the same
+        autoplay:4000
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        centeredSlides: true,
+        touchRatio: 0.2,
+        loop:true,
+        loopedSlides: 9, //looped slides should be the same
+        slideToClickedSlide: true,
+        autoplay:4000
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
 
 
 </script>

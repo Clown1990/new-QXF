@@ -23,15 +23,15 @@
                 <a href="" class="weChat"><img src="images/wechat_24px_1164443_easyicon.net.png" alt=""></a>
                 <a href="" class="weBo"><img src="images/sina_weibo_24px_1164436_easyicon.net.png" alt=""></a>
             </div>
-            <div class="QR"><img src="images/01.png" alt=""></div>
+            <div class="QR"><s>---服务热线---</s><span>028-36069196</span></div>
         </div>
     </section>
 </header>
 <nav>
     <div>
-        <ul id="navUl">
+        <ul id="navUl clearfix">
             <li><a href="index.html">首页</a></li>
-            <li style=" position: relative;">
+            <li>
                 <a href="javascript:;">企业品牌<i></i></a>
                 <ol class="hide-box">
                     <li><a href="brand2.html">企业概况</a></li>
@@ -42,33 +42,24 @@
                 </ol>
             </li>
             <li><a href="process.html">实力工艺</a></li>
-            <li style=" position: relative;">
-                <a href="#">千禧百态<i></i></a>
-                <ol class="hide-box">
-                    <li><a href="QXnews.html">新闻动态</a></li>
-                    <!--<li><a href="QXactivity.html">活动公告</a></li>-->
-                </ol>
+            <li>
+                <a href="QXnews.html">新闻动态</a>
             </li>
             <li><a href="contactUs.html">联系我们</a></li>
         </ul>
     </div>
 </nav>
 <div class="swiper-container gallery-top brand5 brand3 ">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;">
-            <img src="images/brandImg1.png" alt="">
-        </div>
+    <div class="swiper-wrapper" id="list">
+        <!--<div class="swiper-slide" style="background: url('images/22.png')no-repeat center; background-size: contain;"></div>-->
     </div>
-    Add Arrows
+    <!--  Add Arrows-->
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
 </div>
 <div class="swiper-container gallery-thumbs brand5 brand3 bottom">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size:
-        contain;">
-
-        </div>
+    <div class="swiper-wrapper" id="little-list">
+        <!--<div class="swiper-slide" style="background: url('images/22.png')no-repeat center; background-size:contain;"></div>-->
     </div>
 </div>
 
@@ -82,29 +73,17 @@
 <script type="text/javascript" src="js/zzsc.js"></script>-->
 <script src="js/swiper.jquery.js"></script>
 <script>
-    $.get('http://www.qianxichina.cn/QXJS/photo/selectControl?type=2', function (data) {
+    $.get('http://www.qianxichina.cn/QXJS/photo/downloadData', function (data) {
         var shtml = '';
         var list =  data.list;
-       /* for(var i = 0; i < list.length; i ++){
-            shtml += `<li>
-                            <a href="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}">
-                            <img src="http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}" class='${i}' alt="${list[i].content}">
-                            </a>
-                        </li>`;
-        };*/
-       for(var i =0 ; i<list.length;i++){
-           shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}')no-repeat center; background-size: contain;"></div>`
-       }
-        $('#list').append(shtml)
+        if(list.path == 2){
+            for(var i =0 ; i<list.length;i++){
+                shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyStuff/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+            }
+            $('#list').append(shtml);
+            $('#little-list').append(shtml);
+        }
     });
-//    $.ajax({
-//        url:'http://www.qianxichina.cn/QXJS/photo/selectControl?type=2',
-//        dataType:'jsonp',
-//        jsonp:'jsoncallback',
-//        success:function (result) {
-//            console.log(result)
-//        }
-//    })
 
     var galleryTop = new Swiper('.gallery-top', {
         nextButton:'.swiper-button-next',

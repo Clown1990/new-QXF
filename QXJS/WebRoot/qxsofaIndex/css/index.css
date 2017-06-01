@@ -161,7 +161,7 @@ nav div ul li {
     float: left;
 }
 nav div ul li a {
-    padding: 0 30px;
+    margin: 0 20px;
     font-size: 16px;
     line-height: 40px;
     font-weight: bolder;
@@ -199,12 +199,14 @@ nav div ul li:hover:nth-child(2) ol {
     transition: height 1s linear;
 }
 nav div ul li:hover:nth-child(2) ol li {
-    width: 121px;
+    width: 101px;
     float: left;
     height: 40px;
 }
 nav div ul li:hover:nth-child(2) ol li a{
-    font-size:14px;
+    font-size:10px;
+    margin:0px 10px;
+    width:80px;
 }
 nav div ul li:hover ol {
     display: block;
@@ -279,7 +281,7 @@ nav div ul .active {
 .brand4 .gallery-thumbs .swiper-slide img{
     height: 300px;
     width:250px;
-    background: contain;
+    background-size: contain;
 }
 
 .hide-box li {

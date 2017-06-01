@@ -48,28 +48,28 @@
     </div>
 </nav>
 <div class="swiper-container gallery-top brand5 ">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;"></div>
+    <div class="swiper-wrapper" id="list">
+       <!-- <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg2.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg3.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg5.png')no-repeat center; background-size:
         contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg6.png')no-repeat center; background-size:
-        contain;"></div>
+        contain;"></div>-->
     </div>
-    Add Arrows
+    <!--Add Arrows-->
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
 </div>
 <div class="swiper-container gallery-thumbs brand5 bottom">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;"></div>
+    <div class="swiper-wrapper" id="little-list">
+       <!-- <div class="swiper-slide" style="background: url('images/brandImg1.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg2.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg3.png')no-repeat center; background-size: contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg5.png')no-repeat center; background-size:
         contain;"></div>
         <div class="swiper-slide" style="background: url('images/brandImg6.png')no-repeat center; background-size:
-        contain;"></div>
+        contain;"></div>-->
     </div>
 </div>
 
@@ -100,6 +100,18 @@
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
+
+    $.get('http://www.qianxichina.cn/QXJS/photo/downloadData', function (data) {
+        var shtml = '';
+        var list =  data.list;
+        if(list.path == 4){
+            for(var i =0 ; i<list.length;i++){
+                shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyBrand/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+            }
+            $('#list').append(shtml);
+            $('#little-list').append(shtml);
+        }
+    });
 
 </script>
 </body>

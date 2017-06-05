@@ -112,13 +112,14 @@
     $.get('http://www.qianxichina.cn/QXJS/photo/downloadData', function (data) {
         var shtml = '';
         var list =  data.list;
-       if(list.path == 3){
            for(var i =0 ; i<list.length;i++){
-               shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyHoner/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+               var type = list[i].type;
+               if(type == 3){
+                   shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyHonerImg/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+               }
            }
            $('#list').append(shtml);
            $('#little-list').append(shtml);
-       }
     });
 
 </script>

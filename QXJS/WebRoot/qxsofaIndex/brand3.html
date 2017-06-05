@@ -76,13 +76,15 @@
     $.get('http://www.qianxichina.cn/QXJS/photo/downloadData', function (data) {
         var shtml = '';
         var list =  data.list;
-        if(list.path == 2){
-            for(var i =0 ; i<list.length;i++){
-                shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyStuff/${list[i].path}')no-repeat center; background-size: contain;"></div>`
+        for(var i =0 ; i<list.length;i++){
+            var type = list[i].type;
+            if(type == 2){
+                shtml+=`<div class="swiper-slide" style="background: url('http://www.qianxichina.cn/QXJS/source/companyStuffImg/${list[i].path}')no-repeat center; background-size: contain;"></div>`
             }
-            $('#list').append(shtml);
-            $('#little-list').append(shtml);
         }
+        $('#list').append(shtml);
+        $('#little-list').append(shtml);
+
     });
 
     var galleryTop = new Swiper('.gallery-top', {

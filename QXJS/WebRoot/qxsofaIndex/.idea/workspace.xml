@@ -25,12 +25,12 @@
       <file leaf-file-name="brand4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/brand4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
+            <state relative-caret-position="360">
+              <caret line="118" column="26" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1496314053095" expanded="true" signature="5823:5951" ph="..." />
+                <marker date="1496660383756" expanded="true" signature="5870:6001" ph="..." />
               </folding>
             </state>
           </provider>
@@ -39,39 +39,12 @@
       <file leaf-file-name="brand5.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/brand5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="48" selection-end-column="6" />
+            <state relative-caret-position="418">
+              <caret line="118" column="57" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1496314053150" expanded="true" signature="4822:4950" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brand3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/brand3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="50" selection-end-column="6" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1496314053121" expanded="true" signature="3343:3471" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brand1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/brand1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1496660383704" expanded="true" signature="4854:4985" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,32 +53,29 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="197" column="88" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+            <state relative-caret-position="4068">
+              <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
               <folding>
                 <element signature="e#3673#3808#0" expanded="false" />
                 <element signature="e#3815#3875#0" expanded="false" />
-                <element signature="e#3901#3937#0" expanded="false" />
-                <element signature="e#3963#4004#0" expanded="false" />
-                <element signature="e#4838#4858#0" expanded="false" />
-                <element signature="e#4874#4921#0" expanded="false" />
-                <element signature="e#4943#4966#0" expanded="false" />
-                <element signature="e#4974#5052#0" expanded="false" />
-                <element signature="e#5063#5163#0" expanded="false" />
-                <element signature="e#5177#5284#0" expanded="false" />
-                <element signature="e#5300#5324#0" expanded="false" />
-                <element signature="e#5347#5369#0" expanded="false" />
-                <marker date="1496314568001" expanded="true" signature="4020:4041" ph="{...}" />
+                <element signature="e#4881#4901#0" expanded="false" />
+                <element signature="e#4917#4964#0" expanded="false" />
+                <element signature="e#4986#5009#0" expanded="false" />
+                <element signature="e#5017#5095#0" expanded="false" />
+                <element signature="e#5106#5206#0" expanded="false" />
+                <element signature="e#5220#5327#0" expanded="false" />
+                <element signature="e#5343#5367#0" expanded="false" />
+                <element signature="e#5390#5412#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactUs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contactUs.html">
+      <file leaf-file-name="brand1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brand1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            <state relative-caret-position="-90">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -114,28 +84,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/process.html">
+      <file leaf-file-name="brand3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/brand3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+            <state relative-caret-position="990">
+              <caret line="91" column="55" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1496660383646" expanded="true" signature="3375:3506" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QXnews.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/QXnews.html">
+      <file leaf-file-name="brand2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brand2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="78" column="81" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="954">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,15 +152,15 @@
         <option value="$PROJECT_DIR$/brand2.html" />
         <option value="$PROJECT_DIR$/QXactivity.html" />
         <option value="$PROJECT_DIR$/QXactivityDetail.html" />
-        <option value="$PROJECT_DIR$/brand3.html" />
-        <option value="$PROJECT_DIR$/brand5.html" />
-        <option value="$PROJECT_DIR$/brand4.html" />
         <option value="$PROJECT_DIR$/brand1.html" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/contactUs.html" />
         <option value="$PROJECT_DIR$/process.html" />
         <option value="$PROJECT_DIR$/js/qx.js" />
         <option value="$PROJECT_DIR$/QXnews.html" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/brand3.html" />
+        <option value="$PROJECT_DIR$/brand5.html" />
+        <option value="$PROJECT_DIR$/brand4.html" />
       </list>
     </option>
   </component>
@@ -381,11 +349,14 @@
       <workItem from="1496059039271" duration="5000" />
       <workItem from="1496059053360" duration="2490000" />
       <workItem from="1496313159942" duration="1795000" />
+      <workItem from="1496318396567" duration="835000" />
+      <workItem from="1496365307111" duration="13000" />
+      <workItem from="1496659874086" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124851000" />
+    <option name="totallyTimeSpent" value="126215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -627,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brand2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/zzsc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -641,83 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brand4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1496314053095" expanded="true" signature="5823:5951" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brand5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="48" selection-end-column="6" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1496314053150" expanded="true" signature="4822:4950" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brand1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="197" column="88" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
-          <folding>
-            <element signature="e#3673#3808#0" expanded="false" />
-            <element signature="e#3815#3875#0" expanded="false" />
-            <element signature="e#3901#3937#0" expanded="false" />
-            <element signature="e#3963#4004#0" expanded="false" />
-            <element signature="e#4838#4858#0" expanded="false" />
-            <element signature="e#4874#4921#0" expanded="false" />
-            <element signature="e#4943#4966#0" expanded="false" />
-            <element signature="e#4974#5052#0" expanded="false" />
-            <element signature="e#5063#5163#0" expanded="false" />
-            <element signature="e#5177#5284#0" expanded="false" />
-            <element signature="e#5300#5324#0" expanded="false" />
-            <element signature="e#5347#5369#0" expanded="false" />
-            <marker date="1496314568001" expanded="true" signature="4020:4041" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contactUs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="180">
           <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brand3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="50" selection-end-column="6" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1496314053121" expanded="true" signature="3343:3471" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,10 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,17 +623,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QXnews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="78" column="81" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+        <state relative-caret-position="148">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4068">
+          <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+          <folding>
+            <element signature="e#3673#3808#0" expanded="false" />
+            <element signature="e#3815#3875#0" expanded="false" />
+            <element signature="e#4881#4901#0" expanded="false" />
+            <element signature="e#4917#4964#0" expanded="false" />
+            <element signature="e#4986#5009#0" expanded="false" />
+            <element signature="e#5017#5095#0" expanded="false" />
+            <element signature="e#5106#5206#0" expanded="false" />
+            <element signature="e#5220#5327#0" expanded="false" />
+            <element signature="e#5343#5367#0" expanded="false" />
+            <element signature="e#5390#5412#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="118" column="26" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496660383756" expanded="true" signature="5870:6001" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="118" column="57" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496660383704" expanded="true" signature="4854:4985" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brand3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="91" column="55" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496660383646" expanded="true" signature="3375:3506" ph="..." />
           </folding>
         </state>
       </provider>

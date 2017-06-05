@@ -234,12 +234,15 @@ nav div ul .active {
 }
 .index{
     width: 100%;
-    height: 702px;
+    height: 802px;
     margin-top:-2px;
 }
 .index .swiper-slide img {
     width:100%;
     height:100%;
+}
+.brand2 .swiper-slide{
+    height:802px;
 }
 .brand2 .swiper-slide img{
     display: block;
@@ -382,8 +385,8 @@ nav div ul .active {
 }
 
 .firstRow ul li .TimeDescribe {
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 8px;
+    line-height: 17px;
 }
 
 .secondRow ul li.thirdLi {

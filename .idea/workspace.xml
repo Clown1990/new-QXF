@@ -2,24 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ae0b64-2689-493b-a553-4dcdff218e7b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/10s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/11s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/12s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/1s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/2s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/3s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/4s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/5s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/6s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/7s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/8s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/websrc/img/gallery/9s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/aopalliance.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/asm-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/backport-util-concurrent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/c3p0-0.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/cfgatewayadapter.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/cglib-2.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-codec-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-httpclient-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/commons-logging.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/concurrent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-acrobat.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-messaging-common.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-messaging-data-req.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-messaging-opt.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-messaging-proxy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-messaging-remoting.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/flex-rds-server.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jackson-core-lgpl-1.8.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jackson-mapper-lgpl-1.8.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/javassist-3.17.1-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jsp-api-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/junit-4.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/log4j-api-2.0-beta9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/mybatis-3.2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.6-bin.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/servlet-api-3.0-alpha-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/slf4j-api-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-aop-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-aspects-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-beans-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-context-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-context-support-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-core-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-expression-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-flex-core-1.5.0.M1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-instrument-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-instrument-tomcat-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-jdbc-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-jms-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-messaging-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-orm-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-oxm-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-test-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-tx-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-web-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-webmvc-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-webmvc-portlet-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/spring-websocket-4.0.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/lib/xalan.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/.idea/workspace.xml" afterPath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/brand1.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/brand1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/contactUs.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/contactUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/css/index.css" afterPath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/index.html" afterPath="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/index.html" />
     </list>
     <ignored path="QXJS_Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,15 +89,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="71" column="36" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1652">
+              <caret line="378" column="26" selection-start-line="378" selection-start-column="20" selection-end-line="378" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brand1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/brand1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="128" column="102" selection-start-line="128" selection-start-column="102" selection-end-line="128" selection-end-column="102" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/Activity.html" />
-        <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/temple/order.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/WEB-INF/websrc/js/order.js" />
         <option value="$PROJECT_DIR$/QXJS/src/com/qxjs/common/JMFastJsonHttpMessageConverter.java" />
         <option value="$PROJECT_DIR$/QXJS/src/com/qxjs/common/GroupedResourceBundleMessageSource.java" />
@@ -132,6 +192,8 @@
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/temple/store/storeManage.html" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/style.css" />
         <option value="$PROJECT_DIR$/QXJS/WebRoot/websrc/css/css.css" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/css/index.css" />
+        <option value="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/brand1.html" />
       </list>
     </option>
   </component>
@@ -148,11 +210,14 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/QXJS/WebRoot/websrc/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="15" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -180,6 +245,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,9 +296,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-QXF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-QXF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QXJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qxsofaIndex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -243,7 +352,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QX/qianxiSofa" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -383,17 +492,18 @@
       <workItem from="1490152102691" duration="5489000" />
       <workItem from="1495355157717" duration="64000" />
       <workItem from="1495546426151" duration="41000" />
+      <workItem from="1496317619702" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77986000" />
+    <option name="totallyTimeSpent" value="78736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="15" width="1382" height="784" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18898809" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -737,28 +847,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4293">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1652">
+          <caret line="378" column="26" selection-start-line="378" selection-start-column="20" selection-end-line="378" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/brand1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QXJS/WebRoot/qxsofaIndex/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="71" column="36" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="128" column="102" selection-start-line="128" selection-start-column="102" selection-end-line="128" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>

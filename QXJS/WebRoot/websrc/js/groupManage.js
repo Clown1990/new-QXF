@@ -3,20 +3,20 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
-/** 判断是否有User登陆**/
-const USER_KEY = 'user';
-let  user = getStorage(USER_KEY);
-user =JSON.parse(user);
-
-function getStorage(key){
-	return localStorage.getItem(key)
-}
-
-if(user){
-	$('.dropdown span').text(`您好! ${user}`)
-}else{
-	window.location.href = "../login.html";
-}
+// /** 判断是否有User登陆**/
+// const USER_KEY = 'user';
+// let  user = getStorage(USER_KEY);
+// user =JSON.parse(user);
+//
+// function getStorage(key){
+// 	return localStorage.getItem(key)
+// }
+//
+// if(user){
+// 	$('.dropdown span').text(`您好! ${user}`)
+// }else{
+// 	window.location.href = "../login.html";
+// }
 
 /** 初始化组合信息表 **/
 function init(){

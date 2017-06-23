@@ -3,27 +3,27 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
-/** 判断是否有User登陆**/
-const USER_KEY = 'user';
-let  user = getStorage(USER_KEY);
-user =JSON.parse(user);
-
-function getStorage(key){
-	return localStorage.getItem(key)
-}
-function clearStorage(key){
-	localStorage.removeItem(key);
-}
-if(user){
-	$('#dropdown span').text(`您好! ${user}`)
-}else{
-	window.location.href = "../login.html";
-}
-/*退出清除localStorage*/
-$('.dropout').click(function(){
-	clearStorage(USER_KEY);
-	location.reload();
-});
+// /** 判断是否有User登陆**/
+// const USER_KEY = 'user';
+// let  user = getStorage(USER_KEY);
+// user =JSON.parse(user);
+//
+// function getStorage(key){
+// 	return localStorage.getItem(key)
+// }
+// function clearStorage(key){
+// 	localStorage.removeItem(key);
+// }
+// if(user){
+// 	$('#dropdown span').text(`您好! ${user}`)
+// }else{
+// 	window.location.href = "../login.html";
+// }
+// /*退出清除localStorage*/
+// $('.dropout').click(function(){
+// 	clearStorage(USER_KEY);
+// 	location.reload();
+// });
 
 /** 初始化店铺信息表 **/
 function init(){

@@ -3,27 +3,27 @@ var totalNumber = 0;//总记录数
 var pageSize = 15;//页面大小
 var startIndex = 0;//当前页号
 
-/** 判断是否有User登陆**/
-const USER_KEY = 'user';
-let  user = getStorage(USER_KEY);
-user =JSON.parse(user);
-
-function getStorage(key){
-	return localStorage.getItem(key)
-}
-function clearStorage(key){
-	localStorage.removeItem(key);
-}
-if(user){
-	$('.dropdown span').text(`您好! ${user}`)
-}else{
-	window.location.href = "../login.html";
-}
-/*退出清除localStorage*/
-$('.dropout').click(function(){
-	clearStorage(USER_KEY);
-	location.reload();
-});
+// /** 判断是否有User登陆**/
+// const USER_KEY = 'user';
+// let  user = getStorage(USER_KEY);
+// user =JSON.parse(user);
+//
+// function getStorage(key){
+// 	return localStorage.getItem(key)
+// }
+// function clearStorage(key){
+// 	localStorage.removeItem(key);
+// }
+// if(user){
+// 	$('.dropdown span').text(`您好! ${user}`)
+// }else{
+// 	window.location.href = "../login.html";
+// }
+// /*退出清除localStorage*/
+// $('.dropout').click(function(){
+// 	clearStorage(USER_KEY);
+// 	location.reload();
+// });
 
 /** 初始化用户信息表 **/
 function init(){
@@ -33,6 +33,7 @@ function init(){
 		dataType : "json",
 		contentType : "application/json",
 		data : {"username":fuzzyUsername, "role":0, "currentPage":(currentPage-1), "pageSize":pageSize},
+		cache:false,
 		success : function(msg) {
 			console.log(msg);
 			var list = msg.list;
@@ -91,6 +92,7 @@ function selectStoreInfo(storeName, province, num, action){
 		dataType : "json",
 		contentType : "application/json",
 		data : {"storeName":storeName, "province":province, "currentPage":0, "pageSize":1000},
+		cache: false,
 		success : function(msg) {
 			var result = msg.result;
 			var list = msg.list;
@@ -133,6 +135,7 @@ function insertUserControl(){
 		dataType : "json",
 		contentType : "application/json",
 		data : addData,
+		cache: false,
 		success : function(msg) {
 			var result = msg.result;
 		},
@@ -151,6 +154,7 @@ function updateUserControl(){
 		dataType : "json",
 		contentType : "application/json",
 		data : updateData,
+		cache: false,
 		success : function(msg) {
 			var result = msg.result;
 		},
